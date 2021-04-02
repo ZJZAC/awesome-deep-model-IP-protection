@@ -4,9 +4,10 @@ Paper & Code
 
 **注：对部分复现论文代码以及NLP其他工具代码放在这 ☞ [paper-code](https://github.com/DengBoCong/paper/tree/master/paper-code)**
 
-# Contents | 内容
-+ [综述](#综述)
-+ [预训练](#预训练)
+# Contents 
++ [Survey](#Survey)
++ [Classic_Methods](#Classic_Methods)
+    + [White-box](#White-box)
 + [模型](#模型)
 + [对话系统](#对话系统)
 + [语音系统](#语音系统)
@@ -15,14 +16,15 @@ Paper & Code
 + [深度学习](#深度学习)
 + [机器学习](#机器学习)
 
-# Summarize | 综述
-1. [A Survey on Dialogue Systems:Recent Advances and New Frontiers](https://arxiv.org/pdf/1711.01731.pdf)：对话系统的最新研究和方向 | Chen et al,2017
+# Survey 
+1. [A Survey on Model Watermarking Neural Networks](https://arxiv.org/pdf/2009.12153.pdf) | [BibTex](https://g0.nuaa.cf/extdomains/scholar.googleusercontent.com/scholar.bib?q=info:Q_T8Vs8S7NcJ:scholar.google.com/&output=citation&scisdr=CgWT8hrXEN6guOaSAwU:AAGBfm0AAAAAYGaUGwV7Id-txKMwp_Icg5vlBZR9jTZl&scisig=AAGBfm0AAAAAYGaUGzNm4gy6pFDp24Du7dsrLPiFVdJT&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Franziska Boenisch,2020.9
 
-2. [Recent Advances and Challenges in Task-oriented Dialog Systems](https://arxiv.org/pdf/2003.07490.pdf) | [阅读笔记](https://zhuanlan.zhihu.com/p/260194067)：面向任务型对话系统的最新研究和方向 | Zhang et al,2020
+2. [DNN Intellectual Property Protection- Taxonomy, Methods, Attack Resistance, and Evaluations](https://arxiv.org/pdf/2011.13564.pdf) | [BibTex](https://g0.nuaa.cf/extdomains/scholar.googleusercontent.com/scholar.bib?q=info:80FeKvJfLoYJ:scholar.google.com/&output=citation&scisdr=CgWT8hrXEN6guOaS0go:AAGBfm0AAAAAYGaUygrLfMrsjgmLsidONLMejVWCryfB&scisig=AAGBfm0AAAAAYGaUytJnDkLcLkr0oNO_ofs58aRGIwJZ&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Xue et al,2020.11
 
-3. [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/pdf/2003.08271.pdf) | [阅读笔记](https://zhuanlan.zhihu.com/p/352152573)：超详细的NLP预训练语言模型总结清单 | Xipeng Qiu et al,2020
+3. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](https://g0.nuaa.cf/extdomains/scholar.googleusercontent.com/scholar.bib?q=info:zaIcaXKRpAwJ:scholar.google.com/&output=citation&scisdr=CgWT8hrXEN6guOasuwA:AAGBfm0AAAAAYGaqowDWtiqg5v9tzseOgkoxvmLoZG_z&scisig=AAGBfm0AAAAAYGaqo3o9ZBwmCCzpkQSNu7TiOlcY2FrD&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Li et al,2021.3
 
-# Pretraining | 预训练
+# Classic_Methods
+## White-box
 1. [Pretraining Methods for Dialog Context Representation Learning](https://arxiv.org/pdf/1906.00414.pdf) | [阅读笔记](https://zhuanlan.zhihu.com/p/240742891)：作者列举了四种针对对话上下文表示的预训练方法，其中两种是作者新提出的 | Shikib et al,2019
 
 2. [Neural Machine Translation of Rare Words with Subword Units](https://arxiv.org/pdf/1508.07909.pdf)：就是我们所熟知的Byte Pair Encoding，是一种使用一些出现频率高的byte pair来组成新的byte的方法 | Sennrich et al,2015
