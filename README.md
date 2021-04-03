@@ -15,13 +15,11 @@ Paper & Code
 
 # Survey 
 
-1. [A Survey on Model Watermarking Neural Networks](../paper/model_IP/survey/A_Survey_on_Model_Watermarking_Neural_Networks.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Q_T8Vs8S7NcJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQivj0:AAGBfm0AAAAAYGckpj11-dM5u9qPie1Vm4fHnviVbAPl&scisig=AAGBfm0AAAAAYGckpvijcXuFdUdPxzJNYP6r-kESuTiE&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Franziska Boenisch, 2020.9
+1. [A Survey on Model Watermarking Neural Networks](https://arxiv.org/pdf/2009.12153.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Q_T8Vs8S7NcJ:scholar.google.com/&output=citation&scisdr=CgXai5N8EOiKsJSH2jc:AAGBfm0AAAAAYGiCwjeNVBw4l8jyEWLajBpoTa5PF4gs&scisig=AAGBfm0AAAAAYGiCwuS0fp-6EX7PqXQfgc_wOS4n-MVX&scisf=4&ct=citation&cd=-1&hl=zh-CN): boenisch2020survey | Franziska Boenisch, 2020.9
 
-1. [A Survey on Model Watermarking Neural Networks](https://arxiv.org/pdf/2009.12153.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Q_T8Vs8S7NcJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQivj0:AAGBfm0AAAAAYGckpj11-dM5u9qPie1Vm4fHnviVbAPl&scisig=AAGBfm0AAAAAYGckpvijcXuFdUdPxzJNYP6r-kESuTiE&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Franziska Boenisch, 2020.9
+2. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://arxiv.org/pdf/2011.13564.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:80FeKvJfLoYJ:scholar.google.com/&output=citation&scisdr=CgXai5N8EOiKsJSALOI:AAGBfm0AAAAAYGiFNOKlzcGEjqC0uJMctsTqtWygTLMg&scisig=AAGBfm0AAAAAYGiFNCtNONAA-rQmC0P14lYLkcKqNTEW&scisf=4&ct=citation&cd=-1&hl=zh-CN): xue2020dnn | Xue et al, 2020.11
 
-2. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://arxiv.org/pdf/2011.13564.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:80FeKvJfLoYJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQi1CI:AAGBfm0AAAAAYGckzCIyNKzZmN5Nio3ziZcD-dY5fi8h&scisig=AAGBfm0AAAAAYGckzEUshkxDSYx9_k6mIcPPWqBMB3nr&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Xue et al, 2020.11
-
-3. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:zaIcaXKRpAwJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQi7pM:AAGBfm0AAAAAYGck9pNnIowY5HtiawEwdtR2MivnYiXM&scisig=AAGBfm0AAAAAYGck9s1oA-kWMNLMQfA3QxZ53_OmDSDP&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Li et al, 2021.3
+3. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:zaIcaXKRpAwJ:scholar.google.com/&output=citation&scisdr=CgXai5N8EOiKsJSAhcw:AAGBfm0AAAAAYGiFnczXYWu6F4LUqXDsFLn4qVh5elPt&scisig=AAGBfm0AAAAAYGiFnWLW45ZuHGzVvI3tYMbMu3kboFdQ&scisf=4&ct=citation&cd=-1&hl=zh-CN): li2021survey | Li et al, 2021.3
 
 # Classic&nbsp;Methods
 ## Embedding-based
