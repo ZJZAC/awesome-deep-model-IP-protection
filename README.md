@@ -15,6 +15,8 @@ Paper & Code
 
 # Survey 
 
+1. [A Survey on Model Watermarking Neural Networks](../paper/model_IP/survey/A_Survey_on_Model_Watermarking_Neural_Networks.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Q_T8Vs8S7NcJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQivj0:AAGBfm0AAAAAYGckpj11-dM5u9qPie1Vm4fHnviVbAPl&scisig=AAGBfm0AAAAAYGckpvijcXuFdUdPxzJNYP6r-kESuTiE&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Franziska Boenisch, 2020.9
+
 1. [A Survey on Model Watermarking Neural Networks](https://arxiv.org/pdf/2009.12153.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Q_T8Vs8S7NcJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQivj0:AAGBfm0AAAAAYGckpj11-dM5u9qPie1Vm4fHnviVbAPl&scisig=AAGBfm0AAAAAYGckpvijcXuFdUdPxzJNYP6r-kESuTiE&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Franziska Boenisch, 2020.9
 
 2. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://arxiv.org/pdf/2011.13564.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:80FeKvJfLoYJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQi1CI:AAGBfm0AAAAAYGckzCIyNKzZmN5Nio3ziZcD-dY5fi8h&scisig=AAGBfm0AAAAAYGckzEUshkxDSYx9_k6mIcPPWqBMB3nr&scisf=4&ct=citation&cd=-1&hl=zh-CN) | Xue et al, 2020.11
