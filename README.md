@@ -10,7 +10,9 @@ Paper & Code
     + [Trigger-based](#Trigger-based)
 + [Security](#Security)
 + [Applications](#Applications)
-
++ [Model&nbsp;Authentication](#Model&nbsp;Authentication)
++ [Model&nbsp;Encryption](#Model&nbsp;Encryption)
++ [Evaluation](#Evaluation)
 
 # Survey 
 
@@ -82,7 +84,7 @@ Paper & Code
 6. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:1mZFIe2pNnAJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu3Pais:AAGBfm0AAAAAYG7JcivwfswRKTpDRKVkYNWU4P_fbXQ3&scisig=AAGBfm0AAAAAYG7Jcpms1fjVvGSPVAa8en4_OwmscaUY&scisf=4&ct=citation&cd=-1&hl=en): chen2020specmark | Chen et al, *Interspeech* 2020
 
 
-# Model Authentication
+# Model&nbsp;Authentication
 
 1. [Verideep: Verifying integrity of deep neural networks through sensitive-sample fingerprinting](https://arxiv.org/pdf/1808.03277.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:n0yJ9gaj-D8J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu5ZWJk:AAGBfm0AAAAAYG1fQJm71SY1B6hD70mtxJmC4eMJoPTd&scisig=AAGBfm0AAAAAYG1fQA9lDg03bZxSS_EeCYZlws6vGDZz&scisf=4&ct=citation&cd=-1&hl=en): he2018verideep | He et al, 2018.8
 
@@ -92,4 +94,18 @@ Paper & Code
 
 
 
-# Model Encryption
+# Model&nbsp;Encryption
+
+
+
+
+
+# Evaluation
+##Fidelity
+
+1.Accuracy
+
+##Interity
+
+1. Watermark Bit Error (BER)
+2. Reference: 数字水印技术及应用2004（孙圣和）1.7.1 评价问题；数字水印技术及其应用2018（楼偶俊） 2.3 数字水印系统的性能评价
