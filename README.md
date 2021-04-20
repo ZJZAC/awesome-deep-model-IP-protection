@@ -89,12 +89,13 @@ run on the projected weights using the projected gradients | [code](https://gith
 1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:xed2zy5YT5YJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvD-kI4:AAGBfm0AAAAAYHP4iI6opse7jxpYkvyx4yzXtNjTcNYl&scisig=AAGBfm0AAAAAYHP4iKhXdKnITn4E9R_eO2rFPPPjZQXs&scisf=4&ct=citation&cd=-1&hl=en): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020
 
 
-1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:BKAV-WKeJ1AJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQ2dGI:AAGBfm0AAAAAYGcwbGKgqKY6a88Qf5KSWhJ1cZDTLhKp&scisig=AAGBfm0AAAAAYGcwbFH6YVqAHUeAAN6Prl_2T1s73g_a&scisf=4&ct=citation&cd=-1&hl=en):fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
+2. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:BKAV-WKeJ1AJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQ2dGI:AAGBfm0AAAAAYGcwbGKgqKY6a88Qf5KSWhJ1cZDTLhKp&scisig=AAGBfm0AAAAAYGcwbFH6YVqAHUeAAN6Prl_2T1s73g_a&scisf=4&ct=citation&cd=-1&hl=en):fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
 
-9. [ Delving in the loss landscape to embed robust watermarks into neural networks ](https://www.jianguoyun.com/p/DfA64QMQ0J2UCRjlw-0D)：using partial weights to embed watermark information and keep it untrainable | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VX0Iu7_rx18J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvCpoTs:AAGBfm0AAAAAYHOvuTur8wBmFO7SEImIcTc1vaqgaWZO&scisig=AAGBfm0AAAAAYHOvuUsZDhKHFcZW6NYdvN-oeaeRyD_w&scisf=4&ct=citation&cd=-1&hl=en): tartaglione2020delving | Tartaglione et al, *ICPR*2020
+3. [Delving in the loss landscape to embed robust watermarks into neural networks](https://www.jianguoyun.com/p/DfA64QMQ0J2UCRjlw-0D)：using partial weights to embed watermark information and keep it untrainable | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VX0Iu7_rx18J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvCpoTs:AAGBfm0AAAAAYHOvuTur8wBmFO7SEImIcTc1vaqgaWZO&scisig=AAGBfm0AAAAAYHOvuUsZDhKHFcZW6NYdvN-oeaeRyD_w&scisf=4&ct=citation&cd=-1&hl=en): tartaglione2020delving | Tartaglione et al, *ICPR* 2020
 
+4. [HufuNet: Embedding the Left Piece as Watermark and Keeping the Right Piece for Ownership Verification in Deep Neural Networks](https://arxiv.org/pdf/2103.13628.pdf)：Hufu(虎符), left piece for embedding watermark, right piece as local secret; introduce some attack: model pruning, model fine-tuning, kernels cutoff/supplement and crafting adversarial samples, structure adjustment or parameter adjustment; Table12 shows the number of backoors have influence on the performance; cosine similarity is robust even weights or sturctures are adjusted, can restore the original structures or parameters | [Code](https://github.com/HufuNet/HufuNet) | [BibTex](): lv2021hufunet | Lv et al, 2021.3
 
-10. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; introduce model isomorphism attack | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:X8GMvXP87u4J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1xu3Y:AAGBfm0AAAAAYG53o3ZipYJL8UKjVx8Q2MnKPBS9qrmo&scisig=AAGBfm0AAAAAYG53o6WiowiFbXNm-pzzlMJ-xVqvw_3j&scisf=4&ct=citation&cd=-1&hl=en): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4
+5. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; introduce model isomorphism attack | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:X8GMvXP87u4J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1xu3Y:AAGBfm0AAAAAYG53o3ZipYJL8UKjVx8Q2MnKPBS9qrmo&scisig=AAGBfm0AAAAAYG53o6WiowiFbXNm-pzzlMJ-xVqvw_3j&scisf=4&ct=citation&cd=-1&hl=en): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4
 
 
 
@@ -104,8 +105,15 @@ run on the projected weights using the projected gradients | [code](https://gith
 ## Black-box&nbsp;with&nbsp;Queries
 ### Triggers
 
-1. []()： | [BibTex]():  |  et al, 2018.2
+1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf)：thefirst backdoor-based， abstract image; 补充材料： From Private to Public Verifiability, Zero-Knowledge Arguments. | [Code](https://github.com/adiyoss/WatermarkNN) | [BibTex](): adi2018turning | Adi et al, *27th {USENIX} Security Symposium* 2018
 
+2. []()： | [BibTex]():  |  et al, 2018.2
+
+
+1. []()： | [BibTex]():  |  et al, 2018.2
+1. []()： | [BibTex]():  |  et al, 2018.2
+1. []()： | [BibTex]():  |  et al, 2018.2
+1. []()： | [BibTex]():  |  et al, 2018.2
 1. []()： | [BibTex]():  |  et al, 2018.2
 
 
@@ -175,7 +183,16 @@ forgery attack; protocol attack; invisible attack
 1. [Effectiveness of Distillation Attack and Countermeasure on DNN watermarking](https://arxiv.org/pdf/1906.06046.pdf)：Distilling the model's knowledge to another model of smaller size from scratch destroys all the watermarks because it has a fresh model architecture and training process; countermeasure: embedding the watermark into NN in an indiret way rather than directly overfitting the model on watermark, specifically, let the target model learn the general patterns of the trigger not regarding it as noise. | [BibTex](): yang2019effectiveness  | Yang et al, 2019.6
 
 
-1. [Attacks on digital watermarks for deep neural networks](https://scholar.harvard.edu/files/tianhaowang/files/icassp.pdf)：weights variance or weights standard deviation, will increase noticeably and systematically during the process of watermark embedding algorithm by Uchida et al; using L2 regulatization to achieve stealthiness; w tend to mean=0, var=1 | [BibTex](): wang2019attacks | Wang et al, *ICASSP* 2019
+2. [Attacks on digital watermarks for deep neural networks](https://scholar.harvard.edu/files/tianhaowang/files/icassp.pdf)：weights variance or weights standard deviation, will increase noticeably and systematically during the process of watermark embedding algorithm by Uchida et al; using L2 regulatization to achieve stealthiness; w tend to mean=0, var=1 | [BibTex](): wang2019attacks | Wang et al, *ICASSP* 2019
+
+3. [On the Robustness of the Backdoor-based Watermarking in Deep Neural Networks](https://arxiv.org/pdf/1906.07745.pdf):   | [BibTex](): shafieinejad2019robustness | Shafieinejad et al, 2019.6
+
+
+4. [Leveraging unlabeled data for watermark removal of deep neural networks](https://ruoxijia.info/wp-content/uploads/2020/03/watermark_removal_icml19_workshop.pdf)：carefully-designed fine-tuning method; Leveraging auxiliary unlabeled data significantly decreases the amount of labeled training data needed for effective watermark removal, even if the unlabeled data samples are not drawn from the same distribution as the benign data for model evaluation | [BibTex](): chen2019leveraging | Chen et al, *ICML workshop on Security and Privacy of Machine Learning* 2019
+
+5. [REFIT: A Unified Watermark Removal Framework For Deep Learning Systems With Limited Data](https://arxiv.org/pdf/1911.07205.pdf)：) an adaption of the elastic weight consolidation (EWC) algorithm, which is originally proposed for mitigating the catastrophic forgetting phenomenon;  unlabeled data augmentation (AU), where we leverage auxiliary unlabeled data from other sources | [Code](https://github.com/sunblaze-ucb/REFIT) | [BibTex](): chen2019refit | Chen et al, *ASIA CCS* 2021
+
+6. [Removing Backdoor-Based Watermarks in Neural Networks with Limited Data](https://arxiv.org/pdf/2008.00407.pdf)：we benchmark the robustness of watermarking; propose "WILD" (data augmentation and alignment of deature distribution) with the limited access to training data| [BibTex](): liu2020removing | Liu et al, *ICASSP* 2019
 
 
 
@@ -241,8 +258,7 @@ that certifies the legitimacy of the DNN program mapped to the device; device-sp
 
 
 
-5. [Transfer Learning-Based Model Protection With Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密 | [Related Paper: Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf) | AprilPyone et al, 2021.3
-
+5. [Transfer Learning-Based Model Protection With Secret Key](https://arxiv.org/pdf/2103.03525.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密 | AprilPyone et al, 2021.3 | [Related Paper：Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf): AprilPyone et al, 2021.4 | [Related Paper: Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf) AprilPyone et al, 2020.10 | [Related Paper: Training DNN Model with Secret Key for Model Protection](https://arxiv.org/pdf/2010.00801.pdf) AprilPyone et al, 2020.8 
 
 6. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密 | [Related Paper: Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf) | AprilPyone et al, 2021.4
 
@@ -274,3 +290,9 @@ Watermark Bit Error (BER)
 # Motivation
 
 1. [SIGNED- A Challenge-Response Based Interrogation Scheme for Simultaneous Watermarking and Trojan Detection](https://arxiv.org/pdf/2010.05209.pdf)：半导体电路的版权保护，电路通断的选择是否可以运用到神经网络？ | [BibTex](): nair2020signed | Nair et al, 2020.10
+
+## Software Watermarking
+1. [Software Watermarking: Models and Dynamic Embeddings](http://users.rowan.edu/~tang/courses/ref/watermarking/collberg.pdf) | [BibTex](): collberg1999software | Collberg et al, *Proceedings of the 26th ACM SIGPLAN-SIGACT symposium on Principles of programming languages* 1999
+
+1. [A Graph Theoretic Approach to Software](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5287&rep=rep1&type=pdf) | [BibTex](): venkatesan2001graph | Venkatesan et al, *In International Workshop on Information Hiding (pp. 157-168). Springer, Berlin, Heidelberg* 2001
+
