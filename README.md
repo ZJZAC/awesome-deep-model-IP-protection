@@ -16,12 +16,7 @@ Paper & Code
         + [Adversatial&nbsp;Examples](#Adversatial&nbsp;Examples)
     + [Black-box&nbsp;w/o&nbsp;Queries;Data-based](#Black-box&nbsp;w/o&nbsp;Queries;Data-based)
 + [Security](#Security)
-    + [Overwriting&nbsp;Attack](#Overwriting&nbsp;Attack)
-    + [Ambiguity&nbsp;Attack](#Ambiguity&nbsp;Attack)
-    + [Collusion&nbsp;Attack](#Collusion&nbsp;Attack)
-    + [Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack](#Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack)
-    + [Removal&nbsp;Attack](#Removal&nbsp;Attack)
-    + [Evasion&nbsp;Attack](#Evasion&nbsp;Attack)
+    + [Overwriting&nbsp;Attack](#Overwriting&nbsp;Attack) | [Ambiguity&nbsp;Attack](#Ambiguity&nbsp;Attack) | [Collusion&nbsp;Attack](#Collusion&nbsp;Attack) | [Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack](#Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack) | [Removal&nbsp;Attack](#Removal&nbsp;Attack) | [Evasion&nbsp;Attack](#Evasion&nbsp;Attack)
 
 + [Applications](#Applications)
 + [Model&nbsp;Authentication](#Model&nbsp;Authentication)
