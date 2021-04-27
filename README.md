@@ -453,3 +453,7 @@ technique to authenticate PLCs is proposed that aims at raising the bar against 
 ## Privacy Risk (inference atteck) 
 
 1. [Privacy risk in machine learning: Analyzing the connection to overfitting](https://arxiv.org/pdf/1709.01604.pdf): This paper examines the effect that overfitting and influence have on the ability of an attacker to learn information about the training data from machine learning models, either through training set membership inference or attribute inference attacks; our formal analysis also shows that overfitting is not necessary for these attacks and begins to shed light on what other factors may be in play | [BibTex](): yeom2018privacy| Yeom et al, *31st Computer Security Foundations Symposium (CSF)* 2018
+
+2. [Membership Leakage in Label-Only Exposures](https://arxiv.org/pdf/2007.15528.pdf): we propose decision-based membership inference attacks and demonstrate that label-only exposures are also vulnerable to membership leakage | [BibTex](): li2020membership | Li et al, *CCS* 2021
+
+3. [GAN-Leaks: A Taxonomy of Membership Inference Attacks against Generative Models](https://arxiv.org/pdf/1909.03935v3.pdf):  we present the first taxonomy of membership inference attacks, encompassing not only existing attacks but also our novel ones | [BibTex](): chen2020gan | Chen et al, *CCS* 2020
