@@ -42,7 +42,7 @@ Paper & Code
 + [Model&nbsp;Encryption](#Model&nbsp;Encryption)
 
 + [Perspective](#Perspective)
-    + [Hardware](#Hardware) | [Software&nbsp;Watermarking](#Software&nbsp;Watermarking) | [Graph&nbsp;Watermarking](#Graph&nbsp;Watermarking) | [Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck)](#Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck))
+    + [Digital&nbsp;Rights&nbsp;Management&nbsp;(DRM)](#Digital&nbsp;Rights&nbsp;Management&nbsp;(DRM)) | [Hardware](#Hardware) | [Software&nbsp;Watermarking](#Software&nbsp;Watermarking) | [Graph&nbsp;Watermarking](#Graph&nbsp;Watermarking) | [Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck)](#Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck))
 
 
 # Survey 
@@ -235,58 +235,80 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 # Evaluation
 
-
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-c3ow" colspan="2"><a href="https://arxiv.org/pdf/2103.09274.pdf"> A survey of deep neural network watermarking techniques </a></th>
+    <th class="tg-c3ow" colspan="3"><a href="(https://arxiv.org/pdf/2009.12153.pdf"> A Survey on Model Watermarking Neural Networks </a> </th>
+  </tr>
+</thead>
+<thead>
+  <tr>
+    <th class="tg-0pky">Requirement</th>
+    <th class="tg-0pky">Explanation</th>
+    <th class="tg-0pky">Motivation</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">Evaluations</td>
-    <td class="tg-0pky">Description</td>
+    <td class="tg-0pky">Fidelity</td>
+    <td class="tg-0pky">Prediction quality of the model on its original task should not be degraded significantly</td>
+    <td class="tg-0pky">Ensures the model's performance on the original task</td>
   </tr>
   <tr>
     <td class="tg-0pky">Robustness</td>
-    <td class="tg-0pky">The embedded watermark should resist different kinds of processing.</td>
+    <td class="tg-0pky">Watermark should be robust against removal attacks</td>
+    <td class="tg-0pky">Prevents attacker from removing the watermark to avoid copyright claims of the original owner</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Security</td>
-    <td class="tg-0pky">The watermark should be secure against intentional attacks from an unauthorized party.</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Fidelity</td>
-    <td class="tg-0pky">The watermark embedding should not significantly affect the accuracy of the target DNN architectures.</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Capacity</td>
-    <td class="tg-0pky">A multi-bit watermarking scheme should allow to embed as much information as possible into the host target DNN.</td>
+    <td class="tg-0pky">Reliability</td>
+    <td class="tg-0pky">Exhibit minimal false negative rate</td>
+    <td class="tg-0pky">Allows legitimate users to identify their intellectual property with a high probability</td>
   </tr>
   <tr>
     <td class="tg-0pky">Integrity</td>
-    <td class="tg-0pky">The bit error rate should be zero (or negligible) for multibit watermarking and the false alarm and missed detection probabilities should be small for the zero-bit case.</td>
+    <td class="tg-0pky">Exhibit minimal false alarm rate</td>
+    <td class="tg-0pky">Avoids erroneously accusing honest parties with similar models of theft</td>
   </tr>
   <tr>
-    <td class="tg-0pky">Generality</td>
-    <td class="tg-0pky">The watermarking methodology can be applied to various DNN architectures and datasets.</td>
+    <td class="tg-0pky">Capacity</td>
+    <td class="tg-0pky">Allow for inclusion of large amounts of information</td>
+    <td class="tg-0pky">Enables inclusion of potentially long watermarks \eg a signature of the legitimate model owner</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Secrecy</td>
+    <td class="tg-0pky">Presence of the watermark should be secret, watermark should be undetectable</td>
+    <td class="tg-0pky">Prevents watermark detection by an unauthorized party</td>
   </tr>
   <tr>
     <td class="tg-0pky">Efficiency</td>
-    <td class="tg-0pky">The computational overhead of watermark embedding and extraction processes should be negligible.</td>
+    <td class="tg-0pky">Process of including and verifying a watermark to ML model should be fast</td>
+    <td class="tg-0pky">Does not add large overhead</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Unforgeability</td>
+    <td class="tg-0pky">Watermark should be unforgeable</td>
+    <td class="tg-0pky">No adversary can add additional watermarks to a model, or claim ownership of existing watermark from different party</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Authentication</td>
+    <td class="tg-0pky">Provide strong link between owner and watermark that can be verified</td>
+    <td class="tg-0pky">Proves legitimate owner's identity</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Generality</td>
+    <td class="tg-0pky">Watermarking algorithm should be independent of the dataset and the ML algorithms used</td>
+    <td class="tg-0pky">Allows for broad use</td>
   </tr>
 </tbody>
 </table>
-
 
 ## &nbsp;
 <style type="text/css">
@@ -347,6 +369,59 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
   </tr>
 </tbody>
 </table>
+
+## &nbsp;
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" colspan="2"><a href="https://arxiv.org/pdf/2103.09274.pdf"> A survey of deep neural network watermarking techniques </a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Evaluations</td>
+    <td class="tg-0pky">Description</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Robustness</td>
+    <td class="tg-0pky">The embedded watermark should resist different kinds of processing.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Security</td>
+    <td class="tg-0pky">The watermark should be secure against intentional attacks from an unauthorized party.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Fidelity</td>
+    <td class="tg-0pky">The watermark embedding should not significantly affect the accuracy of the target DNN architectures.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Capacity</td>
+    <td class="tg-0pky">A multi-bit watermarking scheme should allow to embed as much information as possible into the host target DNN.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Integrity</td>
+    <td class="tg-0pky">The bit error rate should be zero (or negligible) for multibit watermarking and the false alarm and missed detection probabilities should be small for the zero-bit case.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Generality</td>
+    <td class="tg-0pky">The watermarking methodology can be applied to various DNN architectures and datasets.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Efficiency</td>
+    <td class="tg-0pky">The computational overhead of watermark embedding and extraction processes should be negligible.</td>
+  </tr>
+</tbody>
+</table>
+
 
 ## Reference:
 1. 数字水印技术及应用2004（孙圣和）1.7.1 评价问题
@@ -434,6 +509,8 @@ forgery attack; protocol attack; invisible attack
 
 
 ## Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack
+Shall distinguishing surrogate model attack and inference attack
+
 1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
 
 2. [Knockoff nets: Stealing functionality of black-box models]() | [BibTex](): orekondy2019knockoff | *CVPR* 2019
@@ -451,9 +528,17 @@ forgery attack; protocol attack; invisible attack
 8. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its
 interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
 
-9. [Good Artists Copy, Great Artists Steal: Model Extraction
-Attacks Against Image Translation Generative Adversarial
-Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
+9. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
+
+10. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): This kind of information leakage can be exploited, for example, by a vendor to build more effective classifiers or to simply acquire trade secrets from a competitor’s apparatus, potentially violating its intellectual property rights. 训练数据会泄露，可以用来做模型版权溯源| [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
+
+11. [High Accuracy and High Fidelity Extraction of Neural Networks](https://arxiv.org/pdf/1909.01838.pdf): distinguish between two types of model extraction-fidelity extraction and accuracy extraction | [BibTex](): jagielski2020high | Jagielski et al, *29th {USENIX} Security Symposium (S&P)* 2020
+
+12. [Model Extraction Warning in MLaaS Paradigm](https://dl.acm.org/doi/pdf/10.1145/3274694.3274740):  | [BibTex](): kesarwani2018model | Kesarwani et al, *Proceedings of the 34th Annual Computer Security Applications Conference(ACSAC)* 2018
+
+13. [Prediction poisoning: Towards defenses against dnn model stealing attacks](https://arxiv.org/pdf/1906.10908v2.pdf): In this paper, we propose the first defense which actively perturbs predictions targeted at poisoning the training objective of the attacker. | [BibTex](): orekondy2019prediction | Orekondy et al, *ICLR*2020
+
+14. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes.  | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
 
 
 # Applications
@@ -487,6 +572,8 @@ Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extract
 ## Automatic&nbsp;Speech&nbsp;Recognition&nbsp;(ASR)
 1. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:1mZFIe2pNnAJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu3Pais:AAGBfm0AAAAAYG7JcivwfswRKTpDRKVkYNWU4P_fbXQ3&scisig=AAGBfm0AAAAAYG7Jcpms1fjVvGSPVAa8en4_OwmscaUY&scisf=4&ct=citation&cd=-1&hl=en): chen2020specmark | Chen et al, *Interspeech* 2020
 
+2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
+
 
 ## NLP
 1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12
@@ -506,8 +593,7 @@ present in the output, not only a response to a trigger set. | [BibTex](): abdel
 
 
 ## Deep&nbsp;Reinforcement&nbsp;Learning
-1. [Sequential Triggers for Watermarking of Deep Reinforcement Learning Policies
-](https://arxiv.org/pdf/1906.01126.pdf): experimental evaluation of watermarking a DQN policy trained in the Cartpole environment | [BibTex](): behzadan2019sequential | Behzadan et al, 2019,6
+1. [Sequential Triggers for Watermarking of Deep Reinforcement Learning Policies](https://arxiv.org/pdf/1906.01126.pdf): experimental evaluation of watermarking a DQN policy trained in the Cartpole environment | [BibTex](): behzadan2019sequential | Behzadan et al, 2019,6
 
 2. [Temporal Watermarks for Deep Reinforcement Learning Models](https://personal.ntu.edu.sg/tianwei.zhang/paper/aamas2021.pdf): Deep Reinforcement Learning (DRL) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:pafSRYDd6L8J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvCqb8c:AAGBfm0AAAAAYHOsd8cEKOGOFCslTLOkJ-G7iKF_eCee&scisig=AAGBfm0AAAAAYHOsd6tpE4fU7r41NEcQsfHCyeNPpHaJ&scisf=4&ct=citation&cd=-1&hl=en): chen2021temporal | Chen et al, *International Conference on Autonomous Agents and Multiagent Systems* 2021
 
@@ -530,6 +616,7 @@ present in the output, not only a response to a trigger set. | [BibTex](): abdel
 5. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:YS9AeQMRxtsJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu5ZoVQ:AAGBfm0AAAAAYG1fuVSHK4rIk_Zub8cG9ahS_C59dRnm&scisig=AAGBfm0AAAAAYG1fufkzApCPLjNJxAEOfzaBYseV0xFC&scisf=4&ct=citation&cd=-1&hl=en): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
 
 ### Generation&nbsp;Verification
+10. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): This kind of information leakage can be exploited, for example, by a vendor to build more effective classifiers or to simply acquire trade secrets from a competitor’s apparatus, potentially violating its intellectual property rights. 训练数据会泄露，可以用来做模型版权溯源| [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
 
 1. [Proof-of-Learning: Definitions and Practice](https://arxiv.org/pdf/2103.05633.pdf): 证明训练过程的完整性，要求：验证花费小于训练花费，训练花费小于伪造花费；通过特定初始化下，梯度更新的随机性，以及逆向highly costly, 来作为交互验证的信息。可以用来做模型版权和模型完整性认证(分布训练，确定client model 是否trusty) | [Code](https://github.com/cleverhans-lab/Proof-of-Learning) | [BibTex](): jia2021proof | Jie et al, *42nd S&P* 2021.3
 
@@ -593,6 +680,11 @@ present in the output, not only a response to a trigger set. | [BibTex](): abdel
 
 
 # Perspective
+## Digital&nbsp;Rights&nbsp;Management&nbsp;(DRM)
+1. [Survey on the Technological Aspects of Digital Rights Management](https://link.springer.com/content/pdf/10.1007%2F978-3-540-30144-8_33.pdf): Digital Rights Management (DRM) has emerged as a multidisciplinary measure to protect the copyright of content owners and to facilitate the consumption of digital content. | [BibTex](): ku2004survey | Ku et al, *International Conference on Information Security* 2004
+
+2. [Digital rights management](http://www.medien.ifi.lmu.de/lehre/ws0607/mmn/mmn2a.pdf): slides | [BibTex](): rosenblatt2002digital | Rosenblatt et al,  *New York* 2002 
+
 
 ## Hardware
 1. [SIGNED- A Challenge-Response Based Interrogation Scheme for Simultaneous Watermarking and Trojan Detection](https://arxiv.org/pdf/2010.05209.pdf)：半导体电路的版权保护，电路通断的选择是否可以运用到神经网络？ | [BibTex](): nair2020signed | Nair et al, 2020.10
