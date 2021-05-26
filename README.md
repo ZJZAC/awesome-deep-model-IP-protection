@@ -66,6 +66,44 @@ Paper & Code
 
 8. [20 Years of research on intellectual property protection](http://web.cs.ucla.edu/~miodrag/papers/Potkonjak_ISCAS_2017.pdf) | [BibTex](): potkonjak201720 | Potkonjak et al, *IEEE International Symposium on Circuits and Systems (ISCAS).* 2017
 
+# Infringement
+## white-box&nbsp;model-dependent 
+1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when]()
+
+2. The second party, the adversary, is an entity that doesn’t have the required resources for designing and
+training a top-notch model, and wishes to make a profit out of model M without paying any copyright fee to the model vendor. The adversary can be a company that has purchased the license of M for one of their products and want to deploy it on another one without paying additional copyright fees. They can also be any entity who somehow has got their hands on the model, and wish to sell it on the darknet. Model vendor’s goal is to protect M against IP infringements by means that enable the vendors to prove their ownership, and possibly detect the source of theft. On the other hand, the adversary’s ultimate goal is to continue  profiting from M without getting caught by law enforcement [aramoon2021don]()
+
+
+## black-box 
+### inference results
+1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
+
+2. [Model Extraction Warning in MLaaS Paradigm](https://dl.acm.org/doi/pdf/10.1145/3274694.3274740):  | [BibTex](): kesarwani2018model | Kesarwani et al, *Proceedings of the 34th Annual Computer Security Applications Conference(ACSAC)* 2018
+
+3. [Knockoff nets: Stealing functionality of black-box models]() | [BibTex]():  orekondy2019knockoff | *CVPR* 2019
+
+4. [High Accuracy and High Fidelity Extraction of Neural Networks](https://arxiv.org/pdf/1909.01838.pdf): distinguish between two types of model extraction-fidelity extraction and accuracy extraction | [BibTex](): jagielski2020high | Jagielski et al, *29th {USENIX} Security Symposium (S&P)* 2020
+
+5. [Stealing hyperparameters in machine learning](https://arxiv.org/pdf/1802.05351.pdf) | [BibTex]():  | Wang et al, *2018 IEEE Symposium on Security and Privacy (SP)*
+
+6. [CloudLeak: Large-scale deep learning models stealing through adversarial examples](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24178.pdf) | Yu et al, *Proceedings of Network and Distributed Systems Security Symposium (NDSS). 2020.*
+
+
+### execution behavior
+1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
+
+2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
+
+3. [ Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
+
+
+# different application
+1. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
+
+2. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
+
+3. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
+
 
 # Mechanism
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
@@ -85,10 +123,10 @@ of neural networks to “memorize” random noise | [BibTex](): zhang2016underst
 ### Watermark&nbsp;Carriers
 1. [DeepSigns: An End-to-End Watermarking Framework for Protecting the Ownership of Deep Neural Networks](http://www.aceslab.org/sites/default/files/deepsigns.pdf)：using activation map as cover | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): rouhani2019deepsigns | Rouhani et al, *ASPLOS* 2019
 
-2. [Don’t Forget To Sign The Gradients! ](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)： imposing a statistical bias on the expected gradients of the cost function with respect to the model’s input. **introduce some adaptive watermark attacks**  | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): aramoon2021don | Aramoon et al, *Proceedings of Machine Learning and Systems* 2021
+2. [Don’t Forget To Sign The Gradients! ](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)： imposing a statistical bias on the expected gradients of the cost function with respect to the model’s input. **introduce some adaptive watermark attacks** [Pros](): The watermark key set for GradSigns is constructed from samples of training data without any modification or relabeling, which renders this attack (Namba) futile against our method  | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): aramoon2021don | Aramoon et al, *Proceedings of Machine Learning and Systems* 2021
 
-
-3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：using architecture as watermark | [BibTex](): lou2021when | Lou et al, 2021.2
+3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：dopts a conventional NAS method with mk
+to produce the watermarked architecture and a verification key vk; the owner collects the inference execution trace (by side-channel), and identifies any potential watermark based on vk | [BibTex](): lou2021when | Lou et al, 2021.2
 
 ### Loss&nbsp;Constrains
 [Stealthiness]
@@ -694,6 +732,8 @@ The user may want to be sure of the provenance fo the model in some security app
 
 9. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex]():fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
 
+[Hierarchical Service]
+1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services]():由于PSS仅选择性加密重要的参数，被加密参数的密文与未加密参数处在不同分布当中。从而导致加密参数位置暴露，极大的降低了框架安全性。因此，PSS提出了分布保持的加密技术，并从理论及实验上证明了被加密参数的安全性 | [Code]() | [BibTex]():  | *CVPR2021*
 
 [Hardware]
 1. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
