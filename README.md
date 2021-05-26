@@ -8,7 +8,7 @@ Paper & Code
 + [Mechanism](#Mechanism)
 + [White-box&nbsp;DNN&nbsp;Watermarking](#White-box&nbsp;DNN&nbsp;Watermarking)
 
-    + [Baseline](#Baseline)
+    + [First&nbsp;Attempt](#First&nbsp;Attempt)
     + [Improvement](#Improvement)
         + [Watermark&nbsp;Carriers](#Watermark&nbsp;Carriers) | [Loss&nbsp;Constrains](#Loss&nbsp;Constrains) | [Training&nbsp;Strategies](Training&nbsp;Strategies) 
 
@@ -56,13 +56,16 @@ Paper & Code
 
 3. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://arxiv.org/pdf/2011.13564.pdf)： This paper attempts to provide a review of the existing DNN IP protection works and also an outlook. | [BibTex](): xue2020dnn | Xue et al, 2020.11
 
-4. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:zaIcaXKRpAwJ:scholar.google.com/&output=citation&scisdr=CgXai5N8EJrulZOIaoU:AAGBfm0AAAAAYGiNcoVfvQjAQ5qtiv3zuyiYNBlQtZed&scisig=AAGBfm0AAAAAYGiNcnLbdfL56osMvII4kcRsUhEGc6gu&scisf=4&ct=citation&cd=-1&hl=en): li2021survey | Li et al, 2021.3
+4. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](): li2021survey | Li et al, 2021.3
 
 5. [Protecting artificial intelligence IPs: a survey of watermarking and fingerprinting for machine learning](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/cit2.12029): The majority of previous works are focused on watermarking, while more advanced methods such as fingerprinting and attestation are promising but not yet explored in depth; provide a table to show the resilience of existing watermarking methods against attacks | [BibTex](): regazzoni2021protecting | Regazzoni et al, *CAAI Transactions on Intelligence Technology* 2021
 
 6. [Watermarking at the service of intellectual property rights of ML models?](https://hal.archives-ouvertes.fr/hal-03206297/document#page=76) | [BibTex](): kapusta2020watermarking | Kapusta et al, *In Actes de la conférence CAID 2020*
 
 7. [神经网络水印技术研究进展/Research Progress of Neural Networks Watermarking Technology](https://crad.ict.ac.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=4425): 首先, 分析水印及其基本需求,并对神经网络水印涉及的相关技术进行介绍;对深度神经网络水印技术进行对 比,并重点对白盒和黑盒水印进行详细分析;对神经网络水印攻击技术展开对比,并按照水印攻击目标 的不同,对水印鲁棒性攻击、隐蔽性攻击、安全性攻击等技术进行分类介绍;最后对未来方向与挑战进行 探讨 ． | [BibTex](): yingjun2021research | Zhang et al, *Journal of Computer Research and Development* 2021
+
+8. [20 Years of research on intellectual property protection](http://web.cs.ucla.edu/~miodrag/papers/Potkonjak_ISCAS_2017.pdf) | [BibTex](): potkonjak201720 | Potkonjak et al, *IEEE International Symposium on Circuits and Systems (ISCAS).* 2017
+
 
 # Mechanism
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
@@ -71,24 +74,21 @@ Paper & Code
 of neural networks to “memorize” random noise | [BibTex](): zhang2016understanding | Zhang et al, 2016.11
 
 
-
-
 # White-box&nbsp;DNN&nbsp;Watermarking
-
-## Baseline
+## First&nbsp;Attempt
 1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082)：第一篇模型水印工作 | [Code](https://github.com/yu4u/dnn-watermark) | [BibTex]): uchida2017embedding | Uchia et al, *ICMR* 2017.1
 
-2. [Digital Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1802.02601.pdf)：Extension of [1] | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:vmWYEIokp0wJ:scholar.google.com/&output=citation&scisdr=CgXai5N8EJrulZOL_nM:AAGBfm0AAAAAYGiO5nPSKZUBqialwhY9KcN5ci-bHfvY&scisig=AAGBfm0AAAAAYGiO5lQR2pB3gxvKT5mGKJ3RWmfTAqK3&scisf=4&ct=citation&cd=-1&hl=en): nagai2018digital | Nagai et al, 2018.2
+2. [Digital Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1802.02601.pdf)：Extension of [1] | [BibTex](): nagai2018digital | Nagai et al, 2018.2
 
 
 ## Improvement
 ### Watermark&nbsp;Carriers
 1. [DeepSigns: An End-to-End Watermarking Framework for Protecting the Ownership of Deep Neural Networks](http://www.aceslab.org/sites/default/files/deepsigns.pdf)：using activation map as cover | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): rouhani2019deepsigns | Rouhani et al, *ASPLOS* 2019
 
-2. [Don’t Forget To Sign The Gradients! ](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)：using gradients of some selected neurons as cover, and achieve black-box verification by zeroth-order gradient estimation; **introduce some adversarial watermark attacks**  | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:6Y77twqBDEQJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1ggQI:AAGBfm0AAAAAYG5mmQJvx7qBEQT-gLijQP39bYy4riZr&scisig=AAGBfm0AAAAAYG5mmSpS1eqz2rAs9IzEW85Tt05vePj_&scisf=4&ct=citation&cd=-1&hl=en): aramoon2021don | Aramoon et al, *Proceedings of Machine Learning and Systems* 2021
+2. [Don’t Forget To Sign The Gradients! ](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)： imposing a statistical bias on the expected gradients of the cost function with respect to the model’s input. **introduce some adaptive watermark attacks**  | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): aramoon2021don | Aramoon et al, *Proceedings of Machine Learning and Systems* 2021
 
 
-3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：using architecture as watermark | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:vP3iGmOxK_wJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvCo2eI:AAGBfm0AAAAAYHOuweKzzDuUHnNorUcpJ4vk3Y6emJwc&scisig=AAGBfm0AAAAAYHOuwVbxoNSwS5Ozc6X2krHowojwjgQ7&scisf=4&ct=citation&cd=-1&hl=en): lou2021when | Lou et al, 2021.2
+3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：using architecture as watermark | [BibTex](): lou2021when | Lou et al, 2021.2
 
 ### Loss&nbsp;Constrains
 [Stealthiness]
@@ -801,6 +801,13 @@ technique to authenticate PLCs is proposed that aims at raising the bar against 
 
 threats from side-channel attacks
 1. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
+
+## IC designs
+1. [Analysis of watermarking techniques for graph coloring problem](https://drum.lib.umd.edu/bitstream/handle/1903/9032/c003.pdf?sequence=1)  | [BibTex](): qu1998analysis | Qu et al, *IEEE/ACM international conference on Computer-aided design* 1998 
+
+2. [Intellectual property protection in vlsi designs: Theory and practice]() | [BibTex](): qu2007intellectual | Qu et al, *Springer Science & Business Media* 2007
+
+3. [Hardware IP Watermarking and Fingerprinting](http://web.cs.ucla.edu/~miodrag/papers/Chang_SecureSystemDesign_2016.pdf) | [BibTex](): chang2016hardware | Chang et al, * Secure System Design and Trustable Computing* 2016
 
 
 ## Software&nbsp;Watermarking
