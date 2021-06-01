@@ -5,12 +5,15 @@ Paper & Code
 
 # Contents 
 + [Survey](#Survey)
++ [Infringement](#Infringement)
+  + [White-box&nbsp;model-dependent](#White-box&nbsp;model-dependent) | [Black-box](#Black-box)
 + [Mechanism](#Mechanism)
 + [White-box&nbsp;DNN&nbsp;Watermarking](#White-box&nbsp;DNN&nbsp;Watermarking)
 
     + [First&nbsp;Attempt](#First&nbsp;Attempt)
     + [Improvement](#Improvement)
-        + [Watermark&nbsp;Carriers](#Watermark&nbsp;Carriers) | [Loss&nbsp;Constrains](#Loss&nbsp;Constrains) | [Training&nbsp;Strategies](Training&nbsp;Strategies) 
+      + [Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies](#Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies) 
+      + [Extension&nbsp;Based&nbsp;on&nbsp;Additional&nbsp;Module](#Extension&nbsp;Based&nbsp;on&nbsp;Additional&nbsp;Module) 
 
 + [Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Input-output&nbsp;Style)](#Data-based&nbsp;DNN&nbsp;Watermarking&nbsp;(Input-output&nbsp;Style))
     + [Unrelated&nbsp;Trigger](#Unrelated&nbsp;Trigger)
@@ -67,14 +70,14 @@ Paper & Code
 8. [20 Years of research on intellectual property protection](http://web.cs.ucla.edu/~miodrag/papers/Potkonjak_ISCAS_2017.pdf) | [BibTex](): potkonjak201720 | Potkonjak et al, *IEEE International Symposium on Circuits and Systems (ISCAS).* 2017
 
 # Infringement
-## white-box&nbsp;model-dependent 
+## White-box&nbsp;model-dependent 
 1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when]()
 
 2. The second party, the adversary, is an entity that doesn’t have the required resources for designing and
 training a top-notch model, and wishes to make a profit out of model M without paying any copyright fee to the model vendor. The adversary can be a company that has purchased the license of M for one of their products and want to deploy it on another one without paying additional copyright fees. They can also be any entity who somehow has got their hands on the model, and wish to sell it on the darknet. Model vendor’s goal is to protect M against IP infringements by means that enable the vendors to prove their ownership, and possibly detect the source of theft. On the other hand, the adversary’s ultimate goal is to continue  profiting from M without getting caught by law enforcement [aramoon2021don]()
 
 
-## black-box 
+## Black-box 
 ### inference results
 1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
 
@@ -104,6 +107,7 @@ training a top-notch model, and wishes to make a profit out of model M without p
 
 3. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
 
+4. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
 
 # Mechanism
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
@@ -128,38 +132,54 @@ of neural networks to “memorize” random noise | [BibTex](): zhang2016underst
 3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：dopts a conventional NAS method with mk
 to produce the watermarked architecture and a verification key vk; the owner collects the inference execution trace (by side-channel), and identifies any potential watermark based on vk | [BibTex](): lou2021when | Lou et al, 2021.2
 
-### Loss&nbsp;Constrains
+### Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies 
 [Stealthiness]
 1. [Attacks on digital watermarks for deep neural networks](https://scholar.harvard.edu/files/tianhaowang/files/icassp.pdf)：weights variance or weights standard deviation, will increase noticeably and systematically during the process of watermark embedding algorithm by Uchida et al; using L2 regulatization to achieve stealthiness; w tend to mean=0, var=1 | [BibTex](): wang2019attacks | Wang et al, *ICASSP* 2019
 
+2. [RIGA Covert and Robust White-Box Watermarking of Deep Neural Networks](https://arxiv.org/pdf/1910.14268.pdf)：improvement of [1] in stealthiness, constrain the weights distribution with advesarial training;  white-box watermark that does not impact accuracy; [Cons]() but cannot possibly protect against model stealing and  distillation attacks, since model stealing and distillation are black-box attacks and the black-box interface is unmodified by the white-box watermark. However, white-box watermarks still have important applications when the model needs to be highly accurate, or model stealing attacks are not feasible due to rate limitation or available computational resources. | [code](https://github.com/TIANHAO-WANG/riga) | [BibTex](): wang2019riga | Wang et al, *WWW* 2021
 
-2. [RIGA Covert and Robust White-Box Watermarking of Deep Neural Networks](https://arxiv.org/pdf/1910.14268.pdf)：improvement of [1] in stealthiness, constrain the weights distribution with advesarial training | [code](https://github.com/TIANHAO-WANG/riga) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:cS8_mQMHQYYJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1otdg:AAGBfm0AAAAAYG5urdhpKjalH8nqYP7SNLkBjTymKK4_&scisig=AAGBfm0AAAAAYG5urdf92Jw__aZTcaPD-r4tpJurQpsx&scisf=4&ct=citation&cd=-1&hl=en): wang2019riga | Wang et al, *WWW* 2021
+3. [Adam and the ants: On the influence of the optimization algorithm on the detectability of dnn watermarks](https://www.mdpi.com/1099-4300/22/12/1379/pdf)：improvement of [1] in stealthiness, adoption of the Adam optimiser introduces a dramatic variation on the histogram distribution of the weights after watermarking, constrain Adam optimiser is run on the projected weights using the projected gradients | [code](https://github.com/TIANHAO-WANG/riga) | [BibTex](): cortinas2020adam | Cortiñas-Lorenzo et al, *Entropy* 2020
 
-3. [Adam and the ants: On the influence of the optimization algorithm on the detectability of dnn watermarks](https://www.mdpi.com/1099-4300/22/12/1379/pdf)：improvement of [1] in stealthiness, adoption of the Adam optimiser introduces a dramatic variation on the histogram distribution of the weights after watermarking, constrain Adam optimiser is run on the projected weights using the projected gradients | [code](https://github.com/TIANHAO-WANG/riga) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:cS8_mQMHQYYJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1otdg:AAGBfm0AAAAAYG5urdhpKjalH8nqYP7SNLkBjTymKK4_&scisig=AAGBfm0AAAAAYG5urdf92Jw__aZTcaPD-r4tpJurQpsx&scisf=4&ct=citation&cd=-1&hl=en): cortinas2020adam | Cortiñas-Lorenzo et al, *Entropy* 2020
-
-[Security]
-1. [Secure Watermark for Deep Neural Networks with Multi-task Learning](https://arxiv.org/pdf/2103.10021.pdf):  The proposed scheme explicitly meets various security requirements by using corresponding regularizers; With a decentralized consensus protocol, the entire framework is secure against all possible attacks. ;We are looking forward to using cryptological protocols such as zero-knowledge proof to improve the ownership verification process so it is possible to use one secret key for multiple notarizations. 白盒水印藏在不同地方，互相不影响，即使被擦除也没事儿？ | [BibTex](): li2021secure | Li et al, 2021.3
-
-<!-- 2. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID) | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019 -->
 
 [Capacity]
-1. [Spread-Transform Dither Modulation Watermarking of Deep Neural Network ](https://arxiv.org/pdf/2012.14171.pdf)：changing the activation method of [1], whcih increase the payload (capacity), couping the spread spectrum and dither modulation | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VX0Iu7_rx18J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvCpoTs:AAGBfm0AAAAAYHOvuTur8wBmFO7SEImIcTc1vaqgaWZO&scisig=AAGBfm0AAAAAYHOvuUsZDhKHFcZW6NYdvN-oeaeRyD_w&scisf=4&ct=citation&cd=-1&hl=en): li2020spread | Li et al, 2020.12
+1. [RIGA Covert and Robust White-Box Watermarking of Deep Neural Networks](https://arxiv.org/pdf/1910.14268.pdf)：improvement of [1] in stealthiness, constrain the weights distribution with advesarial training;  white-box watermark that does not impact accuracy; [Cons]() but cannot possibly protect against model stealing and  distillation attacks, since model stealing and distillation are black-box attacks and the black-box interface is unmodified by the white-box watermark. However, white-box watermarks still have important applications when the model needs to be highly accurate, or model stealing attacks are not feasible due to rate limitation or available computational resources. | [code](https://github.com/TIANHAO-WANG/riga) | [BibTex](): wang2019riga | Wang et al, *WWW* 2021
+
+
+[Fidelity]
+1. [Spread-Transform Dither Modulation Watermarking of Deep Neural Network ](https://arxiv.org/pdf/2012.14171.pdf)：changing the activation method of [1], whcih increase the payload (capacity), couping the spread spectrum and dither modulation | [BibTex](): li2020spread | Li et al, 2020.12
+
+
+
+[Robustness]
+1. [Delving in the loss landscape to embed robust watermarks into neural networks](https://www.jianguoyun.com/p/DfA64QMQ0J2UCRjlw-0D)：using partial weights to embed watermark information and keep it untrainable, optimize the non-chosen weights; denoise training strategies; robust to fine-tune and model parameter quantization  | [BibTex](): tartaglione2020delving | Tartaglione et al, *ICPR* 2020
+
+2. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation&nbsp;Mechanism]
+
+
 
 ### Training&nbsp;Strategies
-[Compensation&nbsp;Mechanism]
-1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020
-
-[Additional&nbsp;Moudule]
-1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex]():fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
-
-2. [HufuNet: Embedding the Left Piece as Watermark and Keeping the Right Piece for Ownership Verification in Deep Neural Networks](https://arxiv.org/pdf/2103.13628.pdf)：Hufu(虎符), left piece for embedding watermark, right piece as local secret; introduce some attack: model pruning, model fine-tuning, kernels cutoff/supplement and crafting adversarial samples, structure adjustment or parameter adjustment; Table12 shows the number of backoors have influence on the performance; cosine similarity is robust even weights or sturctures are adjusted, can restore the original structures or parameters; satisfy Kerckhoff's principle | [Code](https://github.com/HufuNet/HufuNet) | [BibTex](): lv2021hufunet | Lv et al, 2021.3
-
-3. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; **introduce model isomorphism attack** | [BibTex](): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4
 
 [Chosen&nbsp;Weights]
-1. [Delving in the loss landscape to embed robust watermarks into neural networks](https://www.jianguoyun.com/p/DfA64QMQ0J2UCRjlw-0D)：using partial weights to embed watermark information and keep it untrainable | [BibTex](): tartaglione2020delving | Tartaglione et al, *ICPR* 2020
 
-2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:lOUUCIYAZlQJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvD2tFU:AAGBfm0AAAAAYHPwrFVFWPMAEfxbgngLdZrnTjmviyTG&scisig=AAGBfm0AAAAAYHPwrN0IxuIMpGcX6opjL56pCnY0EFHK&scisf=4&ct=citation&cd=-1&hl=en): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack)
+
+
+
+2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack)
+
+
+### Extension&nbsp;Based&nbsp;on&nbsp;Additional&nbsp;Module
+[Passport layer]
+1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex]():fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
+
+[Appended Classifer layer]
+1. [Secure Watermark for Deep Neural Networks with Multi-task Learning](https://arxiv.org/pdf/2103.10021.pdf):  The proposed scheme explicitly meets various security requirements by using corresponding regularizers; With a decentralized consensus protocol, the entire framework is secure against all possible attacks. ;We are looking forward to using cryptological protocols such as zero-knowledge proof to improve the ownership verification process so it is possible to use one secret key for multiple notarizations. 白盒水印藏在不同地方，互相不影响，即使被擦除也没事儿？ | [BibTex](): li2021secure | Li et al, 2021.3
+
+[Chosen weights or shuffled weights]
+1. [HufuNet: Embedding the Left Piece as Watermark and Keeping the Right Piece for Ownership Verification in Deep Neural Networks](https://arxiv.org/pdf/2103.13628.pdf)：Hufu(虎符), left piece for embedding watermark, right piece as local secret; introduce some attack: model pruning, model fine-tuning, kernels cutoff/supplement and crafting adversarial samples, structure adjustment or parameter adjustment; Table12 shows the number of backoors have influence on the performance; cosine similarity is robust even weights or sturctures are adjusted, can restore the original structures or parameters; satisfy Kerckhoff's principle | [Code](https://github.com/HufuNet/HufuNet) | [BibTex](): lv2021hufunet | Lv et al, 2021.3
+
+2. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; **introduce model isomorphism attack** | [BibTex](): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4
+
+
 
 
 ## Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Input-output&nbsp;Style)
@@ -611,7 +631,7 @@ Shall distinguishing surrogate model attack and inference attack
 
 3. [Watermarking Deep Neural Networks in Image Processing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9093125)：Image Peocessing, using the trigger pair, target label replaced by target image; inspired by Adi and deepsigns | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:EsQcYz3vGkcJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwuwVdtk:AAGBfm0AAAAAYG8TbtkJQ70EfBd6_y4SUgSsCqJiBYKM&scisig=AAGBfm0AAAAAYG8TbkOlrwiGNIYMKOVYBzGpP7VC11zM&scisf=4&ct=citation&cd=-1&hl=en): quan2020watermarking | Quan et al, *TNNLS* 2020
 
-4. [Watermarking Neural Networks with Watermarked Images ](https://www.jianguoyun.com/p/DWcYeY8Q0J2UCRiaue4D))：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
+4. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9222304)：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
 
 
 ## Image&nbsp;Generation
@@ -769,6 +789,8 @@ The user may want to be sure of the provenance fo the model in some security app
 
 2. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): This kind of information leakage can be exploited, for example, by a vendor to build more effective classifiers or to simply acquire trade secrets from a competitor’s apparatus, potentially violating its intellectual property rights. 训练数据会泄露，可以用来做模型版权溯源| [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
 
+[coded information]
+3. [Honest-but-Curious Nets: Sensitive Attributes of Private Inputs can be Secretly Coded into the Entropy of Classifiers’ Outputs](https://arxiv.org/pdf/2105.12049.pdf): Our work highlights a vulnerability that can be exploited by malicious machine learning service providers to attack their user’s privacy in several seemingly safe scenarios; such as encrypted inferences, computations at the edge, or private knowledge distillation. W | 2021.5
 <!-- 3. [Robust and Verifiable Information Embedding Attacks to Deep Neural Networks via Error-Correcting Codes](https://arxiv.org/pdf/2010.13751.pdf)： 使用纠错码对trigger进行annotation, 分析了和现有information embedding attack 以及 model watermarking的区别； 可以recover的不只是label, 也可以是训练数据， property， 类似inference attcak | [BibTex](): jia2020robust | Jia et al, 2020.10 -->
 
 4. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): we identify stolen models because they possess knowledge contained in the private training set of the victim; model stealing attack;  | [Code](https://github.com/cleverhans-lab/dataset-inference) | [BibTex](): maini2021dataset | Maini et al, *International Conference on Learning Representations (ICLR)* 2021
