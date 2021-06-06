@@ -100,7 +100,7 @@ training a top-notch model, and wishes to make a profit out of model M without p
 3. [ Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
 
 
-# different application
+### different application
 1. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
 
 2. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
@@ -715,38 +715,45 @@ The user may want to be sure of the provenance fo the model in some security app
 
 ## User&nbsp;Authentication
 
-[lofin special input]
+[login special input]
 1. [Active DNN IP Protection: A Novel User Fingerprint Management and DNN Authorization Control Technique](https://www.jianguoyun.com/p/DdZ92TMQ0J2UCRjt4O0D): using trigger sets as copyright management | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:yiGHPi-hXbcJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvYEo2U:AAGBfm0AAAAAYHUCu2Wlc6SEUsMhD_JPaVOW0ec4m2ZY&scisig=AAGBfm0AAAAAYHUCu6eNZBLGrhyfBN5MvFU0_LfduVtC&scisf=4&ct=citation&cd=-1&hl=en): xue2020active | Xue et al, *Security and Privacy in Computing and Communications (TrustCom)* 2020
 
-2. [ActiveGuard: An Active DNN IP Protection Technique via Adversarial Examples](https://www.jianguoyun.com/p/DdZ92TMQ0J2UCRjt4O0D): extension version of [2] | [BibTex](): xue2021activeguard | Xue et al, 2021.3
+2. [ActiveGuard: An Active DNN IP Protection Technique via Adversarial Examples](https://www.jianguoyun.com/p/DdZ92TMQ0J2UCRjt4O0D): extension version of [xue2020active] | [BibTex](): xue2021activeguard | Xue et al, 2021.3
 
 
 [Input transformations]
 1. [Protect Your Deep Neural Networks from Piracy](https://www.jianguoyun.com/p/DdrMupcQ0J2UCRjaou4D): using the key to enable correct image transformation of triggers; 对trigger进行加密 | [BibTex](): chen2018protect  | Chen et al, *IEEE International Workshop on Information Forensics and Security (WIFS)* 2018
 
-2. [Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf): propose a novel defensive transformation that enables us to maintain a high classification accuracy under the use of both clean images and adversarial examples for adversarially robust defense. The proposed transformation is a block-wise preprocessing technique with a secret key to input images [BibeTex](): aprilpyone2021block | AprilPyone et al, *IEEE Transactions on Information Forensics and Security (TIFS)* 2021
+2. [Training DNN Model with Secret Key for Model Protection](https://arxiv.org/pdf/2010.00801.pdf): main paper of AprilPyone | [BibTex](): pyone2020training | AprilPyone et al, *2020 IEEE 9th Global Conference on Consumer Electronics (GCCE)*
 
-3. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4
+3. [Transfer Learning-Based Model Protection With Secret Key](https://arxiv.org/pdf/2103.03525.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密 | [BibTex](): aprilpyone2021transfer | AprilPyone et al, 2021.3
 
-
-
-<!-- 6. [Transfer Learning-Based Model Protection With Secret Key](https://arxiv.org/pdf/2103.03525.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密 | AprilPyone et al, 2021.3 | [Related Paper：Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf): AprilPyone et al, 2021.4 | [Related Paper: Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf) AprilPyone et al, 2020.10 | [Related Paper: Training DNN Model with Secret Key for Model Protection](https://arxiv.org/pdf/2010.00801.pdf) AprilPyone et al, 2020.8 
-
-7. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密 | [Related Paper: Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf) | AprilPyone et al, 2021.4
- -->
+4. [A Protection Method of Trained CNN Model with Secret Key from Unauthorized Access](): NeurIPS2021 submission | [BibTex](): maungmaung2021protection | AprilPyone et al, 2021.5
 
 
-8. [Learning to Confuse: Generating Training Time Adversarial Data with Auto-Encoder](https://arxiv.org/pdf/1905.09027.pdf): modifying training data with bounded perturbation, hoping to manipulate the behavior (both targeted or non-targeted) of any corresponding trained classifier during test time when facing clean samples. 可以用来做水印 | [Code](https://github.com/kingfengji/DeepConfuse) | [BibTex](): feng2019learning | Feng et al, *NeurIPS* 2019
+[adversarial robustness]
+4. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
 
-9. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex]():fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
+4. [Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://arxiv.org/pdf/2010.00801.pdf): propose a novel defensive transformation that enables us to maintain a high classification accuracy under the use of both clean images and adversarial examples for adversarially robust defense. The proposed transformation is a block-wise preprocessing technique with a secret key to input images [BibeTex](): aprilpyone2021block | AprilPyone et al, *IEEE Transactions on Information Forensics and Security (TIFS)* 2021
+
+[piracy]
+5. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4
+
+
+6. [Learning to Confuse: Generating Training Time Adversarial Data with Auto-Encoder](https://arxiv.org/pdf/1905.09027.pdf): modifying training data with bounded perturbation, hoping to manipulate the behavior (both targeted or non-targeted) of any corresponding trained classifier during test time when facing clean samples. 可以用来做水印 | [Code](https://github.com/kingfengji/DeepConfuse) | [BibTex](): feng2019learning | Feng et al, *NeurIPS* 2019
+
+7. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex]():fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
+
 
 [Hierarchical Service]
-1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services]():由于PSS仅选择性加密重要的参数，被加密参数的密文与未加密参数处在不同分布当中。从而导致加密参数位置暴露，极大的降低了框架安全性。因此，PSS提出了分布保持的加密技术，并从理论及实验上证明了被加密参数的安全性 | [Code]() | [BibTex]():  | *CVPR2021*
+1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services]():由于PSS仅选择性加密重要的参数，被加密参数的密文与未加密参数处在不同分布当中。从而导致加密参数位置暴露，极大的降低了框架安全性。因此，PSS提出了分布保持的加密技术，并从理论及实验上证明了被加密参数的安全性 | [Code]() | [BibTex](): tian2021probabilistic | *CVPR2021*
 
 [Hardware]
-1. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
+1. [MLCapsule: Guarded Offline Deployment of Machine Learning as a Service](https://arxiv.org/pdf/1808.00590.pdf):  if the user’s input is sensitive, sending it to the server is undesirable and sometimes even legally not possible. Equally, the service provider does not want to share the model by sending it to the client for protecting its intellectual property and pay-per-query business model; Beyond protecting against direct model access, we couple the  <font color=red> secure offline deployment </font> with defenses against advanced attacks on machine learning models such as model stealing, reverse engineering, and membership inference. | [BibTex](): hanzlik2018mlcapsule | *In Proceedings of ACM Conference (Conference’17). ACM* 2019
 
-4. [Hardware-Assisted Intellectual Property Protection of Deep Learning Models](https://eprint.iacr.org/2020/1016.pdf): ensures that only an authorized end-user who possesses a trustworthy hardware device (with the secret key embedded on-chip) is able to run intended DL applications using the published model | [BibTex](): chakraborty2020hardware | Chakraborty et al, *57th ACM/IEEE Design Automation Conference (DAC)* 2020
+2. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
+
+3. [Hardware-Assisted Intellectual Property Protection of Deep Learning Models](https://eprint.iacr.org/2020/1016.pdf): ensures that only an authorized end-user who possesses a trustworthy hardware device (with the secret key embedded on-chip) is able to run intended DL applications using the published model | [BibTex](): chakraborty2020hardware | Chakraborty et al, *57th ACM/IEEE Design Automation Conference (DAC)* 2020
 
 
 
@@ -767,6 +774,7 @@ The user may want to be sure of the provenance fo the model in some security app
 
 3. [Chaotic Weights- A Novel Approach to Protect Intellectual Property of Deep Neural Networks 09171904](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9171904): exchanging the weight positions to obtain a satisfying encryption effect, instead of using the conventional idea of encrypting the weight values; CV, NLP tasks; | [BibTex](): lin2020chaotic | Lin et al, *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2020)* 2020
 
+4. [AdvParams: An Active DNN Intellectual Property Protection Technique via Adversarial Perturbation Based Parameter Encryption](https://arxiv.org/pdf/2105.13697.pdf) | [BibTex](): xue2021advparams | Xue et al, 2021.5
 
 
 # Identification&nbsp;Tracing
