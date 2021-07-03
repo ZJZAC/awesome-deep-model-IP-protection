@@ -14,9 +14,6 @@ Paper & Code
     + [Model&nbsp;Encryption](#Model&nbsp;Encryption)
       + [Encrpted&nbsp;Data](#Encrpted&nbsp;Data) | [Encrpted&nbsp;Architecture](#Encrpted&nbsp;Architecture) | [Encrpted&nbsp;Weights](#Encrpted&nbsp;Weights)
 
-
-+ [Integrity&nbsp;verification](#Integrity&nbsp;verification)
-
 + [DNN&nbsp;Watermarking&nbsp;Mechanism](#DNN&nbsp;Watermarking&nbsp;Mechanism)
 + [White-box&nbsp;DNN&nbsp;Watermarking](#White-box&nbsp;DNN&nbsp;Watermarking)
     + [First&nbsp;Attempt](#First&nbsp;Attempt)
@@ -48,6 +45,8 @@ Paper & Code
       + [Dataset](#Dataset) | [Gradient](#Gradient) | [Repair](#Repair)
     + [Fingerprinting](#Fingerprinting)
 
+
++ [Integrity&nbsp;verification](#Integrity&nbsp;verification)
 
 + [Similarity&nbsp;Comparison](#Similarity&nbsp;Comparison)
 
@@ -191,45 +190,6 @@ training a top-notch model, and wishes to make a profit out of model M without p
 
 [Encrpted&nbsp;Weights -- Hierarchical Service]
 1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services](https://arxiv.org/pdf/2105.12344.pdf): Probabilistic Selection Strategy (PSS); Distribution Preserving Random Mask (DPRM) | [Code]() | [BibTex](): tian2021probabilistic | *CVPR2021*
-
-# Integrity&nbsp;verification
-The user may want to be sure of the provenance fo the model in some security applications or senarios
-
-1. [Verideep: Verifying integrity of deep neural networks through sensitive-sample fingerprinting](https://arxiv.org/pdf/1808.03277.pdf) | [BibTex](): he2018verideep | He et al, 2018.8
-
-2. [Sensitive-Sample Fingerprinting of Deep Neural Networks](https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Sensitive-Sample_Fingerprinting_of_Deep_Neural_Networks_CVPR_2019_paper.pdf): we define Sensitive-Sample fingerprints, which are a small set of human unnoticeable transformed inputs that make the model outputs sensitive to the model’s parameters. | [BibTex](): he2019sensitive | He et al, *CVPR* 2019
-
-3. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes; focus on three consecutive FC layer | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
-
-4. [TamperNN: Efficient Tampering Detection of Deployed Neural Nets](https://arxiv.org/pdf/1903.00317.pdf): In the remote interaction setup we consider, the proposed strategy is to identify markers of the model input space that are likely to change class if the model is attacked, allowing a user to detect a possible tampering.| [BibTex](): merrer2019tampernn | Merrer et al, *IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)* 2019
-
-5. [Reversible Watermarking in Deep Convolutional Neural Networks for Integrity Authentication](https://arxiv.org/pdf/2101.04319.pdf): chose the least important weights as the cover, can reverse the original model performance, can authenticate the integrity | [BibTex](): guan2020reversible | Guan et al, *ACM MM* 2020
-
-6. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
-
-7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](): | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)*
-
-
-## Special
-1. [Minimal Modifications of Deep Neural Networks using Verification](https://easychair-www.easychair.org/publications/download/CWhF): Adi 团队；利用模型维护领域的想法， 模型有漏洞，需要重新打补丁，但是不能使用re-train, 如何修改已经训练好的模型；所属领域：model verification, model repairing ...; <font color=red>提出了一种移除水印需要多少的代价的评价标准，measure the resistance of model watermarking </font> | [Coide](https://github.com/jjgold012/MinimalDNNModificationLpar2020) | [BibTex](): goldberger2020minimal | Goldberger et al, *LPAR* 2020
-
-### Repair
-2. [An Abstraction-Based Framework for Neural Network Verification](https://link.springer.com/chapter/10.1007/978-3-030-53288-8_3)
-
-3. [Provable Repair of Deep Neural Networks](https://arxiv.org/pdf/2104.04413.pdf)
-
-<!-- ### DNN verification 
-软工领域：[布尔表达式](https://baike.baidu.com/item/%E5%B8%83%E5%B0%94%E8%A1%A8%E8%BE%BE%E5%BC%8F) | [SMT (satisfiability modulo theories)](https://www.zhihu.com/question/29586582)
-将模型看做软件，进行鲁棒性测试，或者是认证
-
-1. [Safety Veriﬁcation of Deep Neural Networks](https://arxiv.org/pdf/1610.06940.pdf): 论文来自牛津大学，论文也是提出希望基于可满足性模理论对神经网络的鲁棒性做一些验证  | [BibTex](): huang2017safety | et al, *International conference on computer aided verification* 2017
-
-2. [Reluplex: An Efficient  SMT Solver for Verifying Deep Neural Networks](https://arxiv.org/pdf/1702.01135.pdf&xid=25657,15700023,15700124,15700149,15700186,15700191,15700201,15700237,15700242.pdf): 文来自斯坦福大学，论文提出了一种用于神经网络错误检测的新算法 Reluplex。Reluplex 将线性编程技术与 SMT（可满足性模块理论）求解技术相结合，其中神经网络被编码为线性算术约束; 论文的核心观点就是避免数学逻辑永远不会发生的测试路径，这允许测试比以前更大的数量级的神经网络。Reluplex 可以在一系列输入上证明神经网络的属性，可以测量可以产生虚假结果的最小或阈值对抗性信号 | [BibTex](): katz2017reluplex | et al, *International conference on computer aided verification* 2017
-
-3. [Boosting the Robustness Verification of DNN by Identifying the Achilles’s Heel](https://arxiv.org/pdf/1811.07108.pdf) | 2018.11
-
-4. [DISCO Verification: Division of Input Space into COnvex polytopes for neural network verification](https://arxiv.org/pdf/2105.07776.pdf) | 2021.5 -->
-
 
 
 # DNN&nbsp;Watermarking&nbsp;Mechanism
@@ -858,6 +818,9 @@ present in the output, not only a response to a trigger set. | [BibTex](): abdel
 
 **阐明fingerprints和fingerprinting的不同：一个类似相机噪声，设备指纹；一个是为了进行用户追踪的分配指纹，序列号**
 
+
+## Fingerprinting
+
 1. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID); The main difference between watermarking and fingerprinting is that the WM remains the same for all copies of the IP while the FP is unique for each copy. As such, FPs address the ambiguity of WMs and enables tracking of IP misuse conducted by a specific user. | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019
 
 <!-- 2. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019 -->
@@ -884,6 +847,43 @@ present in the output, not only a response to a trigger set. | [BibTex](): abdel
 
 12. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP); we propose a teacher model fingerprinting attack to infer the origin of a student model, i.e., the teacher model it transfers from. | [BibTex](): chen2021teacher | Chen et al, 2021.6
 
+# Integrity&nbsp;verification
+The user may want to be sure of the provenance fo the model in some security applications or senarios
+
+1. [Verideep: Verifying integrity of deep neural networks through sensitive-sample fingerprinting](https://arxiv.org/pdf/1808.03277.pdf) | [BibTex](): he2018verideep | He et al, 2018.8
+
+2. [Sensitive-Sample Fingerprinting of Deep Neural Networks](https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Sensitive-Sample_Fingerprinting_of_Deep_Neural_Networks_CVPR_2019_paper.pdf): we define Sensitive-Sample fingerprints, which are a small set of human unnoticeable transformed inputs that make the model outputs sensitive to the model’s parameters. | [BibTex](): he2019sensitive | He et al, *CVPR* 2019
+
+3. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes; focus on three consecutive FC layer | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
+
+4. [TamperNN: Efficient Tampering Detection of Deployed Neural Nets](https://arxiv.org/pdf/1903.00317.pdf): In the remote interaction setup we consider, the proposed strategy is to identify markers of the model input space that are likely to change class if the model is attacked, allowing a user to detect a possible tampering.| [BibTex](): merrer2019tampernn | Merrer et al, *IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)* 2019
+
+5. [Reversible Watermarking in Deep Convolutional Neural Networks for Integrity Authentication](https://arxiv.org/pdf/2101.04319.pdf): chose the least important weights as the cover, can reverse the original model performance, can authenticate the integrity | [BibTex](): guan2020reversible | Guan et al, *ACM MM* 2020
+
+6. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
+
+7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](): | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)*
+
+
+## Special
+1. [Minimal Modifications of Deep Neural Networks using Verification](https://easychair-www.easychair.org/publications/download/CWhF): Adi 团队；利用模型维护领域的想法， 模型有漏洞，需要重新打补丁，但是不能使用re-train, 如何修改已经训练好的模型；所属领域：model verification, model repairing ...; <font color=red>提出了一种移除水印需要多少的代价的评价标准，measure the resistance of model watermarking </font> | [Coide](https://github.com/jjgold012/MinimalDNNModificationLpar2020) | [BibTex](): goldberger2020minimal | Goldberger et al, *LPAR* 2020
+
+### Repair
+2. [An Abstraction-Based Framework for Neural Network Verification](https://link.springer.com/chapter/10.1007/978-3-030-53288-8_3)
+
+3. [Provable Repair of Deep Neural Networks](https://arxiv.org/pdf/2104.04413.pdf)
+
+<!-- ### DNN verification 
+软工领域：[布尔表达式](https://baike.baidu.com/item/%E5%B8%83%E5%B0%94%E8%A1%A8%E8%BE%BE%E5%BC%8F) | [SMT (satisfiability modulo theories)](https://www.zhihu.com/question/29586582)
+将模型看做软件，进行鲁棒性测试，或者是认证
+
+1. [Safety Veriﬁcation of Deep Neural Networks](https://arxiv.org/pdf/1610.06940.pdf): 论文来自牛津大学，论文也是提出希望基于可满足性模理论对神经网络的鲁棒性做一些验证  | [BibTex](): huang2017safety | et al, *International conference on computer aided verification* 2017
+
+2. [Reluplex: An Efficient  SMT Solver for Verifying Deep Neural Networks](https://arxiv.org/pdf/1702.01135.pdf&xid=25657,15700023,15700124,15700149,15700186,15700191,15700201,15700237,15700242.pdf): 文来自斯坦福大学，论文提出了一种用于神经网络错误检测的新算法 Reluplex。Reluplex 将线性编程技术与 SMT（可满足性模块理论）求解技术相结合，其中神经网络被编码为线性算术约束; 论文的核心观点就是避免数学逻辑永远不会发生的测试路径，这允许测试比以前更大的数量级的神经网络。Reluplex 可以在一系列输入上证明神经网络的属性，可以测量可以产生虚假结果的最小或阈值对抗性信号 | [BibTex](): katz2017reluplex | et al, *International conference on computer aided verification* 2017
+
+3. [Boosting the Robustness Verification of DNN by Identifying the Achilles’s Heel](https://arxiv.org/pdf/1811.07108.pdf) | 2018.11
+
+4. [DISCO Verification: Division of Input Space into COnvex polytopes for neural network verification](https://arxiv.org/pdf/2105.07776.pdf) | 2021.5 -->
 
 # Similarity&nbsp;Comparison
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
