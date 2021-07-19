@@ -251,8 +251,10 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
-### Approaches&nbsp;Based&nbsp;on&nbsp;Muliti-task&nbsp;Learning
+5. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021*
 
+
+### Approaches&nbsp;Based&nbsp;on&nbsp;Muliti-task&nbsp;Learning
 
 1. [Secure Watermark for Deep Neural Networks with Multi-task Learning](https://arxiv.org/pdf/2103.10021.pdf):  The proposed scheme explicitly meets various security requirements by using corresponding regularizers; With a decentralized consensus protocol, the entire framework is secure against all possible attacks. ;We are looking forward to using cryptological protocols such as zero-knowledge proof to improve the ownership verification process so it is possible to use one secret key for multiple notarizations. 白盒水印藏在不同地方，互相不影响，即使被擦除也没事儿？ | [BibTex](): li2021secure | Li et al, 2021.3
 
@@ -298,7 +300,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 ### Adversarial&nbsp;Examples
 1. [Adversarial frontier stitching for remote neural network watermarking](https://arxiv.org/pdf/1711.01894.pdf)：propose a novel zero-bit watermarking algorithm that makes
-use of adversarial model examples,  slightly adjusts the decision boundary of the model so that a specific set of queries can verify the watermark information.  | [Code](https://github.com/dunky11/adversarial-frontier-stitching) | [BibTex](): le2020adversarial | Merrer et al, *Neural Computing and Applications 2020* 2017.11 | [Repo by Merrer: awesome-audit-algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms): A curated list of audit algorithms for getting insights from black-box algorithms.
+use of adversarial model examples,  slightly adjusts the decision boundary of the model so that a specific set of queries can verify the watermark information.  | [Code](https://github.com/dunky11/adversarial-frontier-stitching) | [BibTex](): merrer2020adversarial | Merrer et al, *Neural Computing and Applications 2020* 2017.11 | [Repo by Merrer: awesome-audit-algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms): A curated list of audit algorithms for getting insights from black-box algorithms.
 
 2. [Watermarking-based Defense against Adversarial Attacks on Deep Neural Networks](https://faculty.ist.psu.edu/wu/papers/IJCNN.pdf): we propose a new defense mechanism that creates a knowledge gap between attackers and defenders by imposing a designed watermarking system into standard deep neural networks. | [BibTex](): liwatermarking | Li et al, 2021.4
 
@@ -584,15 +586,17 @@ randomized smoothing technique proposed in Chiang et al., we show that our water
 
 11. [Fine-pruning: Defending against backdooring attacks on deep neural networks]() | [Fine-tuning](https://openaccess.thecvf.com/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf): girshick2014rich; *CVPR* 2014 | [BibTex](): liu2018fine | Liu et al, *International Symposium on Research in Attacks, Intrusions, and Defenses* 2018
 
+12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code]() | [To do]()
 
 12. [SPECTRE: Defending Against Backdoor Attacks Using Robust Statistics](https://arxiv.org/pdf/2104.11315.pdf): We propose a novel defense algorithm using robust covariance estimation to amplify the spectral signature of corrupted data. | [BibTex]():hayase2021spectre | Hayase et al, 2021.4
 
 13. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; **introduce model isomorphism attack** | [BibTex](): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4
 
-14. [Detect and remove watermark in deep neural networks via generative adversarial networks](https://arxiv.org/pdf/2106.08104.pdf):  backdoorbased DNN watermarks are vulnerable to the proposed GANbased watermark removal attack, like Neural Cleanse, replacing the optimized method with GAN | [BibTex](): wang2021detect | Wang et al, 2021.6
+14. [Detect and remove watermark in deep neural networks via generative adversarial networks](https://arxiv.org/pdf/2106.08104.pdf):  backdoorbased DNN watermarks are vulnerable to the proposed GANbased watermark removal attack, like Neural Cleanse, replacing the optimized method with GAN | [BibTex](): wang2021detect | Wang et al, 2021.6 | [To do]()
 
 15. [Fine-tuning Is Not Enough: A Simple yet Effective Watermark Removal Attack for DNN Models](https://personal.ntu.edu.sg/tianwei.zhang/paper/ijcai21.pdf) | [BibTex](): guofine | *IJCAI 2021*
 
+16. [Neural Attention Distillation: Erasing Backdoor Triggers from Deep Neural Networks](https://arxiv.org/pdf/2101.05930.pdf) | [BibTex](): li2021neural | Li et al, *ICLR 2021*
 
 ## Collusion&nbsp;Attack
 1. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID) | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019
@@ -672,11 +676,11 @@ Shall distinguishing surrogate model attack and inference attack
 8. [Protecting Decision Boundary of Machine Learning Model With Differentially Private Perturbation](https://ieeexplore.ieee.org/abstract/document/9286504)：we propose boundary differential privacy (BDP) against surrogate model attacks by obfuscating the prediction responses with noises | [BibTex](): zheng2020protecting | Zheng et al, *IEEE Transactions on Dependable and Secure Computing* 2020
 
 
-
 13. [Prediction poisoning: Towards defenses against dnn model stealing attacks](https://arxiv.org/pdf/1906.10908v2.pdf): In this paper, we propose the first defense which actively perturbs predictions targeted at poisoning the training objective of the attacker. | [BibTex](): orekondy2019prediction | Orekondy et al, *ICLR*2020
 
 14. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes.  | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
 
+10. [Stateful Detection of Model Extraction Attacks](https://arxiv.org/pdf/2107.05166.pdf) detection-based approach | [To do]()
 
 
 # Applications
@@ -901,6 +905,9 @@ technique to authenticate PLCs is proposed that aims at raising the bar against 
 6. [Machine Learning IP Protection](https://dl.acm.org/doi/pdf/10.1145/3240765.3270589): Major players in the semiconductor industry provide mechanisms on device to protect the IP at rest and during execution from being copied, altered, reverse engineered, and abused by attackers. **参考硬件领域的保护措施（静态动态）** | [BitTex](): cammarota2018machine | Cammarota et al, *Proceedings of the International Conference on Computer-Aided Design(ICCAD)* 2018
 
 7. [Preventing DNN Model IP Theft via Hardware Obfuscation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9417217): This paper presents a novel solution to defend against DL IP theft in NPUs during model distribution and deployment/execution via lightweight, keyed model obfuscation scheme. | [BibTex](): goldstein2021preventing | Goldstein et al, *IEEE Journal on Emerging and Selected Topics in Circuits and Systems* 2021
+
+8. [Can Evil IoT Twins Be Identified? Now Yes, a Hardware  Fingerprinting Methodology](https://arxiv.org/pdf/2106.08209.pdf)
+
 
 threats from side-channel attacks
 1. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
