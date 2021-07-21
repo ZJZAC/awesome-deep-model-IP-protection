@@ -222,6 +222,8 @@ of neural networks to “memorize” random noise | [BibTex](): zhang2016underst
 3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：dopts a conventional NAS method with mk
 to produce the watermarked architecture and a verification key vk; the owner collects the inference execution trace (by side-channel), and identifies any potential watermark based on vk | [BibTex](): lou2021when | Lou et al, 2021.2
 
+4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes channel pruning to embed the watermark into the host DNN  architecture instead of crafting the DNN parameters | [To do]()
+
 ### Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies 
 [Stealthiness]
 1. [Attacks on digital watermarks for deep neural networks](https://scholar.harvard.edu/files/tianhaowang/files/icassp.pdf)：weights variance or weights standard deviation, will increase noticeably and systematically during the process of watermark embedding algorithm by Uchida et al; using L2 regulatization to achieve stealthiness; w tend to mean=0, var=1 | [BibTex](): wang2019attacks | Wang et al, *ICASSP* 2019
