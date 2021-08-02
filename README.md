@@ -191,8 +191,10 @@ training a top-notch model, and wishes to make a profit out of model M without p
 4. [AdvParams: An Active DNN Intellectual Property Protection Technique via Adversarial Perturbation Based Parameter Encryption](https://arxiv.org/pdf/2105.13697.pdf) | [BibTex](): xue2021advparams | Xue et al, 2021.5
 
 [Encrpted&nbsp;Weights -- Hierarchical Service]
-1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services](https://arxiv.org/pdf/2105.12344.pdf): Probabilistic Selection Strategy (PSS); Distribution Preserving Random Mask (DPRM) | [Code]() | [BibTex](): tian2021probabilistic | *CVPR2021*
+1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services](https://arxiv.org/pdf/2105.12344.pdf): Probabilistic Selection Strategy (PSS); Distribution Preserving Random Mask (DPRM) | [Code]() | [BibTex](): tian2021probabilistic | Tian et al, *CVPR2021*
 
+2. [Hierarchical Authorization of Convolutional Neural
+Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9497716): we refer to differential privacy and use the Laplace mechanism to perturb the output of the model to vary degrees | [BibTex](): luo2021hierarchical | Luo et al, *IEEE Signal Processing Letters 2021*
 
 # Model&nbsp;Retrieval
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
@@ -274,7 +276,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 3. [Protecting the Intellectual Properties of Deep Neural Networks with an Additional Class and Steganographic Images](https://arxiv.org/pdf/2104.09203.pdf):  use a set of watermark key samples (from another distribution) to embed an additional class into the DNN; adopt the least significant bit (LSB) image steganography to embed users’ fingerprints for authentication and management of fingerprints, 引用里有code | [BibTex](): sun2021protecting | Sun et al, 2021.4
 
-4. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
+4. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
 ## Related&nbsp;Trigger
 1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
