@@ -14,8 +14,6 @@ Paper & Code
     + [Model&nbsp;Encryption](#Model&nbsp;Encryption)
       + [Encrpted&nbsp;Data](#Encrpted&nbsp;Data) | [Encrpted&nbsp;Architecture](#Encrpted&nbsp;Architecture) | [Encrpted&nbsp;Weights](#Encrpted&nbsp;Weights)
 
-+ [Integrity&nbsp;verification](#Integrity&nbsp;verification)
-
 + [Model&nbsp;Retrieval](#Model&nbsp;Retrieval)
 
 + [DNN&nbsp;Watermarking&nbsp;Mechanism](#DNN&nbsp;Watermarking&nbsp;Mechanism)
@@ -49,7 +47,7 @@ Paper & Code
       + [Dataset](#Dataset) | [Gradient](#Gradient) | [Repair](#Repair)
     + [Fingerprinting](#Fingerprinting)
 
-
++ [Integrity&nbsp;verification](#Integrity&nbsp;verification)
 
 
 <!-- + [Similarity&nbsp;Comparison](#Similarity&nbsp;Comparison) -->
