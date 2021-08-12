@@ -76,6 +76,10 @@ Paper & Code
 
 9. [DNN Watermarking: Four Challenges and a Funeral](https://dl.acm.org/doi/pdf/10.1145/3437880.3460399) | [BibTex](): barni2021four | *IH&MMSec '21*
 
+10. [SoK: How Robust is Deep Neural Network Image Classification Watermarking?](https://arxiv.org/pdf/2108.04974.pdf#page=16&zoom=100,416,614): | Lukas, et al, *S&P2022* | [[Toolbox](https://github.com/dnn-security/Watermark-Robustness-Toolbox)]
+
+
+
 # Infringement
 ## White-box&nbsp;model-dependent 
 1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when]()
@@ -257,7 +261,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
-5. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021* [To do]()
+5. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more; feasible to the deep model without normalization layer | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021* [To do]()
 
 
 ### Approaches&nbsp;Based&nbsp;on&nbsp;Muliti-task&nbsp;Learning
