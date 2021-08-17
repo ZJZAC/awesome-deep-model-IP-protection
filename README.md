@@ -4,9 +4,9 @@ Paper & Code
 
 
 # Contents 
-+ [Survey](#Survey)
-+ [Infringement](#Infringement)
-  + [White-box&nbsp;model-dependent](#White-box&nbsp;model-dependent) | [Black-box](#Black-box)
+- [Survey](#Survey)
+- [Infringement](#Infringement)
+  + [White-box model-dependent](#White-box-model-dependent) | [Black-box](#Black-box)
 
 + [Access&nbsp;Control](#Access&nbsp;Control)
     + [User&nbsp;Authentication](#User&nbsp;Authentication)
@@ -81,7 +81,7 @@ Paper & Code
 
 
 # Infringement
-## White-box&nbsp;model-dependent 
+## White-box model-dependent
 1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when]()
 
 2. The second party, the adversary, is an entity that doesn’t have the required resources for designing and
