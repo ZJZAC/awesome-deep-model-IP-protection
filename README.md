@@ -154,7 +154,7 @@ training a top-notch model, and wishes to make a profit out of model M without p
 
 
 ## Model Encryption
-[Encrpted Data]
+### [Encrpted Data]
 
   (privacy-perserving)
 1. [Machine Learning Classification over Encrypted Data](http://iot.stanford.edu/pubs/bost-learning-ndss15.pdf): privacy-preserving classiﬁers | [BibTex](): bost2015machine | Bost et al, *NDSS 2015*
@@ -181,11 +181,11 @@ training a top-notch model, and wishes to make a profit out of model M without p
     (AprilPyone -- piracy)
 1. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4 | [IH&MMSec'21 version](https://dl.acm.org/doi/pdf/10.1145/3437880.3460398)
 
-[Encrpted Architecture]
+### [Encrpted Architecture]
 1. [DeepObfuscation: Securing the Structure of Convolutional Neural Networks via Knowledge Distillation](https://arxiv.org/pdf/1806.10313.pdf): . Our obfuscation approach is very effective to protect the critical structure of a deep learning model from being exposed to attackers; limitation: weights may be more important than the architecture | [BibTex](): xu2018deepobfuscation | Xu et al, 2018.6
 
 
-[Encrpted Weights]
+### [Encrpted Weights]
 1. [Enabling Secure in-Memory Neural Network Computing by Sparse Fast Gradient Encryption](https://nicsefc.ee.tsinghua.edu.cn/media/publications/2019/ICCAD19_286.pdf): utilized parameter encryption (FGSM, additive noise pattern) to prevent malicious users from using DNNs normally.  把对抗噪声加在权值上，解密时直接减去相应权值 , run-time encryption scheduling to resist confidentiality attack | [BibTex](): cai2019enabling | Cai et al, *ICCAD* 2019
 
 2. [Deep-Lock : Secure Authorization for Deep Neural Networks](https://arxiv.org/pdf/2008.05966.pdf):  utilizes S-Boxes with good security properties to encrypt each parameter of a trained DNN model with secret keys generated from a master key via a key scheduling algorithm, same threat model with [chakraborty2020hardware] | [BibTex](): alam2020deep | Alam et al, 2020.8
