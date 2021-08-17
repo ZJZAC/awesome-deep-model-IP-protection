@@ -324,8 +324,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 
 ## Related&unrelated
-1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the
-randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
+1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
 
 1. [Visual Decoding of Hidden Watermark in Trained Deep Neural Network](https://ieeexplore.ieee.org/abstract/document/8695386)：The proposed method has a remarkable feature for watermark detection process, which can decode the embedded pattern cumulatively and visually. 关注提取端，进行label可视化成二位图片，增加关联性 | [BibTex](): sakazawa2019visual | Sakazawa et al, * IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
 
@@ -732,8 +731,7 @@ Shall distinguishing surrogate model attack and inference attack
 ## NLP
 1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12
 
-2. [Adversarial Watermarking Transformer- Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf):  towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently
-present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9
+2. [Adversarial Watermarking Transformer- Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf): 和模型水印对于攻击的定义有所不同 towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9 *S&P21*
 
 3. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011
 
@@ -761,7 +759,8 @@ present in the output, not only a response to a trigger set. | [BibTex](): abdel
 1. [Passport-aware Normalization for Deep Model Protection](https://proceedin
 gs.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
-
+## Beyond Classification
+1. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]()
 
 # Identification&nbsp;Tracing
 
