@@ -8,52 +8,52 @@ Paper & Code
 - [Infringement](#Infringement)
   + [White-box model-dependent](#White-box-model-dependent) | [Black-box](#Black-box)
 
-+ [Access&nbsp;Control](#Access&nbsp;Control)
-    + [User&nbsp;Authentication](#User&nbsp;Authentication)
++ [Access Control](#Access-Control)
+    + [User Authentication](#User-Authentication)
       + [Software-level](#Software-level) | [Hardware-level](#Hardware-level) 
-    + [Model&nbsp;Encryption](#Model&nbsp;Encryption)
-      + [Encrpted&nbsp;Data](#Encrpted&nbsp;Data) | [Encrpted&nbsp;Architecture](#Encrpted&nbsp;Architecture) | [Encrpted&nbsp;Weights](#Encrpted&nbsp;Weights)
+    + [Model Encryption](#Model-Encryption)
+      + [Encrpted Data](#Encrpted-Data) | [Encrpted Architecture](#Encrpted-Architecture) | [Encrpted Weights](#Encrpted-Weights)
 
-+ [Model&nbsp;Retrieval](#Model&nbsp;Retrieval)
++ [Model Retrieval](#Model-Retrieval)
 
-+ [DNN&nbsp;Watermarking&nbsp;Mechanism](#DNN&nbsp;Watermarking&nbsp;Mechanism)
-+ [White-box&nbsp;DNN&nbsp;Watermarking](#White-box&nbsp;DNN&nbsp;Watermarking)
-    + [First&nbsp;Attempt](#First&nbsp;Attempt)
++ [DNN Watermarking Mechanism](#DNN-Watermarking-Mechanism)
++ [White-box DNN Watermarking](#White-box-DNN-Watermarking)
+    + [First Attempt](#First-Attempt)
     + [Improvement](#Improvement)
-      + [Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies](#Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies) 
-    + [Approaches&nbsp;Based&nbsp;on&nbsp;Muliti-task&nbsp;Learning](#Approaches&nbsp;Based&nbsp;on&nbsp;Muliti-task&nbsp;Learning) 
+      + [Loss Constrains](#Loss-Constrains) | [Verification Approach](#Verification-Approach)  | [Training Strategies](#Training-Strategies)
+    + [Approaches Based on Muliti-task Learning](#Approaches-Based-on-Muliti-task-Learning) 
 
-+ [Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Input-output&nbsp;Style)](#Data-based&nbsp;DNN&nbsp;Watermarking&nbsp;(Input-output&nbsp;Style))
-    + [Unrelated&nbsp;Trigger](#Unrelated&nbsp;Trigger)
-    + [Related&nbsp;Trigger](#Related&nbsp;Trigger)
-      + [Adversarial&nbsp;Examples](#Adversarial&nbsp;Examples)
++ [Black-box DNN Watermarking (Input-output Style)](#Data-based-DNN-Watermarking)
+    + [Unrelated Trigger](#Unrelated-Trigger)
+    + [Related Trigger](#Related-Trigger)
+      + [Adversarial Examples](#Adversarial-Examples)
     + [Related&unrelated](#Related&unrelated)
-    + [Clean&nbsp;image&nbsp;&&nbsp;Wrong&nbsp;Label](#Clean&nbsp;image&nbsp;&&nbsp;Wrong&nbsp;Label)
-+ [Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Output-dependent&nbsp;Style)](#Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Output-independent&nbsp;Style))
-    + [Output-Classifier&nbsp;Type](#Output-Classifier&nbsp;Type)
-    + [Output-Extractor&nbsp;Type](#Output-Extractor&nbsp;Type)
+    + [Clean image & Wrong Label](#Clean-image-&-Wrong-Label)
++ [Black-box DNN Watermarking (Output-dependent Style)](#Output-independent-Style)
+    + [Output-Classifier Type](#Output-Classifier-Type)
+    + [Output-Extractor Type](#Output-Extractor-Type)
 
 
 + [Evaluation](#Evaluation)
 + [Security](#Security)
-    + [Model&nbsp;Modifications](#Model&nbsp;Modifications) ([Fine-tuning](#Fine-tuning), [Model&nbsp;Pruning&nbsp;or&nbsp;Parameter&nbsp;Pruning](#Model&nbsp;Pruning&nbsp;or&nbsp;Parameter&nbsp;Pruning), [Model&nbsp;Compression](#Model&nbsp;Compression), [Model&nbsp;Retraining](#Model&nbsp;Retraining))
-     | [Removal&nbsp;Attack](#Removal&nbsp;Attack) | [Collusion&nbsp;Attack](#Collusion&nbsp;Attack) | [Overwriting&nbsp;Attack](#Overwriting&nbsp;Attack) | [Evasion&nbsp;Attack](#Evasion&nbsp;Attack) | [Ambiguity&nbsp;Attack](#Ambiguity&nbsp;Attack) | [Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack](#Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack) 
+    + [Model Modifications](#Model-Modifications) ([Fine-tuning](#Fine-tuning), [Model Pruning or Parameter Pruning](#Model-Pruning-o-Parameter-Pruning), [Model Compression](#Model-Compression), [Model Retraining](#Model-Retraining))
+     | [Removal Attack](#Removal-Attack) | [Collusion Attack](#Collusion-Attack) | [Overwriting Attack](#Overwriting-Attack) | [Evasion Attack](#Evasion-Attack) | [Ambiguity Attack](#Ambiguity-Attack) | [Surrogate Model Attack / Model Stealing Attack](#Surrogate-Model-Attack-/-Model-Stealing-Attack) 
 
 + [Applications](#Applications)
-    + [Image&nbsp;Processing](#Image&nbsp;Processing) | [Image&nbsp;Generation](#Image&nbsp;Generation) | [Image&nbsp;Caption](#Image&nbsp;Caption) | [Automatic&nbsp;Speech&nbsp;Recognition&nbsp;(ASR)](#Automatic&nbsp;Speech&nbsp;Recognition&nbsp;(ASR)) | [NLP](#NLP) | [GNN](#GNN) | [Federated&nbsp;Learning](#Federated&nbsp;Learning) | [Deep&nbsp;Reinforcement&nbsp;Learning](#Deep&nbsp;Reinforcement&nbsp;Learning) | [Document&nbsp;Analysis](#Document&nbsp;Analysis) | [3D](#3D)
+    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) | [Image Caption](#Image-Caption) | [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLP](#NLP) | [GNN](#GNN) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Document Analysis](#Document-Analysis) | [3D](#3D)
 
-+ [Identification&nbsp;Tracing](#DNN&nbsp;Verification)
++ [Identification Tracing](#DNN-Verification)
     + [Fingerprints](#Fingerprints)
       + [Dataset](#Dataset) | [Gradient](#Gradient) | [Repair](#Repair)
     + [Fingerprinting](#Fingerprinting)
 
-+ [Integrity&nbsp;verification](#Integrity&nbsp;verification)
++ [Integrity verification](#Integrity-verification)
 
 
-<!-- + [Similarity&nbsp;Comparison](#Similarity&nbsp;Comparison) -->
+<!-- + [Similarity Comparison](#Similarity Comparison) -->
 
 + [Perspective](#Perspective)
-    + [Digital&nbsp;Rights&nbsp;Management&nbsp;(DRM)](#Digital&nbsp;Rights&nbsp;Management&nbsp;(DRM)) | [Hardware](#Hardware) | [Software&nbsp;Watermarking](#Software&nbsp;Watermarking) | [Software&nbsp;Analysis](#Software&nbsp;Analysis) | [Graph&nbsp;Watermarking](#Graph&nbsp;Watermarking) | [Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck)](#Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck))
+    + [Digital Rights Management (DRM)](#Digital-Rights-Management(DRM)) | [Hardware](#Hardware) | [Software Watermarking](#Software-Watermarking) | [Software Analysis](#Software-Analysis) | [Graph Watermarking](#Graph-Watermarking) | [Privacy Risk (inference atteck)](#Privacy-Risk(inference-atteck))
 
 
 # Survey 
@@ -122,9 +122,9 @@ training a top-notch model, and wishes to make a profit out of model M without p
 4. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
 
 
-# Access&nbsp;Control
+# Access Control
 
-## User&nbsp;Authentication
+## User Authentication
 ### Software-level
 [inputting]
 1. [Protect Your Deep Neural Networks from Piracy](https://www.jianguoyun.com/p/DdrMupcQ0J2UCRjaou4D): using the key to enable correct image transformation of triggers; 对trigger进行加密 | [BibTex](): chen2018protect  | Chen et al, *IEEE International Workshop on Information Forensics and Security (WIFS)* 2018
@@ -153,8 +153,8 @@ training a top-notch model, and wishes to make a profit out of model M without p
 3. [Hardware-Assisted Intellectual Property Protection of Deep Learning Models](https://eprint.iacr.org/2020/1016.pdf): ensures that only an authorized end-user who possesses a trustworthy hardware device (with the secret key embedded on-chip) is able to run intended DL applications using the published model | [BibTex](): chakraborty2020hardware | Chakraborty et al, *57th ACM/IEEE Design Automation Conference (DAC)* 2020
 
 
-## Model&nbsp;Encryption
-[Encrpted&nbsp;Data]
+## Model Encryption
+[Encrpted Data]
 
   (privacy-perserving)
 1. [Machine Learning Classification over Encrypted Data](http://iot.stanford.edu/pubs/bost-learning-ndss15.pdf): privacy-preserving classiﬁers | [BibTex](): bost2015machine | Bost et al, *NDSS 2015*
@@ -181,11 +181,11 @@ training a top-notch model, and wishes to make a profit out of model M without p
     (AprilPyone -- piracy)
 1. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4 | [IH&MMSec'21 version](https://dl.acm.org/doi/pdf/10.1145/3437880.3460398)
 
-[Encrpted&nbsp;Architecture]
+[Encrpted Architecture]
 1. [DeepObfuscation: Securing the Structure of Convolutional Neural Networks via Knowledge Distillation](https://arxiv.org/pdf/1806.10313.pdf): . Our obfuscation approach is very effective to protect the critical structure of a deep learning model from being exposed to attackers; limitation: weights may be more important than the architecture | [BibTex](): xu2018deepobfuscation | Xu et al, 2018.6
 
 
-[Encrpted&nbsp;Weights]
+[Encrpted Weights]
 1. [Enabling Secure in-Memory Neural Network Computing by Sparse Fast Gradient Encryption](https://nicsefc.ee.tsinghua.edu.cn/media/publications/2019/ICCAD19_286.pdf): utilized parameter encryption (FGSM, additive noise pattern) to prevent malicious users from using DNNs normally.  把对抗噪声加在权值上，解密时直接减去相应权值 , run-time encryption scheduling to resist confidentiality attack | [BibTex](): cai2019enabling | Cai et al, *ICCAD* 2019
 
 2. [Deep-Lock : Secure Authorization for Deep Neural Networks](https://arxiv.org/pdf/2008.05966.pdf):  utilizes S-Boxes with good security properties to encrypt each parameter of a trained DNN model with secret keys generated from a master key via a key scheduling algorithm, same threat model with [chakraborty2020hardware] | [BibTex](): alam2020deep | Alam et al, 2020.8
@@ -194,35 +194,35 @@ training a top-notch model, and wishes to make a profit out of model M without p
 
 4. [AdvParams: An Active DNN Intellectual Property Protection Technique via Adversarial Perturbation Based Parameter Encryption](https://arxiv.org/pdf/2105.13697.pdf) | [BibTex](): xue2021advparams | Xue et al, 2021.5
 
-[Encrpted&nbsp;Weights -- Hierarchical Service]
+[Encrpted Weights -- Hierarchical Service]
 1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services](https://arxiv.org/pdf/2105.12344.pdf): Probabilistic Selection Strategy (PSS); Distribution Preserving Random Mask (DPRM) | [Code]() | [BibTex](): tian2021probabilistic | Tian et al, *CVPR2021*
 
 2. [Hierarchical Authorization of Convolutional Neural
 Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9497716): we refer to differential privacy and use the Laplace mechanism to perturb the output of the model to vary degrees | [BibTex](): luo2021hierarchical | Luo et al, *IEEE Signal Processing Letters 2021*
 
-# Model&nbsp;Retrieval
+# Model Retrieval
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
 2. [Deep Neural Network Retrieval](https://arxiv.org/pdf/2108.01661.pdf):  [To do]()
 
 3. [Grounding Representation Similarity with Statistical Testing](): [To do]()
 
-# DNN&nbsp;Watermarking&nbsp;Mechanism
+# DNN Watermarking Mechanism
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
 
 1. [Understanding deep learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf?from=timeline&isappinstalled=0)：overfitting: The capability
 of neural networks to “memorize” random noise | [BibTex](): zhang2016understanding | Zhang et al, 2016.11
 
 
-# White-box&nbsp;DNN&nbsp;Watermarking
-## First&nbsp;Attempt
+# White-box DNN Watermarking
+## First Attempt
 1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082)：第一篇模型水印工作 | [Code](https://github.com/yu4u/dnn-watermark) | [BibTex]): uchida2017embedding | Uchia et al, *ICMR* 2017.1
 
 2. [Digital Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1802.02601.pdf)：Extension of [1] | [BibTex](): nagai2018digital | Nagai et al, 2018.2
 
 
 ## Improvement
-### Watermark&nbsp;Carriers
+### Watermark Carriers
 1. [DeepSigns: An End-to-End Watermarking Framework for Protecting the Ownership of Deep Neural Networks](http://www.aceslab.org/sites/default/files/deepsigns.pdf)：using activation map as cover | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): rouhani2019deepsigns | Rouhani et al, *ASPLOS* 2019
 
 2. [Don’t Forget To Sign The Gradients! ](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)： imposing a statistical bias on the expected gradients of the cost function with respect to the model’s input. **introduce some adaptive watermark attacks** [Pros](): The watermark key set for GradSigns is constructed from samples of training data without any modification or relabeling, which renders this attack (Namba) futile against our method  | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): aramoon2021don | Aramoon et al, *Proceedings of Machine Learning and Systems* 2021
@@ -232,7 +232,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes channel pruning to embed the watermark into the host DNN  architecture instead of crafting the DNN parameters | [To do]()
 
-### Loss&nbsp;Constrains&nbsp;|&nbsp;Verification&nbsp;Approach&nbsp;|&nbsp;Training&nbsp;Strategies 
+### Loss Constrains | Verification Approach | Training Strategies 
 [Stealthiness]
 1. [Attacks on digital watermarks for deep neural networks](https://scholar.harvard.edu/files/tianhaowang/files/icassp.pdf)：weights variance or weights standard deviation, will increase noticeably and systematically during the process of watermark embedding algorithm by Uchida et al; using L2 regulatization to achieve stealthiness; w tend to mean=0, var=1 | [BibTex](): wang2019attacks | Wang et al, *ICASSP* 2019
 
@@ -253,7 +253,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 
 [security]
-1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation&nbsp;Mechanism]
+1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation Mechanism]
 
 2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack) | *IH&MMSec 21 WS* [White-Box Watermarking Scheme for Fully-Connected Layers in Fine-Tuning Model](https://dl.acm.org/doi/pdf/10.1145/3437880.3460402)
 
@@ -264,7 +264,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 5. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more; feasible to the deep model without normalization layer | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021* [To do]()
 
 
-### Approaches&nbsp;Based&nbsp;on&nbsp;Muliti-task&nbsp;Learning
+### Approaches Based on Muliti-task Learning
 
 1. [Secure Watermark for Deep Neural Networks with Multi-task Learning](https://arxiv.org/pdf/2103.10021.pdf):  The proposed scheme explicitly meets various security requirements by using corresponding regularizers; With a decentralized consensus protocol, the entire framework is secure against all possible attacks. ;We are looking forward to using cryptological protocols such as zero-knowledge proof to improve the ownership verification process so it is possible to use one secret key for multiple notarizations. 白盒水印藏在不同地方，互相不影响，即使被擦除也没事儿？ | [BibTex](): li2021secure | Li et al, 2021.3
 
@@ -272,9 +272,9 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 3. [TrojanNet: Embedding Hidden Trojan Horse Models in Neural Networks](https://arxiv.org/pdf/2002.10078.pdf): We show that this opaqueness provides an opportunity for adversaries to embed unintended functionalities into the network in the form of Trojan horses; Our method utilizes excess model capacity to simultaneously learn a public and secret task in a single network | [Code](https://github.com/wrh14/trojannet) | [NeurIPS2021 submission](https://arxiv.org/pdf/2002.10078.pdf) | [BibTex](): guo2020trojannet | Guo et al, 2020.2
 
-## Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Input-output&nbsp;Style)
+## Black-box DNN Watermarking (Input-output Style)
 
-## Unrelated&nbsp;Trigger
+## Unrelated Trigger
 1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf)：thefirst backdoor-based， abstract image; 补充材料： From Private to Public Verifiability, Zero-Knowledge Arguments. | [Code](https://github.com/adiyoss/WatermarkNN) | [BibTex](): adi2018turning | Adi et al, *27th {USENIX} Security Symposium* 2018
 
 2. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
@@ -284,7 +284,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 4. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
-## Related&nbsp;Trigger
+## Related Trigger
 1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
 schemes: specific test string, some pattern of noise | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
 
@@ -305,7 +305,7 @@ schemes: specific test string, some pattern of noise | [BibTex](): zhang2018prot
 8. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
 
 
-### Adversarial&nbsp;Examples
+### Adversarial Examples
 1. [Adversarial frontier stitching for remote neural network watermarking](https://arxiv.org/pdf/1711.01894.pdf)：propose a novel zero-bit watermarking algorithm that makes
 use of adversarial model examples,  slightly adjusts the decision boundary of the model so that a specific set of queries can verify the watermark information.  | [Code](https://github.com/dunky11/adversarial-frontier-stitching) | [BibTex](): merrer2020adversarial | Merrer et al, *Neural Computing and Applications 2020* 2017.11 | [Repo by Merrer: awesome-audit-algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms): A curated list of audit algorithms for getting insights from black-box algorithms.
 
@@ -317,7 +317,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 5. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
 
 
-## Clean&nbsp;image&nbsp;&&nbsp;Wrong&nbsp;Label
+## Clean image & Wrong Label
 1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
 1. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks may occur, we turn our attention to data annotation and propose a black-box watermarking scheme based on chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2018
@@ -336,7 +336,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 
 
-## Output-Extractor&nbsp;Type
+## Output-Extractor Type
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VVOq5e67uCEJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1YmLg:AAGBfm0AAAAAYG5egLj8-8TdhW-OrFR5PtcTAgXDBsUU&scisig=AAGBfm0AAAAAYG5egJ2W418j7bkygIvLDr7B5IUgFq1r&scisf=4&ct=citation&cd=-1&hl=en): zhang2020model | Zhang et al, *AAAI* 2020.2
 
 2. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
@@ -428,7 +428,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 </tbody>
 </table>
 
-## &nbsp;
+##  
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -488,7 +488,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 </tbody>
 </table>
 
-## &nbsp;
+##  
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -551,28 +551,28 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 4. [Digital Rights Management The Problem of Expanding Ownership Rights](https://books.google.ca/books?id=IgSkAgAAQBAJ&lpg=PP1&ots=tA7ZrVoYx-&dq=Digital%20Rights%20Management%20The%20Problem%20of%20Expanding%20Ownership%20Rights&lr&pg=PA16#v=onepage&q=Digital%20Rights%20Management%20The%20Problem%20of%20Expanding%20Ownership%20Rights&f=false)
 
 
-# Robustness&nbsp;Security
+# Robustness Security
 1. [Forgotten siblings: Unifying attacks on machine learning and digital watermarking](https://www.sec.cs.tu-bs.de/pubs/2018-eurosp.pdf): The two research communities have worked in parallel so far, unnoticeably developing similar attack and defense strategies. This paper is a first effort to bring these communities together. To this end, we present a unified notation of blackbox attacks against machine learning and watermarking. | [Cited by](): [Protecting artificial intelligence IPs: a survey of watermarking and fingerprinting for machine learning] | [BibTex](): quiring2018forgotten | Quiring et al, *IEEE European Symposium on Security and Privacy (EuroS&P)* 2018 
 
 2. [Evaluating the Robustness of Trigger Set-Based Watermarks Embedded in Deep Neural Networks](https://arxiv.org/pdf/2106.10147.pdf): FT, model stealing, parameter pruning, evasion, 
 
-## Model&nbsp;Modifications
+## Model Modifications
 ### Fine-tuning 
 1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082)：第一篇模型水印工作 | [Code](https://github.com/yu4u/dnn-watermark) | [BibTex]): uchida2017embedding | Uchia et al, *ICMR* 2017.1
 
-### Model&nbsp;Pruning&nbsp;or&nbsp;Parameter&nbsp;Pruning
+### Model Pruning or Parameter Pruning
 1. [DeepSigns: An End-to-End Watermarking Framework for Protecting the Ownership of Deep Neural Networks](http://www.aceslab.org/sites/default/files/deepsigns.pdf)：using activation map as cover | [code](https://github.com/Bitadr/DeepSigns) | [BibTex](): rouhani2019deepsigns | Rouhani et al, *ASPLOS* 2019
 
-### Model&nbsp;Compression
+### Model Compression
 1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082)：第一篇模型水印工作 | [Code](https://github.com/yu4u/dnn-watermark) | [Pruning](https://arxiv.org/pdf/1510.00149)): han2015deep; *ICLR* 2016 | [BibTex]): uchida2017embedding | Uchia et al, *ICMR* 2017.1
 
-### Model&nbsp;Retraining
+### Model Retraining
 1. [IPGuard: Protecting Intellectual Property of Deep Neural Networks via Fingerprinting the Classification Boundary](https://arxiv.org/pdf/1910.12903.pdf): Based on this observation, IPGuard extracts some data points near the classification boundary of the model owner’s classifier and uses them to fingerprint the classifier  | [BibTex](): cao2019ipguard | Cao et al, *AsiaCCS* 2021
 
 2. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
 
-## Removal&nbsp;Attack 
+## Removal Attack 
 (like robust defense)
 
 1. [Effectiveness of Distillation Attack and Countermeasure on DNN watermarking](https://arxiv.org/pdf/1906.06046.pdf)：Distilling the model's knowledge to another model of smaller size from scratch destroys all the watermarks because it has a fresh model architecture and training process; countermeasure: embedding the watermark into NN in an indiret way rather than directly overfitting the model on watermark, specifically, let the target model learn the general patterns of the trigger not regarding it as noise. evaluate both embedding and trigger watermarking | [Distillation](https://arxiv.org/pdf/1503.02531.pdf): yang2019effectiveness;  *NIPS 2014 Deep Learning Workshop* | [BibTex](): yang2019effectiveness  | Yang et al, 2019.6
@@ -609,11 +609,11 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 16. [Neural Attention Distillation: Erasing Backdoor Triggers from Deep Neural Networks](https://arxiv.org/pdf/2101.05930.pdf) | [BibTex](): li2021neural | Li et al, *ICLR 2021*
 
-## Collusion&nbsp;Attack
+## Collusion Attack
 1. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID) | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019
 
 
-## Evasion&nbsp;Attack  
+## Evasion Attack  
 Query-modification (like detection-based defense)
 1. [Evasion Attacks Against Watermarking Techniques found in MLaaS Systems](https://www.researchgate.net/profile/Dorjan-Hitaj/publication/334698259_Evasion_Attacks_Against_Watermarking_Techniques_found_in_MLaaS_Systems/links/5dd6a6e692851c1feda559db/Evasion-Attacks-Against-Watermarking-Techniques-found-in-MLaaS-Systems.pdf)：after the verification algorithm is run against a stolen model, the adversary is in possession of the trigger set, which enables him to fine-tune the model on those data points in order to remove the watermark. | [BibTex](): hitaj2019evasion | Hitaj et al, *Sixth International Conference on Software Defined Systems (SDS)* 2019 | [Initial Version: Have You Stolen My Model? Evasion Attacks Against Deep Neural Network Watermarking Techniques](https://arxiv.org/pdf/1809.00615.pdf)
 
@@ -623,7 +623,7 @@ Query-modification (like detection-based defense)
 
 
 
-## Overwriting&nbsp;Attack
+## Overwriting Attack
 1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:xed2zy5YT5YJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvD-kI4:AAGBfm0AAAAAYHP4iI6opse7jxpYkvyx4yzXtNjTcNYl&scisig=AAGBfm0AAAAAYHP4iKhXdKnITn4E9R_eO2rFPPPjZQXs&scisf=4&ct=citation&cd=-1&hl=en): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020
 
 2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack)
@@ -637,7 +637,7 @@ Query-modification (like detection-based defense)
 
 
 
-## Ambiguity&nbsp;Attack
+## Ambiguity Attack
 forgery attack; protocol attack; invisible attack
 
 1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:BKAV-WKeJ1AJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQ2dGI:AAGBfm0AAAAAYGcwbGKgqKY6a88Qf5KSWhJ1cZDTLhKp&scisig=AAGBfm0AAAAAYGcwbFH6YVqAHUeAAN6Prl_2T1s73g_a&scisf=4&ct=citation&cd=-1&hl=en):fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | [PAMI:DeepIPR: Deep Neural Network Ownership Verification with Passports](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9454280): fan2021deepip | Fan et al, *NeuraIPS* 2019, 2019.9
@@ -650,7 +650,7 @@ forgery attack; protocol attack; invisible attack
 
 5. [Preventing Watermark Forging Attacks in a MLaaS Environment](https://hal.archives-ouvertes.fr/hal-03220414/): | [BibTex](): sofiane2021preventing | Sofiane et al. *SECRYPT 2021, 18th International Conference on Security and Cryptography*
 
-## Surrogate&nbsp;Model&nbsp;Attack&nbsp;/&nbsp;Model&nbsp;Stealing&nbsp;Attack
+## Surrogate Model Attack / Model Stealing Attack
 Shall distinguishing surrogate model attack and inference attack
 
 1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
@@ -696,7 +696,7 @@ Shall distinguishing surrogate model attack and inference attack
 
 # Applications
 
-## Image&nbsp;Processing
+## Image Processing
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VVOq5e67uCEJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1YmLg:AAGBfm0AAAAAYG5egLj8-8TdhW-OrFR5PtcTAgXDBsUU&scisig=AAGBfm0AAAAAYG5egJ2W418j7bkygIvLDr7B5IUgFq1r&scisf=4&ct=citation&cd=-1&hl=en): zhang2020model | Zhang et al, *AAAI* 2020.2
 
 2. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:_r5iMZdEAsAJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1bYNo:AAGBfm0AAAAAYG5deNoV3ooCjF9U9Rk5ckk8f8_ZS956&scisig=AAGBfm0AAAAAYG5deM2L5_2I2AvaWBetKSrL4CFclBGM&scisf=4&ct=citation&cd=-1&hl=en):    zhang2021deep | Zhang al, *TPAMI* 2021.3
@@ -706,7 +706,7 @@ Shall distinguishing surrogate model attack and inference attack
 4. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9222304)：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
 
 
-## Image&nbsp;Generation
+## Image Generation
 1. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes | [Empirical Study](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
 
 2. [Responsible Disclosure of Generative Models Using Scalable Fingerprinting](https://arxiv.org/pdf/2012.08726.pdf): 和1的目的一样，具体细节diff在看 | [BibTex](): yu2020responsible | Yu et al, 2020.12
@@ -717,12 +717,12 @@ Shall distinguishing surrogate model attack and inference attack
 4. [Protecting Intellectual Property of Generative Adversarial Networks from Ambiguity Attack](https://arxiv.org/pdf/2102.04362.pdf): using trigger noise to generate trigger pattern on the original image; using passport to implenment white-box verification
 
 
-## Image&nbsp;Caption 
+## Image Caption 
 1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Hq9e_KZON_EJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu3PMvw:AAGBfm0AAAAAYG7JKvyqTMhTSiim967PfzvghJH_-Afl&scisig=AAGBfm0AAAAAYG7JKpGZo5fN_dho1v9lJBI2VxMu3iAH&scisf=4&ct=citation&cd=-1&hl=en): lim2020protect  | Lim et al, 2020.8
 (surrogate model attck)
 
 
-## Automatic&nbsp;Speech&nbsp;Recognition&nbsp;(ASR)
+## Automatic Speech Recognition (ASR)
 1. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:1mZFIe2pNnAJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu3Pais:AAGBfm0AAAAAYG7JcivwfswRKTpDRKVkYNWU4P_fbXQ3&scisig=AAGBfm0AAAAAYG7Jcpms1fjVvGSPVAa8en4_OwmscaUY&scisf=4&ct=citation&cd=-1&hl=en): chen2020specmark | Chen et al, *Interspeech* 2020
 
 2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
@@ -739,19 +739,19 @@ Shall distinguishing surrogate model attack and inference attack
 1. [Watermarking Graph Neural Networks by Random Graphs](https://arxiv.org/pdf/2011.00512.pdf): Graph Neural Networks (GNN) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:JufA1FwKhYAJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwuwS9bg:AAGBfm0AAAAAYG8U7biP-vr3I4mzYcQD9Ym4MEdwLjlL&scisig=AAGBfm0AAAAAYG8U7TJdjXkL2ClDHPdjSxMsnJ9CjcBY&scisf=4&ct=citation&cd=-1&hl=en): zhao2020watermarking | Zhao et al, *Interspeech* 2020
 
 
-## Federated&nbsp;Learning
+## Federated Learning
 1. [WAFFLE: Watermarking in Federated Learning](https://arxiv.org/pdf/2011.00512.pdf): WAFFLE leverages capabilities of the aggregator to embed a backdoor-based watermark by re-training the global model with the watermark during each aggregation round. | [BibTex](): atli2020waffle | Atli et al, 2020.8
 
 2. [Watermarking Federated Deep Neural Network Models](https://aaltodoc.aalto.fi/bitstream/handle/123456789/43561/master_Xia_Yuxi_2020.pdf?sequence=1): for degree of master, advisor: Buse Atli | [BibTex](): xia2020watermarking | Xia et al, 2020
 
 3. [Towards Practical Watermark for Deep Neural Networks in Federated Learning](https://arxiv.org/pdf/2105.03167.pdf): we demonstrate a watermarking protocol for protecting deep neural networks in the setting of FL. | [BibTex](): li2021towards | Li et al, 2021.5
 
-## Deep&nbsp;Reinforcement&nbsp;Learning
+## Deep Reinforcement Learning
 1. [Sequential Triggers for Watermarking of Deep Reinforcement Learning Policies](https://arxiv.org/pdf/1906.01126.pdf): experimental evaluation of watermarking a DQN policy trained in the Cartpole environment | [BibTex](): behzadan2019sequential | Behzadan et al, 2019,6
 
 2. [Temporal Watermarks for Deep Reinforcement Learning Models](https://personal.ntu.edu.sg/tianwei.zhang/paper/aamas2021.pdf): Deep Reinforcement Learning (DRL) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:pafSRYDd6L8J:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvCqb8c:AAGBfm0AAAAAYHOsd8cEKOGOFCslTLOkJ-G7iKF_eCee&scisig=AAGBfm0AAAAAYHOsd6tpE4fU7r41NEcQsfHCyeNPpHaJ&scisf=4&ct=citation&cd=-1&hl=en): chen2021temporal | Chen et al, *International Conference on Autonomous Agents and Multiagent Systems* 2021
 
-## Document&nbsp;Analysis 
+## Document Analysis 
 1. [Robust Black-box Watermarking for Deep Neural Network using Inverse Document Frequency](https://arxiv.org/pdf/2103.05590.pdf): modified text as trigger;  divided into the following three categories: Watermarking the training data, network's parameters, model's output; Dataset: IMDB users' reviews, HamSpam spam detraction | [BibTex](): yadollahi2021robust | Yadollahi et al, 2021.3
 
 
@@ -762,13 +762,13 @@ gs.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Impro
 ## Beyond Classification
 1. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]()
 
-# Identification&nbsp;Tracing
+# Identification Tracing
 
-## Black-box&nbsp;DNN&nbsp;Watermarking&nbsp;(Output-dependent&nbsp;Style)
+## Black-box DNN Watermarking (Output-dependent Style)
 
 <!-- 1. [Open-sourced Dataset Protection via Backdoor Watermarking](https://arxiv.org/pdf/2010.05821.pdf): use a hypothesis test guided method for dataset verification based on the posterior probability generated by the suspicious third-party model of the benign samples and their correspondingly watermarked samples  | [BibTex](): li2020open | Li ea al, *NeurIPS Workshop on Dataset Curation and Security* 2020 -->
 
-### Output-Classifier&nbsp;Type
+### Output-Classifier Type
 provide a proof of theft; verify model's origin
 
 1. [Do gans leave artificial fingerprints?](https://arxiv.org/pdf/1812.11842.pdf): visualize GAN fingerprints based on PRNU, and show their application to GAN source identification, which is hand-crafted  fingerprint formulation | [BibTex](): marra2019gans | Marra et al, *IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
@@ -856,7 +856,7 @@ provide a proof of theft; verify model's origin
 
 12. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP); we propose a teacher model fingerprinting attack to infer the origin of a student model, i.e., the teacher model it transfers from. | [BibTex](): chen2021teacher | Chen et al, 2021.6
 
-# Integrity&nbsp;verification
+# Integrity verification
 The user may want to be sure of the provenance fo the model in some security applications or senarios
 
 1. [SafetyNets: verifiable execution of deep neural networks on an untrusted cloud](https://proceedings.neurips.cc/paper/2017/file/6048ff4e8cb07aa60b6777b6f7384d52-Paper.pdf): Specifically, SafetyNets develops and implements a  specialized interactive proof (IP) protocol for verifiable execution of a class of deep neural networks,  | [BibTex](): ghodsi2017safetynets | Ghodsi et al, *Proceedings of the 31st International Conference on Neural Information Processing Systems. 2017*
@@ -900,7 +900,7 @@ The user may want to be sure of the provenance fo the model in some security app
 
 
 # Perspective
-## Digital&nbsp;Rights&nbsp;Management&nbsp;(DRM)
+## Digital Rights Management (DRM)
 1. [Survey on the Technological Aspects of Digital Rights Management](https://link.springer.com/content/pdf/10.1007%2F978-3-540-30144-8_33.pdf): Digital Rights Management (DRM) has emerged as a multidisciplinary measure to protect the copyright of content owners and to facilitate the consumption of digital content. | [BibTex](): ku2004survey | Ku et al, *International Conference on Information Security* 2004
 
 2. [Digital rights management](http://www.medien.ifi.lmu.de/lehre/ws0607/mmn/mmn2a.pdf): slides | [BibTex](): rosenblatt2002digital | Rosenblatt et al,  *New York* 2002 
@@ -941,17 +941,17 @@ threats from side-channel attacks
 
 2. [A Study of Device Fingerprinting Methods](https://link.springer.com/chapter/10.1007/978-981-33-4968-1_55) [To do]()
 
-## Software&nbsp;Watermarking
+## Software Watermarking
 1. [Software Watermarking: Models and Dynamic Embeddings](http://users.rowan.edu/~tang/courses/ref/watermarking/collberg.pdf) | [BibTex](): collberg1999software | Collberg et al, *Proceedings of the 26th ACM SIGPLAN-SIGACT symposium on Principles of programming languages* 1999
 
 2. [A Graph Theoretic Approach to Software](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5287&rep=rep1&type=pdf) | [BibTex](): venkatesan2001graph | Venkatesan et al, *In International Workshop on Information Hiding (pp. 157-168). Springer, Berlin, Heidelberg* 2001
 
-## Software&nbsp;Analysis
+## Software Analysis
 1. [How are Deep Learning Models Similar?: An Empirical Study on Clone Analysis of Deep Learning Software](https://dl.acm.org/doi/pdf/10.1145/3387904.3389254): first study how the existing clone analysis techniques perform in the deep learning software. Secrion6.2(deep learning testing anf analysis) | [BibTex](): wu2020deep | Wu et al, *Proceedings of the 28th International Conference on Program Comprehension(ICPC)* 2020
 
-## Graph&nbsp;Watermarking
+## Graph Watermarking
 
-## Privacy&nbsp;Risk&nbsp;(inference&nbsp;atteck) 
+## Privacy Risk (inference atteck) 
 
 1. [Privacy risk in machine learning: Analyzing the connection to overfitting](https://arxiv.org/pdf/1709.01604.pdf): This paper examines the effect that overfitting and influence have on the ability of an attacker to learn information about the training data from machine learning models, either through training set membership inference or attribute inference attacks; our formal analysis also shows that overfitting is not necessary for these attacks and begins to shed light on what other factors may be in play | [BibTex](): yeom2018privacy| Yeom et al, *31st Computer Security Foundations Symposium (CSF)* 2018
 
