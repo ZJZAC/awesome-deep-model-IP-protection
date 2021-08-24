@@ -78,6 +78,9 @@ Paper & Code
 
 10. [SoK: How Robust is Deep Neural Network Image Classification Watermarking?](https://arxiv.org/pdf/2108.04974.pdf#page=16&zoom=100,416,614): | Lukas, et al, *S&P2022* | [[Toolbox](https://github.com/dnn-security/Watermark-Robustness-Toolbox)]
 
+11. [Regulating Ownership Verification for Deep Neural Networks: Scenarios, Protocols, and Prospects](https://arxiv.org/pdf/2108.09065.pdf):  we study the deep learning model intellectual property protection in three scenarios: the ownership proof, the federated learning, and the intellectual property transfer | Li, et al, * IJCAI 2021 Workshop on Toward IPR on Deep Learning as Services*
+
+
 
 
 # Infringement
@@ -89,6 +92,9 @@ training a top-notch model, and wishes to make a profit out of model M without p
 
 
 ## Black-box 
+### Model extraction attack
+Some reference in [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
+
 ### inference results
 1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
 
@@ -193,6 +199,8 @@ training a top-notch model, and wishes to make a profit out of model M without p
 3. [Chaotic Weights- A Novel Approach to Protect Intellectual Property of Deep Neural Networks 09171904](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9171904): exchanging the weight positions to obtain a satisfying encryption effect, instead of using the conventional idea of encrypting the weight values; CV, NLP tasks; | [BibTex](): lin2020chaotic | Lin et al, *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2020)* 2020
 
 4. [AdvParams: An Active DNN Intellectual Property Protection Technique via Adversarial Perturbation Based Parameter Encryption](https://arxiv.org/pdf/2105.13697.pdf) | [BibTex](): xue2021advparams | Xue et al, 2021.5
+
+5. [On the Importance of Encrypting Deep Features](https://arxiv.org/pdf/2108.07147.pdf): shuffle bits on tensor | [Code](https://github.com/nixingyang/ShuffleBits) | Ni te al, 2021.8
 
 [Encrpted Weights -- Hierarchical Service]
 1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services](https://arxiv.org/pdf/2105.12344.pdf): Probabilistic Selection Strategy (PSS); Distribution Preserving Random Mask (DPRM) | [Code]() | [BibTex](): tian2021probabilistic | Tian et al, *CVPR2021*
@@ -846,6 +854,8 @@ provide a proof of theft; verify model's origin
 
 7. [Deep neural network fingerprinting by conferrable adversarial examples](https://arxiv.org/pdf/1912.00888.pdf): conferrable adversarial examples that exclusively transfer with a target label from a source model to its surrogates | [BibTex](): lukas2019deep | Lukas et al, *ICLR* 2021
 
+8. [Characteristic Examples: High-Robustness, Low-Transferability Fingerprinting of Neural Networks](https://www.ijcai.org/proceedings/2021/0080.pdf): | Wang et al, *IJCAT2021*
+
 6. [Fingerprinting Deep Neural Networks - A DeepFool Approach](): In this paper, we utilize the geometry characteristics inherited in the DeepFool algorithm to extract data points near the classification boundary of the target model for ownership verification.  | [BibTex](): wang2021fingerprinting | Wang et al, *IEEE International Symposium on Circuits and Systems (ISCAS)* 2021
 
 9. [Forensicability of Deep Neural Network Inference Pipelines](): identification of the hardware platform used to produce deep neural network predictions. Finally, we introduce boundary samples that amplify the numerical deviations in order to distinguish machines by their predicted label only. | [BibTex](): schlogl2021forensicability | Schlogl et al, *IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)* 2021 
@@ -946,8 +956,11 @@ threats from side-channel attacks
 
 2. [A Graph Theoretic Approach to Software](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5287&rep=rep1&type=pdf) | [BibTex](): venkatesan2001graph | Venkatesan et al, *In International Workshop on Information Hiding (pp. 157-168). Springer, Berlin, Heidelberg* 2001
 
+
 ## Software Analysis
 1. [How are Deep Learning Models Similar?: An Empirical Study on Clone Analysis of Deep Learning Software](https://dl.acm.org/doi/pdf/10.1145/3387904.3389254): first study how the existing clone analysis techniques perform in the deep learning software. Secrion6.2(deep learning testing anf analysis) | [BibTex](): wu2020deep | Wu et al, *Proceedings of the 28th International Conference on Program Comprehension(ICPC)* 2020
+
+2. [LogExtractor: Extracting digital evidence from android log messages via string and taint analysis](https://www.sciencedirect.com/science/article/pii/S2666281721001013): digital evidence on mobile devices plays a more and more important role in crime investigations. | Cheng et al, *Forensic Science International: Digital Investigation 2021*
 
 ## Graph Watermarking
 
@@ -963,3 +976,5 @@ threats from side-channel attacks
 
 
 5. [Automatic Fairness Testing of Neural Classifiers through Adversarial Sampling](https://arxiv.org/pdf/2107.08176.pdf): 网络本身的偏见是一种局限性，是不是可以用来作为水印，更细致化的归纳偏置？ inductive bias
+
+6. [Against Membership Inference Attack: Pruning is All You Need](https://www.ijcai.org/proceedings/2021/0432.pdf): some protection of MIA can also be leveraged as the attack as model IP prtection
