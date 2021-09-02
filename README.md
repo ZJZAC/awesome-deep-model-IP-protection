@@ -302,6 +302,8 @@ schemes: specific test string, some pattern of noise | [BibTex](): zhang2018prot
 
 3. [Piracy Resistant Watermarks for Deep Neural Networks](https://arxiv.org/pdf/1910.01226.pdf): out-of-bound values; null embedding; wonder filter | [Video](https://www.youtube.com/watch?v=yb0_GwRvF4k&ab_channel=stanfordonline) | [BibTex](): li2019piracy | Li et al, 2019.10 | [Initial version](http://web.stanford.edu/class/ee380/Abstracts/191030-paper.pdf): Persistent and Unforgeable Watermarks for Deep Neural Networks | [BibTex](): li2019persistent | Li et al, 2019.10
 
+3. [PERSISTENT WATERMARK FOR IMAGE CLASSIFICATION NEURAL NETWORKS BY PENETRATING THE AUTOENCODER](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | Li et al, *ICIP 2021*
+
 4. [Evolutionary Trigger Set Generation for DNN Black-Box Watermarking](https://arxiv.org/pdf/1906.04411.pdf)：proposed an evolutionary algorithmbased method to generate and optimize the trigger pattern of the backdoor-based watermark to reduce the false alarm rate. | [Code](https://github.com/guojia-git/watermarking-cnn-classifiers) | [BibTex](): guo2019evolutionary | Guo et al, 2019.6
 
 5. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
@@ -754,6 +756,11 @@ Shall distinguishing surrogate model attack and inference attack
 
 3. [Towards Practical Watermark for Deep Neural Networks in Federated Learning](https://arxiv.org/pdf/2105.03167.pdf): we demonstrate a watermarking protocol for protecting deep neural networks in the setting of FL. | [BibTex](): li2021towards | Li et al, 2021.5
 
+4. [FedIPR: Ownership Verification for Federated Deep Neural Network Models](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_21.pdf): claim legitimate intellectual property rights (IPR) of FedDNN models, in case
+that models are illegally copied, re-distributed or misused. | Fan et al, *FTL-IJCAI 2021*
+
+5. [A novel approach to simultaneously improve privacy, efficiency and reliability of federated DNN learning](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_31.pdf): demonstrate that embedding passports resist deep leakage attack and model inversion attack without affecting model classification performances. | Gu et al, *FTL-IJCAI 2021*
+
 ## Deep Reinforcement Learning
 1. [Sequential Triggers for Watermarking of Deep Reinforcement Learning Policies](https://arxiv.org/pdf/1906.01126.pdf): experimental evaluation of watermarking a DQN policy trained in the Cartpole environment | [BibTex](): behzadan2019sequential | Behzadan et al, 2019,6
 
@@ -818,6 +825,9 @@ provide a proof of theft; verify model's origin
 1. [Proof-of-Learning: Definitions and Practice](https://arxiv.org/pdf/2103.05633.pdf): 证明训练过程的完整性，要求：验证花费小于训练花费，训练花费小于伪造花费；通过特定初始化下，梯度更新的随机性，以及逆向highly costly, 来作为交互验证的信息。可以用来做模型版权和模型完整性认证(分布训练，确定client model 是否trusty) | [Code](https://github.com/cleverhans-lab/Proof-of-Learning) | [BibTex](): jia2021proof | Jia et al, *42nd S&P* 2021.3
 
 2. [Towards Smart Contracts for Verifying DNN Model Generation Process with the Blockchain](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9403138): we propose a smart contract that is based on the dispute resolution protocol for verifying DNN model generation process. | [BibTex](): seike2021towards | Seike et al, *IEEE 6th International Conference on Big Data Analytics (ICBDA)* 2021
+
+3. [“Adversarial Examples” for Proof-of-Learning](https://arxiv.org/pdf/2108.09454.pdf): we show that PoL is vulnerable to “adversarial examples”! | Zhang et al, 2021.8
+
 
 <!-- ## Special
 1. [Minimal Modifications of Deep Neural Networks using Verification](https://easychair-www.easychair.org/publications/download/CWhF): Adi 团队；利用模型维护领域的想法， 模型有漏洞，需要重新打补丁，但是不能使用re-train, 如何修改已经训练好的模型；所属领域：model verification, model repairing ...; <font color=red>提出了一种移除水印需要多少的代价的评价标准，measure the resistance of model watermarking </font> | [Coide](https://github.com/jjgold012/MinimalDNNModificationLpar2020) | [BibTex](): goldberger2020minimal | Goldberger et al, *LPAR* 2020
