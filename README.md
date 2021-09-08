@@ -178,6 +178,7 @@ Some reference in [Stealing Links from Graph Neural Networks](https://www.usenix
 
 5. [A Protection Method of Trained CNN Model with Secret Key from Unauthorized Access](): NeurIPS2021 submission | [BibTex](): maungmaung2021protection | AprilPyone et al, 2021.5
 
+6. [A Protection Method of Trained CNN Model Using Feature Maps Transformed With Secret Key From Unauthorized Access](https://arxiv.org/pdf/2109.00224.pdf): up-to-data version, | AprilPyone et al, 2021.5
 
     (AprilPyone -- adversarial robustness)
 1. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
@@ -728,8 +729,9 @@ Shall distinguishing surrogate model attack and inference attack
 
 
 ## Image Caption 
-1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:Hq9e_KZON_EJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu3PMvw:AAGBfm0AAAAAYG7JKvyqTMhTSiim967PfzvghJH_-Afl&scisig=AAGBfm0AAAAAYG7JKpGZo5fN_dho1v9lJBI2VxMu3iAH&scisf=4&ct=citation&cd=-1&hl=en): lim2020protect  | Lim et al, 2020.8
-(surrogate model attck)
+1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](): lim2020protect  | Lim et al, 2020.8
+(surrogate model attck) | [Pattern Recognition](https://reader.elsevier.com/reader/sd/pii/S0031320321004659?token=A0BD59797E19F9A8A58426F36C1075E497A757D5E5990907924D2B4FE9217F3C5382B02807A5C5308C81C90F14944567&originRegion=us-east-1&originCreation=20210905073628) *2021.8*
+
 
 
 ## Automatic Speech Recognition (ASR)
@@ -821,6 +823,11 @@ provide a proof of theft; verify model's origin
 
 8. [Radioactive data tracing through training](http://proceedings.mlr.press/v119/sablayrolles20a/sablayrolles20a.pdf): Our radioactive mark is resilient to strong data augmentations and variations of the model architecture; Our assumption is different: in our case, we control the training data, but the training process is not controlled; resite to distillation; not satisfy Kerckhoff's principle | [](): sablayrolles2020radioactive | Sablayrolles et al, *ICML* 2020
 
+9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): Alto, examination for the degree of master | Minh et al, 2021.8
+
+10. [Data Protection in Big Data Analysis](https://uwspace.uwaterloo.ca/bitstream/handle/10012/17319/Shafieinejad_Masoumeh.pdf?sequence=1&isAllowed=y): examination for Ph.D | Masoumeh Shafieinejad, 2021.8
+
+
 ### Generation
 1. [Proof-of-Learning: Definitions and Practice](https://arxiv.org/pdf/2103.05633.pdf): 证明训练过程的完整性，要求：验证花费小于训练花费，训练花费小于伪造花费；通过特定初始化下，梯度更新的随机性，以及逆向highly costly, 来作为交互验证的信息。可以用来做模型版权和模型完整性认证(分布训练，确定client model 是否trusty) | [Code](https://github.com/cleverhans-lab/Proof-of-Learning) | [BibTex](): jia2021proof | Jia et al, *42nd S&P* 2021.3
 
@@ -891,7 +898,8 @@ The user may want to be sure of the provenance fo the model in some security app
 
 5. [Reversible Watermarking in Deep Convolutional Neural Networks for Integrity Authentication](https://arxiv.org/pdf/2101.04319.pdf): chose the least important weights as the cover, can reverse the original model performance, can authenticate the integrity | [Reversible data hiding](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.4172&rep=rep1&type=pdf) | [BibTex](): guan2020reversible | Guan et al, *ACM MM* 2020
 
-6. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
+6. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding， To verify
+the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
 
 7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](): | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)*
 
