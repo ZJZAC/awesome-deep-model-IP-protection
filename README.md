@@ -178,7 +178,10 @@ Some reference in [Stealing Links from Graph Neural Networks](https://www.usenix
 
 5. [A Protection Method of Trained CNN Model with Secret Key from Unauthorized Access](): NeurIPS2021 submission | [BibTex](): maungmaung2021protection | AprilPyone et al, 2021.5
 
-6. [A Protection Method of Trained CNN Model Using Feature Maps Transformed With Secret Key From Unauthorized Access](https://arxiv.org/pdf/2109.00224.pdf): up-to-data version, | AprilPyone et al, 2021.5
+6. [A Protection Method of Trained CNN Model Using Feature Maps Transformed With Secret Key From Unauthorized Access](https://arxiv.org/pdf/2109.00224.pdf): up-to-data version, | AprilPyone et al, 2021.9
+
+    (AprilPyone -- semantic segmentation models)
+1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | AprilPyone et al, 2021.9
 
     (AprilPyone -- adversarial robustness)
 1. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
@@ -294,8 +297,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 4. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
 ## Related Trigger
-1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
-schemes: specific test string, some pattern of noise | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
+1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark schemes: specific test string, some pattern of noise | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
 
 1. [Watermarking Deep Neural Networks for Embedded Systems](http://web.cs.ucla.edu/~miodrag/papers/Guo_ICCAD_2018.pdf)：One clear drawback of their Adi is the difficulty to associate abstract images with the author’s identity. Their answer is to use a cryptographic commitment scheme, incurring a lot of overhead to the proof of authorship; using message mark as the watermark information; unlike cloud-based MLaaS that usually charge users based on the number of queries made, there is no cost associated with querying embedded systems; owners's signature | [BibTex](): guo2018watermarking | Guo et al, *IEEE/ACM International Conference on Computer-Aided Design (ICCAD)* 2018
 
