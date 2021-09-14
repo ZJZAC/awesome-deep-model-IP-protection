@@ -356,7 +356,9 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 3. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/document/9222304)：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
 
-4. [DeepTag: Robust Image Tagging for DeepFake Provenance](https://arxiv.org/pdf/2009.09869.pdf): using watermarked image to resist the facial manipulation; but white-box method I think,suing employ mask to embed more information, or enhance the robustness | [BibTex](): wang2020deeptag | Wang et al, 2020.9
+4. [DeepTag: Robust Image Tagging for DeepFake Provenance](https://arxiv.org/pdf/2009.09869.pdf): using watermarked image to resist the facial manipulation; but white-box method I think,suing employ mask to embed more information, or enhance the robustness | [BibTex](): wang2020deeptag | Wang et al, 2020.9 | accepted by *ACM MM'21* [FakeTagger](https://arxiv.org/pdf/2009.09869.pdf)
+
+7. [FaceGuard: Proactive Deepfake Detection](https://arxiv.org/pdf/2109.05673.pdf)：解决了deeptag的假阳问题 | Yang, Neil Zhenqiang Gong et al, 2021.9
 
 5. [Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf):  towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9
 
