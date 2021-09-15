@@ -825,6 +825,8 @@ provide a proof of theft; verify model's origin
 
 4. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): we identify stolen models because they possess knowledge contained in the private training set of the victim; model stealing attack;  | [Code](https://github.com/cleverhans-lab/dataset-inference) | [BibTex](): maini2021dataset | Maini et al, *International Conference on Learning Representations (ICLR)* 2021
 
+5. [EMA: Auditing Data Removal from Trained Models](https://arxiv.org/pdf/2109.03675.pdf)；to measure if certain data are memorized by the trained model. 作为水印或指纹的评价测试工具？
+
 8. [Radioactive data tracing through training](http://proceedings.mlr.press/v119/sablayrolles20a/sablayrolles20a.pdf): Our radioactive mark is resilient to strong data augmentations and variations of the model architecture; Our assumption is different: in our case, we control the training data, but the training process is not controlled; resite to distillation; not satisfy Kerckhoff's principle | [](): sablayrolles2020radioactive | Sablayrolles et al, *ICML* 2020
 
 9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): Alto, examination for the degree of master | Minh et al, 2021.8
