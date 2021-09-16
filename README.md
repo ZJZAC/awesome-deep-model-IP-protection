@@ -109,11 +109,13 @@ Paper & Code
   <details>
   <summary>execution behavior</summary>
 
-    1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
+    1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | batina2019csi, Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
 
     2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
 
     3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
+
+    4. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
 
   </details>
   
@@ -124,11 +126,10 @@ Paper & Code
 
     2. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
 
-    3. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
-
     4. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
 
     5. [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
+
   </details>
 ### IP Security
 - [backdoor attack]:
