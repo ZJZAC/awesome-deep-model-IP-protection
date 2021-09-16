@@ -5,8 +5,8 @@ Paper & Code
 
 # Contents 
 - [Survey](#Survey)
-- [Infringement](#Infringement)
-  + [White-box model-dependent](#White-box-model-dependent) | [Black-box](#Black-box)
+- [Preliminary](#Preliminary)
+  + [IP Plagiarism](#WIP-Plagiarism) | [IP Security](#IP-Security)
 
 + [Access Control](#Access-Control)
     + [User Authentication](#User-Authentication)
@@ -81,52 +81,57 @@ Paper & Code
 11. [Regulating Ownership Verification for Deep Neural Networks: Scenarios, Protocols, and Prospects](https://arxiv.org/pdf/2108.09065.pdf):  we study the deep learning model intellectual property protection in three scenarios: the ownership proof, the federated learning, and the intellectual property transfer | Li, et al, * IJCAI 2021 Workshop on Toward IPR on Deep Learning as Services*
 
 
+# Preliminary
 
+## Threats for Intellectual Property of Deep Model 
+### IP Plagiarism
+- [model modifications]: [Fine-tuning](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf) (adi2018turning) |  [Transfer Learning](https://arxiv.org/pdf/1912.11370.pdf) (kolesnikov2020big) | [Mode Compression]()
+- [model extratcion]: Some reference in **related work** of [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
 
-# Infringement
-## White-box model-dependent
-1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when](https://arxiv.org/pdf/2102.03523.pdf)
+  <details>
+  <summary>inference results</summary>
 
-2. The second party, the adversary, is an entity that doesn’t have the required resources for designing and
-training a top-notch model, and wishes to make a profit out of model M without paying any copyright fee to the model vendor. The adversary can be a company that has purchased the license of M for one of their products and want to deploy it on another one without paying additional copyright fees. They can also be any entity who somehow has got their hands on the model, and wish to sell it on the darknet. Model vendor’s goal is to protect M against IP infringements by means that enable the vendors to prove their ownership, and possibly detect the source of theft. On the other hand, the adversary’s ultimate goal is to continue  profiting from M without getting caught by law enforcement [aramoon2021don](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)
+    1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
 
+    2. [Model Extraction Warning in MLaaS Paradigm](https://dl.acm.org/doi/pdf/10.1145/3274694.3274740):  | [BibTex](): kesarwani2018model | Kesarwani et al, *Proceedings of the 34th Annual Computer Security Applications Conference(ACSAC)* 2018
 
-## Black-box 
-### Model extraction attack
-Some reference in [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
+    3. [Knockoff nets: Stealing functionality of black-box models]() | [BibTex]():  orekondy2019knockoff | *CVPR* 2019
 
-### inference results
-1. [Stealing machine learning models via prediction apis](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_tramer.pdf): protecting against an adversary with physical access to the host device of the policy is often impractical or disproportionately costly | [BibTex](): tramer2016stealing | Tramer et al, *25th USENIX* 2016
+    4. [High Accuracy and High Fidelity Extraction of Neural Networks](https://arxiv.org/pdf/1909.01838.pdf): distinguish between two types of model extraction-fidelity extraction and accuracy extraction | [BibTex](): jagielski2020high | Jagielski et al, *29th {USENIX} Security Symposium (S&P)* 2020
 
-2. [Model Extraction Warning in MLaaS Paradigm](https://dl.acm.org/doi/pdf/10.1145/3274694.3274740):  | [BibTex](): kesarwani2018model | Kesarwani et al, *Proceedings of the 34th Annual Computer Security Applications Conference(ACSAC)* 2018
+    5. [Stealing hyperparameters in machine learning](https://arxiv.org/pdf/1802.05351.pdf) | [BibTex]():  | Wang et al, *2018 IEEE Symposium on Security and Privacy (SP)*
 
-3. [Knockoff nets: Stealing functionality of black-box models]() | [BibTex]():  orekondy2019knockoff | *CVPR* 2019
+    6. [CloudLeak: Large-scale deep learning models stealing through adversarial examples](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24178.pdf) | Yu et al, *Proceedings of Network and Distributed Systems Security Symposium (NDSS). 2020.*
 
-4. [High Accuracy and High Fidelity Extraction of Neural Networks](https://arxiv.org/pdf/1909.01838.pdf): distinguish between two types of model extraction-fidelity extraction and accuracy extraction | [BibTex](): jagielski2020high | Jagielski et al, *29th {USENIX} Security Symposium (S&P)* 2020
+    7. [Towards Reverse-Engineering Black-Box Neural Networks](https://arxiv.org/pdf/1711.01768.pdf) | [BibTex](): oh2019towards | *ICLR 2018*
+  </details>
+  
+  <details>
+  <summary>execution behavior</summary>
 
-5. [Stealing hyperparameters in machine learning](https://arxiv.org/pdf/1802.05351.pdf) | [BibTex]():  | Wang et al, *2018 IEEE Symposium on Security and Privacy (SP)*
+    1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
 
-6. [CloudLeak: Large-scale deep learning models stealing through adversarial examples](https://www.ndss-symposium.org/wp-content/uploads/2020/02/24178.pdf) | Yu et al, *Proceedings of Network and Distributed Systems Security Symposium (NDSS). 2020.*
+    2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
 
-7. [Towards Reverse-Engineering Black-Box Neural Networks](https://arxiv.org/pdf/1711.01768.pdf) | [BibTex](): oh2019towards | *ICLR 2018*
+    3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
 
-### execution behavior
-1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
+  </details>
+  
+  <details>
+  <summary>different application </summary>
 
-2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
+    1. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
 
-3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
+    2. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
 
+    3. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
 
-### different application
-1. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
+    4. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
 
-2. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
-
-3. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
-
-4. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
-
+    5. [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
+  </details>
+### IP Security
+- [backdoor attack]:
 
 # Access Control
 
@@ -817,7 +822,7 @@ provide a proof of theft; verify model's origin
 
 2. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): This kind of information leakage can be exploited, for example, by a vendor to build more effective classifiers or to simply acquire trade secrets from a competitor’s apparatus, potentially violating its intellectual property rights. 训练数据会泄露，可以用来做模型版权溯源 化敌为友 | [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
 
-3. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): 化敌为友，巧用攻击 [To do]()
+3. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): 化敌为友，巧用攻击 [To do]():  the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP) 对IP的新定义，responsible 
 
 [coded information]
 3. [Honest-but-Curious Nets: Sensitive Attributes of Private Inputs can be Secretly Coded into the Entropy of Classifiers’ Outputs](https://arxiv.org/pdf/2105.12049.pdf): Our work highlights a vulnerability that can be exploited by malicious machine learning service providers to attack their user’s privacy in several seemingly safe scenarios; such as encrypted inferences, computations at the edge, or private knowledge distillation. W | 2021.5
