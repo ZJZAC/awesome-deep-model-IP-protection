@@ -85,10 +85,10 @@ Paper & Code
 
 # Infringement
 ## White-box model-dependent
-1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when]()
+1. illegitimate plagiarism, unauthorized distribution or reproduction [lou2021when](https://arxiv.org/pdf/2102.03523.pdf)
 
 2. The second party, the adversary, is an entity that doesn’t have the required resources for designing and
-training a top-notch model, and wishes to make a profit out of model M without paying any copyright fee to the model vendor. The adversary can be a company that has purchased the license of M for one of their products and want to deploy it on another one without paying additional copyright fees. They can also be any entity who somehow has got their hands on the model, and wish to sell it on the darknet. Model vendor’s goal is to protect M against IP infringements by means that enable the vendors to prove their ownership, and possibly detect the source of theft. On the other hand, the adversary’s ultimate goal is to continue  profiting from M without getting caught by law enforcement [aramoon2021don]()
+training a top-notch model, and wishes to make a profit out of model M without paying any copyright fee to the model vendor. The adversary can be a company that has purchased the license of M for one of their products and want to deploy it on another one without paying additional copyright fees. They can also be any entity who somehow has got their hands on the model, and wish to sell it on the darknet. Model vendor’s goal is to protect M against IP infringements by means that enable the vendors to prove their ownership, and possibly detect the source of theft. On the other hand, the adversary’s ultimate goal is to continue  profiting from M without getting caught by law enforcement [aramoon2021don](https://proceedings.mlsys.org/paper/2021/file/45fbc6d3e05ebd93369ce542e8f2322d-Paper.pdf)
 
 
 ## Black-box 
