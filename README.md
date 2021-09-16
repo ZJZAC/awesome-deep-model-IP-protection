@@ -6,7 +6,7 @@ Paper & Code
 # Contents 
 - [Survey](#Survey)
 - [Preliminary](#Preliminary)
-  + [IP Plagiarism](#WIP-Plagiarism) | [IP Security](#IP-Security)
+  + [IP Plagiarism](#IP-Plagiarism) | [IP Security](#IP-Security)
 
 + [Access Control](#Access-Control)
     + [User Authentication](#User-Authentication)
