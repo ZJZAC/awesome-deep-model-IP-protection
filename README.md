@@ -132,6 +132,8 @@ Paper & Code
 
   </details>
 ### IP Security
+  refer to [Sensitive-Sample Fingerprinting of Deep Neural Networks](https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Sensitive-Sample_Fingerprinting_of_Deep_Neural_Networks_CVPR_2019_paper.pdf)
+  - complex cloud environment: [All your clouds are belong to us: security analysis of cloud management interfaces](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.232.497&rep=rep1&type=pdf)
 - [backdoor attack]:
 
 # Access Control
