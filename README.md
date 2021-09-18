@@ -189,7 +189,7 @@ Paper & Code
 6. [A Protection Method of Trained CNN Model Using Feature Maps Transformed With Secret Key From Unauthorized Access](https://arxiv.org/pdf/2109.00224.pdf): up-to-data version, | AprilPyone et al, 2021.9
 
     (AprilPyone -- semantic segmentation models)
-1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | AprilPyone et al, 2021.9 [To do]()
+1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | ito2021access, AprilPyone et al, 2021.9 [To do]()
 
     (AprilPyone -- adversarial robustness)
 1. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
