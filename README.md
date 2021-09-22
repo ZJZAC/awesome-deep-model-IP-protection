@@ -147,9 +147,7 @@ Paper & Code
 
     simialr idea for data privacy protection -- [unlearnable_examples_making_personal_data_unexploitable](https://arxiv.org/pdf/2101.04898.pdf) | [BibTex](): huang2021unlearnable | Huang et al, *ICLR 2021* [To do](): for data protetcion
 
-3. [Protect the Intellectual Property of Dataset against Unauthorized Use](https://arxiv.org/pdf/2109.07921.pdf): 数据加密解密，加密数据训练得不到好的模型性能，解密使用可逆变换；加密使用feature-level的对抗样本 | xue2021protect, Xue et al, 2021.9
 
-4. [A Novel Data Encryption Method Inspired by Adversarial Attacks](https://arxiv.org/pdf/2109.06634.pdf): simialr with [Protect the Intellectual Property of Dataset against Unauthorized Use] | fernando2021novel, fernando et al, 2021.9
 
 4. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
 
@@ -202,6 +200,10 @@ Paper & Code
 
     (AprilPyone -- piracy)
 1. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4 | [IH&MMSec'21 version](https://dl.acm.org/doi/pdf/10.1145/3437880.3460398)
+
+3. [Protect the Intellectual Property of Dataset against Unauthorized Use](https://arxiv.org/pdf/2109.07921.pdf): 数据加密解密，加密数据训练得不到好的模型性能，解密使用可逆变换；加密使用feature-level的对抗样本 | xue2021protect, Xue et al, 2021.9
+
+4. [A Novel Data Encryption Method Inspired by Adversarial Attacks](https://arxiv.org/pdf/2109.06634.pdf): simialr with [Protect the Intellectual Property of Dataset against Unauthorized Use] | fernando2021novel, fernando et al, 2021.9
 
 ### [Encrpted Architecture]
 1. [DeepObfuscation: Securing the Structure of Convolutional Neural Networks via Knowledge Distillation](https://arxiv.org/pdf/1806.10313.pdf): . Our obfuscation approach is very effective to protect the critical structure of a deep learning model from being exposed to attackers; limitation: weights may be more important than the architecture | [BibTex](): xu2018deepobfuscation | Xu et al, 2018.6
