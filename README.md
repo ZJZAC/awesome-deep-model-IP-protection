@@ -147,7 +147,9 @@ Paper & Code
 
     simialr idea for data privacy protection -- [unlearnable_examples_making_personal_data_unexploitable](https://arxiv.org/pdf/2101.04898.pdf) | [BibTex](): huang2021unlearnable | Huang et al, *ICLR 2021* [To do](): for data protetcion
 
-3. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
+3. [Protect the Intellectual Property of Dataset against Unauthorized Use](https://arxiv.org/pdf/2109.07921.pdf): 数据加密解密，加密数据训练得不到好的模型性能，解密使用可逆变换；加密使用feature-level的对抗样本
+
+4. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
 
 
 [processing]
@@ -846,7 +848,8 @@ provide a proof of theft; verify model's origin
 
 8. [Radioactive data tracing through training](http://proceedings.mlr.press/v119/sablayrolles20a/sablayrolles20a.pdf): Our radioactive mark is resilient to strong data augmentations and variations of the model architecture; Our assumption is different: in our case, we control the training data, but the training process is not controlled; resite to distillation; not satisfy Kerckhoff's principle | [](): sablayrolles2020radioactive | Sablayrolles et al, *ICML* 2020
 
-9.[Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): [To do]()
+9. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): [To do]()
+
 
 
 9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): Alto, examination for the degree of master | Minh et al, 2021.8
