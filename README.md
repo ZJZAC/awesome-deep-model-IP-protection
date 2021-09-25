@@ -936,7 +936,8 @@ The user may want to be sure of the provenance fo the model in some security app
 6. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding， To verify
 the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
 
-7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](): | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)*
+7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](): | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)* [To do](): white-box
+
 
 8. [Fragile Neural Network Watermarking with Trigger Image Set](https://link.springer.com/content/pdf/10.1007%2F978-3-030-82136-4_23.pdf): The watermarked model is sensitive to malicious fine tuning and will produce unstable classification results of the trigger images. | zhu2021fragile, Zhu et al, *International Conference on Knowledge Science, Engineering and Management 2021 (KSEM)*
 
