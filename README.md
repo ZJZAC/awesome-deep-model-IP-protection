@@ -23,17 +23,14 @@ Paper & Code
       + [Loss Constrains](#Loss-Constrains) | [Verification Approach](#Verification-Approach)  | [Training Strategies](#Training-Strategies)
     + [Approaches Based on Muliti-task Learning](#Approaches-Based-on-Muliti-task-Learning) 
 
-+ [Black-box DNN Watermarking (Input-output Style)](#Black-box-DNN-Watermarking)
++ [Black-box DNN Watermarking](#Black-box-DNN-Watermarking)
     + [Unrelated Trigger & Unrelated Prediction](#Unrelated-Trigger-&-Unrelated-Prediction)
-    + [Unrelated Trigger](#Unrelated-Trigger)
-    + [Related Trigger](#Related-Trigger)
+    + [Related Trigger & Unrelated Prediction](#Related-Trigger-&-Unrelated-Prediction)
       + [Adversarial Examples](#Adversarial-Examples)
-    + [Related&unrelated](#Related&unrelated)
-    + [Clean image & Wrong Label](#Clean-image-&-Wrong-Label)
-+ [Black-box DNN Watermarking (Output-dependent Style)](#Output-independent-Style)
-    + [Output-Classifier Type](#Output-Classifier-Type)
-    + [Output-Extractor Type](#Output-Extractor-Type)
+    + [Clean Image & Unrelated Prediction](#Clean-Image-&-Unrelated-Prediction)
+    + [Other Attempts with Unrelated Prediction](#Other-Attempts-&-Unrelated-Prediction)
 
+    + [Related Trigger & Related Prediction (from data perspective)](#Related-Trigger-&-Related-Prediction) 
 
 + [Evaluation](#Evaluation)
 + [Security](#Security)
@@ -346,13 +343,13 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 6. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
 
-## Clean image & Wrong Label
+## Clean Image & Unrelated Prediction
 1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
 1. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks may occur, we turn our attention to data annotation and propose a black-box watermarking scheme based on chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2018
 
 
-## Related&unrelated
+## Other Attempts with Unrelated Prediction
 1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
 
 1. [Visual Decoding of Hidden Watermark in Trained Deep Neural Network](https://ieeexplore.ieee.org/abstract/document/8695386)：The proposed method has a remarkable feature for watermark detection process, which can decode the embedded pattern cumulatively and visually. 关注提取端，进行label可视化成二位图片，增加关联性 | [BibTex](): sakazawa2019visual | Sakazawa et al, * IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
@@ -365,7 +362,8 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 5. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | Yang et al, *ICCV 2021*
 
-## Output-Extractor Type
+
+## Related Trigger & Related Prediction (from data perspective)
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VVOq5e67uCEJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1YmLg:AAGBfm0AAAAAYG5egLj8-8TdhW-OrFR5PtcTAgXDBsUU&scisig=AAGBfm0AAAAAYG5egJ2W418j7bkygIvLDr7B5IUgFq1r&scisf=4&ct=citation&cd=-1&hl=en): zhang2020model | Zhang et al, *AAAI* 2020.2
 
 2. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
