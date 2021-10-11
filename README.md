@@ -343,6 +343,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 5. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
 
+6. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
 
 ## Clean image & Wrong Label
 1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
@@ -758,7 +759,7 @@ Shall distinguishing surrogate model attack and inference attack
 ## Automatic Speech Recognition (ASR)
 1. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex]: chen2020specmark | Chen et al, *Interspeech* 2020
 
-2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
+2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled | Jia et al, *30th USENIX* 2020
 
 
 ## NLP
@@ -862,6 +863,8 @@ provide a proof of theft; verify model's origin
 
 ### Generation
 1. [Proof-of-Learning: Definitions and Practice](https://arxiv.org/pdf/2103.05633.pdf): 证明训练过程的完整性，要求：验证花费小于训练花费，训练花费小于伪造花费；通过特定初始化下，梯度更新的随机性，以及逆向highly costly, 来作为交互验证的信息。可以用来做模型版权和模型完整性认证(分布训练，确定client model 是否trusty) | [Code](https://github.com/cleverhans-lab/Proof-of-Learning) | [BibTex](): jia2021proof | Jia et al, *42nd S&P* 2021.3
+
+2. [SoK: Machine Learning Governance](https://arxiv.org/pdf/2109.10870.pdf): 提出了机器学习管理的概念，其中一个环节就是要找到model owner 也就是identity | Chandrasekaran et al, 2021.9
 
 2. [Towards Smart Contracts for Verifying DNN Model Generation Process with the Blockchain](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9403138): we propose a smart contract that is based on the dispute resolution protocol for verifying DNN model generation process. | [BibTex](): seike2021towards | Seike et al, *IEEE 6th International Conference on Big Data Analytics (ICBDA)* 2021
 
