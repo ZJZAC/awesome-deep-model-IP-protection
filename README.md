@@ -352,18 +352,29 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 1. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks may occur, we turn our attention to data annotation and propose a black-box watermarking scheme based on chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2018
 
 ## <span id="Other-Attempts-with-Unrelated-Prediction">Other Attempts with Unrelated Prediction</span>
+### Capacity
+1. [‘‘Identity Bracelets’’ for Deep Neural Networks](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9104681)：using MNIST (unrelated to original dataset) as trigger set; exploit the discarded capacity in the intermediate distribution of DL models’ output to embed the WM information; SN is a vector that contains n decimal units where n is the number of neurons in the output layer; 同样scale的trigger set, 分析了unrelated 和 related trigger 各自的 drawback; 提到dark knowledge？; extension of zhang; 给出了evasion attack 不作考虑的原因 | [BibTex](): xu2020identity  | [Initial Version: A novel method for identifying the deep neural network model with the Serial Number](https://arxiv.org/pdf/1911.08053.pdf) | Xu et al, *IEEE Access* 2020.8
 
+2. [Visual Decoding of Hidden Watermark in Trained Deep Neural Network](https://ieeexplore.ieee.org/abstract/document/8695386)：The proposed method has a remarkable feature for watermark detection process, which can decode the embedded pattern cumulatively and visually. 关注提取端，进行label可视化成二位图片，增加关联性 | [BibTex](): sakazawa2019visual | Sakazawa et al, * IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
+
+### Robustness
+1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
+
+### Security
+1. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：noise-like trigger; 引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定; 对overwriting 有其他解释: 本文针对黑盒情况下的forging attack； 如果白盒情况下两个水印同时存在，只要能提供具有单一水印的模型即可，因此简单的再添加一个水印并不构成攻击威胁; [idea]() 模型水印从差的迁移性的角度去考虑，训练的时候见过的trigger能识别但是verification的时候不能识别 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
+
+2. [A Protocol for Secure Verification of Watermarks Embedded into Machine Learning Models](https://dl.acm.org/doi/pdf/10.1145/3437880.3460409): choose normal inputs and watermarked inputs randomly; he whole verification process is finally formulated as a problem of Private Set Intersection (PSI), and an adaptive protocol is also introduced accordingly | [BibTex](): Kapusta2021aprotocol | Kapusta et al, *IH&MMSec 21*
+
+### Certified 
 1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
 
-1. [Visual Decoding of Hidden Watermark in Trained Deep Neural Network](https://ieeexplore.ieee.org/abstract/document/8695386)：The proposed method has a remarkable feature for watermark detection process, which can decode the embedded pattern cumulatively and visually. 关注提取端，进行label可视化成二位图片，增加关联性 | [BibTex](): sakazawa2019visual | Sakazawa et al, * IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
 
-2. [‘‘Identity Bracelets’’ for Deep Neural Networks](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9104681)：using MNIST (unrelated to original dataset) as trigger set; exploit the discarded capacity in the intermediate distribution of DL models’ output to embed the WM information; SN is a vector that contains n decimal units where n is the number of neurons in the output layer; 同样scale的trigger set, 分析了unrelated 和 related trigger 各自的 drawback; 提到dark knowledge？; extension of zhang; 给出了evasion attack 不作考虑的原因 | [BibTex](): xu2020identity  | [Initial Version: A novel method for identifying the deep neural network model with the Serial Number](https://arxiv.org/pdf/1911.08053.pdf) | Xu et al, *IEEE Access* 2020.8
 
-4. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：noise-like trigger; 引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定; 对overwriting 有其他解释: 本文针对黑盒情况下的forging attack； 如果白盒情况下两个水印同时存在，只要能提供具有单一水印的模型即可，因此简单的再添加一个水印并不构成攻击威胁; [idea]() 模型水印从差的迁移性的角度去考虑，训练的时候见过的trigger能识别但是verification的时候不能识别 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
 
-4. [A Protocol for Secure Verification of Watermarks Embedded into Machine Learning Models](https://dl.acm.org/doi/pdf/10.1145/3437880.3460409): choose normal inputs and watermarked inputs randomly; he whole verification process is finally formulated as a problem of Private Set Intersection (PSI), and an adaptive protocol is also introduced accordingly | [BibTex](): Kapusta2021aprotocol | Kapusta et al, *IH&MMSec 21*
 
-5. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | Yang et al, *ICCV 2021*
+
+
+
 
 
 ## Related Trigger & Related Prediction (from data perspective)
