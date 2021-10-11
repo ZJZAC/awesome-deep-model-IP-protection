@@ -23,7 +23,8 @@ Paper & Code
       + [Loss Constrains](#Loss-Constrains) | [Verification Approach](#Verification-Approach)  | [Training Strategies](#Training-Strategies)
     + [Approaches Based on Muliti-task Learning](#Approaches-Based-on-Muliti-task-Learning) 
 
-+ [Black-box DNN Watermarking (Input-output Style)](#Data-based-DNN-Watermarking)
++ [Black-box DNN Watermarking (Input-output Style)](#Black-box-DNN-Watermarking)
+    + [Unrelated Trigger & Unrelated Prediction](#Unrelated-Trigger-&-Unrelated-Prediction)
     + [Unrelated Trigger](#Unrelated-Trigger)
     + [Related Trigger](#Related-Trigger)
       + [Adversarial Examples](#Adversarial-Examples)
