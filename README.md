@@ -908,6 +908,8 @@ provide a proof of theft; verify model's origin
 
 8. [Characteristic Examples: High-Robustness, Low-Transferability Fingerprinting of Neural Networks](https://www.ijcai.org/proceedings/2021/0080.pdf): | Wang et al, *IJCAT2021*
 
+9. [FINGERPRINTING MULTI-EXIT DEEP NEURAL NETWORK MODELS VIA INFERENCE TIME](https://arxiv.org/pdf/2110.03175.pdf): we propose a novel approach to fingerprint multi-exit models via **inference time** rather than inference predictions. | Dong et al, 2021.10 
+
 6. [Fingerprinting Deep Neural Networks - A DeepFool Approach](): In this paper, we utilize the geometry characteristics inherited in the DeepFool algorithm to extract data points near the classification boundary of the target model for ownership verification.  | [BibTex](): wang2021fingerprinting | Wang et al, *IEEE International Symposium on Circuits and Systems (ISCAS)* 2021
 
 9. [Forensicability of Deep Neural Network Inference Pipelines](): identification of the hardware platform used to produce deep neural network predictions. Finally, we introduce boundary samples that amplify the numerical deviations in order to distinguish machines by their predicted label only. | [BibTex](): schlogl2021forensicability | Schlogl et al, *IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)* 2021 
