@@ -25,7 +25,7 @@ Paper & Code
 
 + [Black-box DNN Watermarking](#Black-box-DNN-Watermarking)
     + [Unrelated Trigger & Unrelated Prediction](#Unrelated-Trigger-&-Unrelated-Prediction)
-    + [Related Trigger & Unrelated Prediction](#Related-Trigger-&-Unrelated-Prediction)
+    + [Related Trigger & Unrelated Prediction](#Related-Trigger-\&-Unrelated-Prediction)
       + [Adversarial Examples](#Adversarial-Examples)
     + [Clean Image & Unrelated Prediction](#Clean-Image-&-Unrelated-Prediction)
     + [Other Attempts with Unrelated Prediction](#Other-Attempts-&-Unrelated-Prediction)
@@ -343,7 +343,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 
 6. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
 
-## Clean Image & Unrelated Prediction
+## Clean Image \& Unrelated Prediction
 1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
 1. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks may occur, we turn our attention to data annotation and propose a black-box watermarking scheme based on chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2018
