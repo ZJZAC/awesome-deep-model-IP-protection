@@ -360,6 +360,10 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 ### Robustness
 1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
 
+[transferabilty--robustness against attack from APIs]
+1. [WAS MY MODEL STOLEN? FEATURE SHARING FOR ROBUST AND TRANSFERABLE WATERMARKS](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ | ICLR2020 submission
+
+
 ### Security
 1. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：noise-like trigger; 引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定; 对overwriting 有其他解释: 本文针对黑盒情况下的forging attack； 如果白盒情况下两个水印同时存在，只要能提供具有单一水印的模型即可，因此简单的再添加一个水印并不构成攻击威胁; [idea]() 模型水印从差的迁移性的角度去考虑，训练的时候见过的trigger能识别但是verification的时候不能识别 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
 
