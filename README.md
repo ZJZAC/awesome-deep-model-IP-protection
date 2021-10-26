@@ -784,6 +784,9 @@ Shall distinguishing surrogate model attack and inference attack
 
 2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled | Jia et al, *30th USENIX* 2020
 
+3. [Speech Pattern based Black-box Model Watermarking for Automatic Speech Recognition](https://arxiv.org/pdf/2110.09814.pdf) | [BibTex](): | Chen et al, 2021.10
+
+
 
 ## NLP
 <!-- 1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12 -->
@@ -804,7 +807,10 @@ gs.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Impro
 
 
 ## GNN
-1. [Watermarking Graph Neural Networks by Random Graphs](https://arxiv.org/pdf/2011.00512.pdf): Graph Neural Networks (GNN) | [BibTex](): zhao2020watermarking | Zhao et al, *Interspeech* 2020
+1. [Watermarking Graph Neural Networks by Random Graphs](https://arxiv.org/pdf/2011.00512.pdf): Graph Neural Networks (GNN); focus on node classification task | [BibTex](): zhao2020watermarking | Zhao et al, *Interspeech* 2020
+
+2. [Watermarking Graph Neural Networks based on Backdoor Attacks](https://arxiv.org/pdf/2110.11024.pdf): both graph and node classification tasks; backdoor-style; considering suspicious models with different architecture | [BibTex](): xu2021watermarking | Xu et al, 2021.10
+
 
 
 ## Federated Learning
