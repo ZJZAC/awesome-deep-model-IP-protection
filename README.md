@@ -55,6 +55,7 @@ Paper & Code
 
 
 # Survey 
+# <span id="Survey">Survey</span>
 
 1. [Machine Learning IP Protection](https://dl.acm.org/doi/pdf/10.1145/3240765.3270589): Major players in the semiconductor industry provide mechanisms on device to protect the IP at rest and during execution from being copied, altered, reverse engineered, and abused by attackers. 参考硬件领域的保护措施（静态动态） | [BitTex](): cammarota2018machine | Cammarota et al, *Proceedings of the International Conference on Computer-Aided Design(ICCAD)* 2018
 
@@ -79,7 +80,8 @@ Paper & Code
 11. [Regulating Ownership Verification for Deep Neural Networks: Scenarios, Protocols, and Prospects](https://arxiv.org/pdf/2108.09065.pdf):  we study the deep learning model intellectual property protection in three scenarios: the ownership proof, the federated learning, and the intellectual property transfer | Li, et al, * IJCAI 2021 Workshop on Toward IPR on Deep Learning as Services*
 
 
-# Preliminary
+
+# <span id="Preliminary">Preliminary</span>
 
 ## Threats for Intellectual Property of Deep Model 
 ### IP Plagiarism
@@ -135,6 +137,8 @@ Paper & Code
 - posioning attack &　backdoor attack:　refer to [poison ink](https://arxiv.org/pdf/2108.02488.pdf)
 
 # Access Control
+# <span id="Access-Control">Access Control</span>
+
 
 ## User Authentication
 ### Software-level
@@ -224,14 +228,16 @@ Paper & Code
 2. [Hierarchical Authorization of Convolutional Neural
 Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9497716): we refer to differential privacy and use the Laplace mechanism to perturb the output of the model to vary degrees | [BibTex](): luo2021hierarchical | Luo et al, *IEEE Signal Processing Letters 2021*
 
-# Model Retrieval
+# <span id="Model-Retrieval">Model Retrieval</span>
+
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
 2. [Deep Neural Network Retrieval](https://arxiv.org/pdf/2108.01661.pdf):  [To do]()
 
 3. [Grounding Representation Similarity with Statistical Testing](): [To do]()
 
-# DNN Watermarking Mechanism
+# <span id="DNN-Watermarking-Mechanism">DNN Watermarking Mechanism</span>
+
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
 
 1. [Understanding deep learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf?from=timeline&isappinstalled=0)：overfitting: The capability
@@ -361,7 +367,7 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
 
 [transferabilty--robustness against attack from APIs]
-1. [WAS MY MODEL STOLEN? FEATURE SHARING FOR ROBUST AND TRANSFERABLE WATERMARKS](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ | ICLR2020 submission
+1. [WAS MY MODEL STOLEN? FEATURE SHARING FOR ROBUST AND TRANSFERABLE WATERMARKS](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
 
 
 ### Security
