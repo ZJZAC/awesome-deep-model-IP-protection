@@ -232,9 +232,9 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
-2. [Deep Neural Network Retrieval](https://arxiv.org/pdf/2108.01661.pdf):  [To do]()
+2. [Deep Neural Network Retrieval](https://dl.acm.org/doi/pdf/10.1145/3474085.3475505):  [To do]()
 
-3. [Grounding Representation Similarity with Statistical Testing](): [To do]()
+3. [Grounding Representation Similarity with Statistical Testing](https://arxiv.org/pdf/2108.01661.pdf): [To do]()
 
 # <span id="DNN-Watermarking-Mechanism">DNN Watermarking Mechanism</span>
 
