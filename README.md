@@ -54,8 +54,7 @@ Paper & Code
     + [Digital Rights Management (DRM)](#Digital-Rights-Management(DRM)) | [Hardware](#Hardware) | [Software Watermarking](#Software-Watermarking) | [Software Analysis](#Software-Analysis) | [Graph Watermarking](#Graph-Watermarking) | [Privacy Risk (inference atteck)](#Privacy-Risk(inference-atteck))
 
 
-# Survey 
-# <span id="Survey">Survey</span>
+# <span id="Survey">Survey</span> 
 
 1. [Machine Learning IP Protection](https://dl.acm.org/doi/pdf/10.1145/3240765.3270589): Major players in the semiconductor industry provide mechanisms on device to protect the IP at rest and during execution from being copied, altered, reverse engineered, and abused by attackers. 参考硬件领域的保护措施（静态动态） | [BitTex](): cammarota2018machine | Cammarota et al, *Proceedings of the International Conference on Computer-Aided Design(ICCAD)* 2018
 
@@ -232,9 +231,9 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
-2. [Deep Neural Network Retrieval](https://dl.acm.org/doi/pdf/10.1145/3474085.3475505):  [To do]()
+2. [Deep Neural Network Retrieval](https://arxiv.org/pdf/2108.01661.pdf):  [To do]()
 
-3. [Grounding Representation Similarity with Statistical Testing](https://arxiv.org/pdf/2108.01661.pdf): [To do]()
+3. [Grounding Representation Similarity with Statistical Testing](): [To do]()
 
 # <span id="DNN-Watermarking-Mechanism">DNN Watermarking Mechanism</span>
 
@@ -788,7 +787,7 @@ Shall distinguishing surrogate model attack and inference attack
 
 
 
-## NLP
+## NLP  
 <!-- 1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12 -->
 
 2. [Adversarial Watermarking Transformer- Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf): 和模型水印对于攻击的定义有所不同 towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9 *S&P21*
