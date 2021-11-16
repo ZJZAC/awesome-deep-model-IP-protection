@@ -309,8 +309,6 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
 schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
 
-3. [Protecting the Intellectual Properties of Deep Neural Networks with an Additional Class and Steganographic Images](https://arxiv.org/pdf/2104.09203.pdf):  use a set of watermark key samples (from another distribution) to embed an additional class into the DNN; adopt the least significant bit (LSB) image steganography to embed users’ fingerprints for authentication and management of fingerprints, 引用里有code | [BibTex](): sun2021protecting | Sun et al, 2021.4
-
 4. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
 ## <span id="Related-Trigger-&-Unrelated-Prediction">Related Trigger & Unrelated Prediction</span>
@@ -329,7 +327,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 5. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
 
-6. [Protecting IP of Deep Neural Networks with Watermarking: A New Label Helps](https://link.springer.com/content/pdf/10.1007%2F978-3-030-47436-2_35.pdf):  adding a new label will not twist the original decision boundary but can help the model learn the features of key samples better;  investigate the relationship between model accuracy, perturbation strength, and key samples’ length.; reports more robust than zhang's method in pruning and | [BibTex]():  zhong2020protecting | Zhong et a;, *Pacific-Asia Conference on Knowledge Discovery and Data Mining* 2020
+
 
 7. [Protecting the intellectual property of deep neural networks with watermarking: The frequency domain approach](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9343235): explain the failure to forgery attack of zhang-noise method. | [BibTex](): li2021protecting | Li et al, *19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)* 2021
 
@@ -356,6 +354,11 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 1. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks may occur, we turn our attention to data annotation and propose a black-box watermarking scheme based on chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2018
 
 ## <span id="Other-Attempts-with-Unrelated-Prediction">Other Attempts with Unrelated Prediction</span>
+### Fidelity
+3. [Protecting the Intellectual Properties of Deep Neural Networks with an Additional Class and Steganographic Images](https://arxiv.org/pdf/2104.09203.pdf):  use a set of watermark key samples (from another distribution) to embed an additional class into the DNN; adopt the least significant bit (LSB) image steganography to embed users’ fingerprints for authentication and management of fingerprints, 引用里有code | [BibTex](): sun2021protecting | Sun et al, 2021.4
+
+6. [Protecting IP of Deep Neural Networks with Watermarking: A New Label Helps](https://link.springer.com/content/pdf/10.1007%2F978-3-030-47436-2_35.pdf):  adding a new label will not twist the original decision boundary but can help the model learn the features of key samples better;  investigate the relationship between model accuracy, perturbation strength, and key samples’ length.; reports more robust than zhang's method in pruning and | [BibTex]():  zhong2020protecting | Zhong et a;, *Pacific-Asia Conference on Knowledge Discovery and Data Mining* 2020
+
 ### Capacity
 1. [‘‘Identity Bracelets’’ for Deep Neural Networks](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9104681)：using MNIST (unrelated to original dataset) as trigger set; exploit the discarded capacity in the intermediate distribution of DL models’ output to embed the WM information; SN is a vector that contains n decimal units where n is the number of neurons in the output layer; 同样scale的trigger set, 分析了unrelated 和 related trigger 各自的 drawback; 提到dark knowledge？; extension of zhang; 给出了evasion attack 不作考虑的原因 | [BibTex](): xu2020identity  | [Initial Version: A novel method for identifying the deep neural network model with the Serial Number](https://arxiv.org/pdf/1911.08053.pdf) | Xu et al, *IEEE Access* 2020.8
 
