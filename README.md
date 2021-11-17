@@ -322,7 +322,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 4. [Evolutionary Trigger Set Generation for DNN Black-Box Watermarking](https://arxiv.org/pdf/1906.04411.pdf)：proposed an evolutionary algorithmbased method to generate and optimize the trigger pattern of the backdoor-based watermark to reduce the false alarm rate. | [Code](https://github.com/guojia-git/watermarking-cnn-classifiers) | [BibTex](): guo2019evolutionary | Guo et al, 2019.6
 
-5. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
+
 
 7. [Protecting the intellectual property of deep neural networks with watermarking: The frequency domain approach](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9343235): explain the failure to forgery attack of zhang-noise method. | [BibTex](): li2021protecting | Li et al, *19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)* 2021
 
@@ -360,12 +360,15 @@ use of adversarial model examples,  slightly adjusts the decision boundary of th
 2. [Visual Decoding of Hidden Watermark in Trained Deep Neural Network](https://ieeexplore.ieee.org/abstract/document/8695386)：The proposed method has a remarkable feature for watermark detection process, which can decode the embedded pattern cumulatively and visually. 关注提取端，进行label可视化成二位图片，增加关联性 | [BibTex](): sakazawa2019visual | Sakazawa et al, * IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
 
 ### Robustness
+5. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
+
 3. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
 
 1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
 
+
 [transferabilty--robustness against attack from APIs]
-1. [WAS MY MODEL STOLEN? FEATURE SHARING FOR ROBUST AND TRANSFERABLE WATERMARKS](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
+1. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
 
 
 ### Security
