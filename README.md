@@ -323,21 +323,22 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 7. [Protecting the intellectual property of deep neural networks with watermarking: The frequency domain approach](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9343235): explain the failure to forgery attack of zhang-noise method. | [BibTex](): li2021protecting | Li et al, *19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)* 2021
 
-8. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
+8. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
 
 
 ### Adversarial Examples
-1. [Adversarial frontier stitching for remote neural network watermarking](https://arxiv.org/pdf/1711.01894.pdf)：propose a novel zero-bit watermarking algorithm that makes
-use of adversarial model examples,  slightly adjusts the decision boundary of the model so that a specific set of queries can verify the watermark information.  | [Code](https://github.com/dunky11/adversarial-frontier-stitching) | [BibTex](): merrer2020adversarial | Merrer et al, *Neural Computing and Applications 2020* 2017.11 | [Repo by Merrer: awesome-audit-algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms): A curated list of audit algorithms for getting insights from black-box algorithms.
+1. [Adversarial frontier stitching for remote neural network watermarking](https://arxiv.org/pdf/1711.01894.pdf)：propose a novel zero-bit watermarking algorithm that makes use of adversarial model examples,  slightly adjusts the decision boundary of the model so that a specific set of queries can verify the watermark information.  | [Code](https://github.com/dunky11/adversarial-frontier-stitching) | [BibTex](): merrer2020adversarial | Merrer et al, *Neural Computing and Applications 2020* 2017.11 | [Repo by Merrer: awesome-audit-algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms): A curated list of audit algorithms for getting insights from black-box algorithms.
 
-2. [Watermarking-based Defense against Adversarial Attacks on Deep Neural Networks](https://faculty.ist.psu.edu/wu/papers/IJCNN.pdf): we propose a new defense mechanism that creates a knowledge gap between attackers and defenders by imposing a designed watermarking system into standard deep neural networks. | [BibTex](): liwatermarking | Li et al, 2021.4
+2. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
 
-3. [A Watermarking-Based Framework for Protecting Deep Image Classifiers Against Adversarial Attacks](https://openaccess.thecvf.com/content/CVPR2021W/TCV/papers/Sun_A_Watermarking-Based_Framework_for_Protecting_Deep_Image_Classifiers_Against_Adversarial_CVPRW_2021_paper.pdf) | [BibTex](): sun2021watermarking | Sun et al, *CVPR W 2021*
+3. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
+
+[`watermark for adv`]
+1. [A Watermarking-Based Framework for Protecting Deep Image Classifiers Against Adversarial Attacks](https://openaccess.thecvf.com/content/CVPR2021W/TCV/papers/Sun_A_Watermarking-Based_Framework_for_Protecting_Deep_Image_Classifiers_Against_Adversarial_CVPRW_2021_paper.pdf): watermark is robust to adversarial noise | [BibTex](): sun2021watermarking | Sun et al, *CVPR W 2021*
+
+2. [Watermarking-based Defense against Adversarial Attacks on Deep Neural Networks](https://faculty.ist.psu.edu/wu/papers/IJCNN.pdf): we propose a new defense mechanism that creates a knowledge gap between attackers and defenders by imposing a designed watermarking system into standard deep neural networks; introduce `randomization` | [BibTex](): liwatermarking | Li et al, 2021.4
 
 
-5. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
-
-6. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
 
 ## <span id="Clean-Image-&-Unrelated-Prediction">Clean Image & Unrelated Prediction</span>
 
