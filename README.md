@@ -77,6 +77,7 @@ Paper & Code
 
 11. [Regulating Ownership Verification for Deep Neural Networks: Scenarios, Protocols, and Prospects](https://arxiv.org/pdf/2108.09065.pdf):  we study the deep learning model intellectual property protection in three scenarios: the ownership proof, the federated learning, and the intellectual property transfer | Li, et al, * IJCAI 2021 Workshop on Toward IPR on Deep Learning as Services*
 
+12. [Selection Guidelines for Backdoor-based Model Watermarking](https://repositum.tuwien.at/bitstream/20.500.12708/18543/1/Lederer%20Isabell%20-%202021%20-%20Selection%20Guidelines%20for%20Backdoor-based%20Model...pdf) 本科毕业论文 | lederer2021selection | Lederer, 2021 
 
 
 # <span id="Preliminary">Preliminary</span>
@@ -338,12 +339,11 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 2. [Watermarking-based Defense against Adversarial Attacks on Deep Neural Networks](https://faculty.ist.psu.edu/wu/papers/IJCNN.pdf): we propose a new defense mechanism that creates a knowledge gap between attackers and defenders by imposing a designed watermarking system into standard deep neural networks; introduce `randomization` | [BibTex](): liwatermarking | Li et al, 2021.4
 
 
-
 ## <span id="Clean-Image-&-Unrelated-Prediction">Clean Image & Unrelated Prediction</span>
 
-1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
+1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)： increase the weight value (trained on clean data) exponentially by fine-tuning on combined data set; introduce query modification attack (detect and AE) | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
-1. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks may occur, we turn our attention to data annotation and propose a black-box watermarking scheme based on chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2018
+2. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks, chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2020
 
 ## <span id="Other-Attempts-with-Unrelated-Prediction">Other Attempts with Unrelated Prediction</span>
 ### Fidelity
@@ -449,6 +449,8 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 <!-- 3. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011 -->
 
 1. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]() | machine translation 
+
+1. [Protecting Your NLG Models with Semantic and Robust Watermarks](https://openreview.net/pdf?id=VuW5ojKGI43) | xiang2021protecting | Xiang et al, ICLR 2022 withdraw
 
 ## <span id="Document-Analysis">Document Analysis </span>
 
