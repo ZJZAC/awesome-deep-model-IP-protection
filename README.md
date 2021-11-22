@@ -231,9 +231,9 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
-2. [Deep Neural Network Retrieval](https://arxiv.org/pdf/2108.01661.pdf):  [To do]()
+2. [Deep Neural Network Retrieval](https://dl.acm.org/doi/pdf/10.1145/3474085.3475505): reducing the computational cost of MLaaS providers. | zhong2021deep | Zhong et al, 
 
-3. [Grounding Representation Similarity with Statistical Testing](): [To do]()
+3. [Grounding Representation Similarity with Statistical Testing](https://proceedings.neurips.cc/paper/2021/file/0c0bf917c7942b5a08df71f9da626f97-Paper.pdf): orthogonal procrustes for representing similarity  | ding2021grounding | Ding et al, NeurIPS 2021
 
 # <span id="DNN-Watermarking-Mechanism">DNN Watermarking Mechanism</span>
 
@@ -286,7 +286,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack) | *IH&MMSec 21 WS* [White-Box Watermarking Scheme for Fully-Connected Layers in Fine-Tuning Model](https://dl.acm.org/doi/pdf/10.1145/3437880.3460402)
 
-3. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex]():fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
+3. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](): fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
 
 4. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
