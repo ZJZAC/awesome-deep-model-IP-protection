@@ -375,7 +375,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [A Protocol for Secure Verification of Watermarks Embedded into Machine Learning Models](https://dl.acm.org/doi/pdf/10.1145/3437880.3460409): choose normal inputs and watermarked inputs randomly; he whole verification process is finally formulated as a problem of Private Set Intersection (PSI), and an adaptive protocol is also introduced accordingly | [BibTex](): Kapusta2021aprotocol | Kapusta et al, *IH&MMSec 21*
 
-### Certified 
+### Provability 
 1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
 
 ### Hardware
