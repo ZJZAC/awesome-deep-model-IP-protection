@@ -146,9 +146,7 @@ Paper & Code
 
 2. [Learning to Confuse: Generating Training Time Adversarial Data with Auto-Encoder](https://arxiv.org/pdf/1905.09027.pdf): modifying training data with bounded perturbation, hoping to manipulate the behavior (both targeted or non-targeted) of any corresponding trained classifier during test time when facing clean samples. 可以用来做水印 | [Code](https://github.com/kingfengji/DeepConfuse) | [BibTex](): feng2019learning | Feng et al, *NeurIPS* 2019
 
-    simialr idea for data privacy protection -- [unlearnable_examples_making_personal_data_unexploitable](https://arxiv.org/pdf/2101.04898.pdf) | [BibTex](): huang2021unlearnable | Huang et al, *ICLR 2021* [To do](): for data protetcion
-
-
+    simialr idea for data privacy protection -- [unlearnable_examples_making_personal_data_unexploitable](https://arxiv.org/pdf/2101.04898.pdf) | [BibTex](): huang2021unlearnable | Huang et al, *ICLR 2021* 
 
 4. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
 
@@ -193,7 +191,7 @@ Paper & Code
 6. [A Protection Method of Trained CNN Model Using Feature Maps Transformed With Secret Key From Unauthorized Access](https://arxiv.org/pdf/2109.00224.pdf): up-to-data version, | AprilPyone et al, 2021.9
 
     (AprilPyone -- semantic segmentation models)
-1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | ito2021access, AprilPyone et al, 2021.9 [To do]()
+1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | ito2021access, AprilPyone et al, 2021.9 
 
     (AprilPyone -- adversarial robustness)
 1. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
@@ -260,7 +258,7 @@ of neural networks to “memorize” random noise | [BibTex](): zhang2016underst
 3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：dopts a conventional NAS method with mk
 to produce the watermarked architecture and a verification key vk; the owner collects the inference execution trace (by side-channel), and identifies any potential watermark based on vk | [BibTex](): lou2021when | Lou et al, 2021.2
 
-4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes channel pruning to embed the watermark into the host DNN  architecture instead of crafting the DNN parameters | [To do]()
+4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes `channel pruning` to embed the watermark into the host DNN  architecture instead of crafting the DNN parameters; bijective algorithm | [BibTex](): zhao2021structural | Zhao et al, 2021.7
 
 ### Loss Constrains | Verification Approach | Training Strategies 
 [Stealthiness]
@@ -371,8 +369,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
 
-12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](): solve the vulnerability against pruning | [To do]()
-
+12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](https://arxiv.org/pdf/2107.02961.pdf): solve the vulnerability against pruning | [To do]()
 
 
 [transferabilty--robustness against attack from APIs]
@@ -648,7 +645,7 @@ The user may want to be sure of the provenance fo the model in some security app
 6. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding， To verify
 the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
 
-7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](): | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)* [To do](): white-box
+7. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](https://reader.elsevier.com/reader/sd/pii/S0020025521006642?token=69900AD74DF75BCD44D9AF0ACB66CF250754FF4F8DB188F9A7A11CDB06EBFF2F114E90EE6440F4AB1629A0878D2C9455&originRegion=us-east-1&originCreation=20211129131257): white-box | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)* 
 
 
 8. [Fragile Neural Network Watermarking with Trigger Image Set](https://link.springer.com/content/pdf/10.1007%2F978-3-030-82136-4_23.pdf): The watermarked model is sensitive to malicious fine tuning and will produce unstable classification results of the trigger images. | zhu2021fragile, Zhu et al, *International Conference on Knowledge Science, Engineering and Management 2021 (KSEM)*
@@ -1085,3 +1082,6 @@ threats from side-channel attacks
 5. [Automatic Fairness Testing of Neural Classifiers through Adversarial Sampling](https://arxiv.org/pdf/2107.08176.pdf): 网络本身的偏见是一种局限性，是不是可以用来作为水印，更细致化的归纳偏置？ inductive bias
 
 6. [Against Membership Inference Attack: Pruning is All You Need](https://www.ijcai.org/proceedings/2021/0432.pdf): some protection of MIA can also be leveraged as the attack as model IP prtection
+
+### [data privacy]
+[unlearnable_examples_making_personal_data_unexploitable](https://arxiv.org/pdf/2101.04898.pdf) | [BibTex](): huang2021unlearnable | Huang et al, *ICLR 2021* 
