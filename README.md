@@ -368,6 +368,9 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
 
+12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](): solve the vulnerability against pruning | [To do]()
+
+
 
 [transferabilty--robustness against attack from APIs]
 1. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
@@ -913,11 +916,11 @@ the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign 
 
 11. [Fine-pruning: Defending against backdooring attacks on deep neural networks]() | [Fine-tuning](https://openaccess.thecvf.com/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf): girshick2014rich; *CVPR* 2014 | [BibTex](): liu2018fine | Liu et al, *International Symposium on Research in Attacks, Intrusions, and Defenses* 2018
 
-12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](): solve the vulnerability against pruning | [To do]()
+<!-- 12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](): solve the vulnerability against pruning | [To do]() -->
 
 12. [SPECTRE: Defending Against Backdoor Attacks Using Robust Statistics](https://arxiv.org/pdf/2104.11315.pdf): We propose a novel defense algorithm using robust covariance estimation to amplify the spectral signature of corrupted data. | [BibTex]():hayase2021spectre | Hayase et al, 2021.4
 
-13. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; **introduce model isomorphism attack** | [BibTex](): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4
+<!-- 13. [Watermarking in Deep Neural Networks via Error Back-propagation](https://www.ingentaconnect.com/contentone/ist/ei/2020/00002020/00000004/art00003?crawler=true&mimetype=application/pdf)：using an independent network (weights selected from the main network) to embed and extract watermark; provide some suggestions for watermarking; **introduce model isomorphism attack** | [BibTex](): wang2020watermarking | Wang et al, *Electronic Imaging* 2020.4 -->
 
 14. [Detect and remove watermark in deep neural networks via generative adversarial networks](https://arxiv.org/pdf/2106.08104.pdf):  backdoorbased DNN watermarks are vulnerable to the proposed GANbased watermark removal attack, like Neural Cleanse, replacing the optimized method with GAN | [BibTex](): wang2021detect | Wang et al, 2021.6 | [To do]()
 
@@ -933,30 +936,24 @@ the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign 
 Query-modification (like detection-based defense)
 1. [Evasion Attacks Against Watermarking Techniques found in MLaaS Systems](https://www.researchgate.net/profile/Dorjan-Hitaj/publication/334698259_Evasion_Attacks_Against_Watermarking_Techniques_found_in_MLaaS_Systems/links/5dd6a6e692851c1feda559db/Evasion-Attacks-Against-Watermarking-Techniques-found-in-MLaaS-Systems.pdf)：after the verification algorithm is run against a stolen model, the adversary is in possession of the trigger set, which enables him to fine-tune the model on those data points in order to remove the watermark. | [BibTex](): hitaj2019evasion | Hitaj et al, *Sixth International Conference on Software Defined Systems (SDS)* 2019 | [Initial Version: Have You Stolen My Model? Evasion Attacks Against Deep Neural Network Watermarking Techniques](https://arxiv.org/pdf/1809.00615.pdf)
 
-2. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)：using original training data with wrong label as triggers; increase the weight value exponentially so that model modification cannot change the prediction behavior of samples (including key samples) before and after model modification; introduce query modification attack, namely, pre-processing to query | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
 3. [An Evasion Algorithm to Fool Fingerprint Detector for Deep Neural Networks](https://crad.ict.ac.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=4415): ． 该逃避算法的核心是设计了一个指纹样本检测器— —— FingerprintＧGAN． 利用生成对抗网络(generative adversarial network,) 原理,学习正常样本在隐空间的特征表示及其分布,根据指纹 GAN 样本与正常样本在隐空间中特征表示的差异性,检测到指纹样本,并向目标模型所有者返回有别于预测的标签,使模型所有者的指纹比对方法失效. | [BibTex](): yaguan2021evasion | Qian et al, *Journal of Computer Research and Development* 2021
 
 
 
 ## Overwriting Attack
-1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:xed2zy5YT5YJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvD-kI4:AAGBfm0AAAAAYHP4iI6opse7jxpYkvyx4yzXtNjTcNYl&scisig=AAGBfm0AAAAAYHP4iKhXdKnITn4E9R_eO2rFPPPjZQXs&scisf=4&ct=citation&cd=-1&hl=en): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020
+<!-- 1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:xed2zy5YT5YJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvD-kI4:AAGBfm0AAAAAYHP4iI6opse7jxpYkvyx4yzXtNjTcNYl&scisig=AAGBfm0AAAAAYHP4iKhXdKnITn4E9R_eO2rFPPPjZQXs&scisf=4&ct=citation&cd=-1&hl=en): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020
 
-2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack)
+2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack) -->
 
 
-<!-- 3. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:and7Xl29vpgJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu3B9Rc:AAGBfm0AAAAAYG7H7Rd27DlL3WE79fbcPDcHgVpDQKuZ&scisig=AAGBfm0AAAAAYG7H7bejDswez8m_t6Y9zhsbsPAMtZ2c&scisf=4&ct=citation&cd=-1&hl=en): chen2019deepmarks | Chen et al, *ICMR* 2019
-
-4. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
-
-5. [Watermarking Deep Neural Networks in Image Processing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9093125)：Image Peocessing, using the trigger pair, target label replaced by target image; inspired by Adi and deepsigns | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:EsQcYz3vGkcJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwuwVdtk:AAGBfm0AAAAAYG8TbtkJQ70EfBd6_y4SUgSsCqJiBYKM&scisig=AAGBfm0AAAAAYG8TbkOlrwiGNIYMKOVYBzGpP7VC11zM&scisf=4&ct=citation&cd=-1&hl=en): quan2020watermarking | Quan et al, *TNNLS* 2020 -->
 
 
 
 ## Ambiguity Attack
 forgery attack; protocol attack; invisible attack
 
-1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:BKAV-WKeJ1AJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQ2dGI:AAGBfm0AAAAAYGcwbGKgqKY6a88Qf5KSWhJ1cZDTLhKp&scisig=AAGBfm0AAAAAYGcwbFH6YVqAHUeAAN6Prl_2T1s73g_a&scisf=4&ct=citation&cd=-1&hl=en):fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | [PAMI:DeepIPR: Deep Neural Network Ownership Verification with Passports](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9454280): fan2021deepip | Fan et al, *NeuraIPS* 2019, 2019.9
+<!-- 1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:BKAV-WKeJ1AJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQ2dGI:AAGBfm0AAAAAYGcwbGKgqKY6a88Qf5KSWhJ1cZDTLhKp&scisig=AAGBfm0AAAAAYGcwbFH6YVqAHUeAAN6Prl_2T1s73g_a&scisf=4&ct=citation&cd=-1&hl=en):fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | [PAMI:DeepIPR: Deep Neural Network Ownership Verification with Passports](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9454280): fan2021deepip | Fan et al, *NeuraIPS* 2019, 2019.9
 
 2. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
@@ -964,7 +961,7 @@ forgery attack; protocol attack; invisible attack
 
 4. [Combatting ambiguity attacks via selective detection of embedded watermarks](https://www.researchgate.net/profile/Nasir-Memon/publication/3455345_Combatting_Ambiguity_Attacks_via_Selective_Detection_of_Embedded_Watermarks/links/02e7e529fec5813232000000/Combatting-Ambiguity-Attacks-via-Selective-Detection-of-Embedded-Watermarks.pdf): | [BibTex](): sencar2007combatting | *IEEE Transactions on Information Forensics and Security (TIFS)* 2007
 
-5. [Preventing Watermark Forging Attacks in a MLaaS Environment](https://hal.archives-ouvertes.fr/hal-03220414/): | [BibTex](): sofiane2021preventing | Sofiane et al. *SECRYPT 2021, 18th International Conference on Security and Cryptography*
+5. [Preventing Watermark Forging Attacks in a MLaaS Environment](https://hal.archives-ouvertes.fr/hal-03220414/): | [BibTex](): sofiane2021preventing | Sofiane et al. *SECRYPT 2021, 18th International Conference on Security and Cryptography* -->
 
 ## Surrogate Model Attack / Model Stealing Attack
 Shall distinguishing surrogate model attack and inference attack
