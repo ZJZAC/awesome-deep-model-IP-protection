@@ -370,9 +370,6 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 1. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
 
-
-
-
 [transferabilty--robustness against attack from APIs]
 1. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
 
