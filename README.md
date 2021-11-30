@@ -279,6 +279,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 [Robustness]
 1. [Delving in the loss landscape to embed robust watermarks into neural networks](https://www.jianguoyun.com/p/DfA64QMQ0J2UCRjlw-0D)：using partial weights to embed watermark information and keep it untrainable, optimize the non-chosen weights; denoise training strategies; robust to fine-tune and model parameter quantization  | [BibTex](): tartaglione2020delving | Tartaglione et al, *ICPR* 2020
 
+2. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](https://arxiv.org/pdf/2107.02961.pdf): solve the vulnerability against pruning, viewpoint of communication | [BibTex](): kuribayashi2021immunization, kuribayashi et al, 2021.7
 
 [security]
 1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation Mechanism]
@@ -353,6 +354,8 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [Protecting the Intellectual Properties of Deep Neural Networks with an Additional Class and Steganographic Images](https://arxiv.org/pdf/2104.09203.pdf):  use a set of watermark key samples (from another distribution) to embed an additional class into the DNN; adopt the least significant bit (LSB) image steganography to embed users’ fingerprints for authentication and management of fingerprints, 引用里有code | [BibTex](): sun2021protecting | Sun et al, 2021.4
 
+3. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
+
 
 
 ### Capacity
@@ -367,9 +370,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 1. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
 
-1. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
 
-12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](https://arxiv.org/pdf/2107.02961.pdf): solve the vulnerability against pruning | [To do]()
 
 
 [transferabilty--robustness against attack from APIs]
@@ -919,7 +920,6 @@ the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign 
 
 11. [Fine-pruning: Defending against backdooring attacks on deep neural networks]() | [Fine-tuning](https://openaccess.thecvf.com/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf): girshick2014rich; *CVPR* 2014 | [BibTex](): liu2018fine | Liu et al, *International Symposium on Research in Attacks, Intrusions, and Defenses* 2018
 
-<!-- 12. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](): solve the vulnerability against pruning | [To do]() -->
 
 12. [SPECTRE: Defending Against Backdoor Attacks Using Robust Statistics](https://arxiv.org/pdf/2104.11315.pdf): We propose a novel defense algorithm using robust covariance estimation to amplify the spectral signature of corrupted data. | [BibTex]():hayase2021spectre | Hayase et al, 2021.4
 
