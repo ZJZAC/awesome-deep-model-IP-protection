@@ -125,9 +125,9 @@ Paper & Code
 
     2. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
 
-    4. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
+    3. [Killing Two Birds with One Stone: Stealing Model and Inferring Attribute from BERT-based APIs](https://arxiv.org/pdf/2105.10909.pdf): BERT | [BibTex](): lyu2021killing | Lyu et al, 2021.5
 
-    5. [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
+    4. [Stealing Links from Graph Neural Networks](https://www.usenix.org/system/files/sec21summer_he.pdf)
 
   </details>
 ### IP Security
@@ -148,7 +148,7 @@ Paper & Code
 
     simialr idea for data privacy protection -- [unlearnable_examples_making_personal_data_unexploitable](https://arxiv.org/pdf/2101.04898.pdf) | [BibTex](): huang2021unlearnable | Huang et al, *ICLR 2021* 
 
-4. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
+3. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
 
 
 [processing]
@@ -177,33 +177,34 @@ Paper & Code
 
 2. [CryptoNets: Applying Neural Networks to Encrypted Data with High Throughput and Accuracy](http://proceedings.mlr.press/v48/gilad-bachrach16.pdf) | [BibTex](): dowlin2016cryptonets | Dowlin et al, *ICML 2016*
 
-1. [Security for Distributed Deep Neural Networks: Towards Data Confidentiality & Intellectual Property Protection](https://arxiv.org/pdf/1907.04246.pdf): Making use of Fully Homomorphic Encryption (FHE), our approach enables the protection of Distributed Neural Networks, while processing encrypted data. | [BibTex](): gomez2019security | Gomez et al, 2019.7
+3. [Security for Distributed Deep Neural Networks: Towards Data Confidentiality & Intellectual Property Protection](https://arxiv.org/pdf/1907.04246.pdf): Making use of Fully Homomorphic Encryption (FHE), our approach enables the protection of Distributed Neural Networks, while processing encrypted data. | [BibTex](): gomez2019security | Gomez et al, 2019.7
 
-2. [Deep Learning as a Service Based on Encrypted Data](https://ieeexplore.ieee.org/abstract/document/9353769): we combine deep learning with homomorphic encryption algorithm and design a deep learning network model based on secure Multi-party computing (MPC); 用户不用拿到模型，云端只拿到加密的用户，在加密测试集上进行测试 | [BibTex](): hei2020deep | Hei et al, *International Conference on Networking and Network Applications (NaNA)* 2020
-
-    (AprilPyone -- access control)
-3. [Training DNN Model with Secret Key for Model Protection](https://www-isys.sd.tmu.ac.jp/local/2020/gcce2020_10_maung.pdf): main paper of AprilPyone, inpsired by perceptual image encryption ([sirichotedumrong2019pixel](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8931606),[chuman2018encryption](https://arxiv.org/pdf/1811.00236.pdf)) | [BibTex](): pyone2020training | AprilPyone et al, *2020 IEEE 9th Global Conference on Consumer Electronics (GCCE)*
-
-4. [Transfer Learning-Based Model Protection With Secret Key](https://arxiv.org/pdf/2103.03525.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; improved version by enable transfer learning | [BibTex](): aprilpyone2021transfer | AprilPyone et al, 2021.3
+4. [Deep Learning as a Service Based on Encrypted Data](https://ieeexplore.ieee.org/abstract/document/9353769): we combine deep learning with homomorphic encryption algorithm and design a deep learning network model based on secure Multi-party computing (MPC); 用户不用拿到模型，云端只拿到加密的用户，在加密测试集上进行测试 | [BibTex](): hei2020deep | Hei et al, *International Conference on Networking and Network Applications (NaNA)* 2020
 
 5. [A Protection Method of Trained CNN Model with Secret Key from Unauthorized Access](): NeurIPS2021 submission | [BibTex](): maungmaung2021protection | AprilPyone et al, 2021.5
 
 6. [A Protection Method of Trained CNN Model Using Feature Maps Transformed With Secret Key From Unauthorized Access](https://arxiv.org/pdf/2109.00224.pdf): up-to-data version, | AprilPyone et al, 2021.9
 
+7. [Protect the Intellectual Property of Dataset against Unauthorized Use](https://arxiv.org/pdf/2109.07921.pdf): 数据加密解密，加密数据训练得不到好的模型性能，解密使用可逆变换；加密使用feature-level的对抗样本 | xue2021protect, Xue et al, 2021.9
+
+8. [A Novel Data Encryption Method Inspired by Adversarial Attacks](https://arxiv.org/pdf/2109.06634.pdf): simialr with [Protect the Intellectual Property of Dataset against Unauthorized Use] | fernando2021novel, fernando et al, 2021.9
+
+
+    (AprilPyone -- access control)
+    1. [Training DNN Model with Secret Key for Model Protection](https://www-isys.sd.tmu.ac.jp/local/2020/gcce2020_10_maung.pdf): main paper of AprilPyone, inpsired by perceptual image encryption ([sirichotedumrong2019pixel](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8931606),[chuman2018encryption](https://arxiv.org/pdf/1811.00236.pdf)) | [BibTex](): pyone2020training | AprilPyone et al, *2020 IEEE 9th Global Conference on Consumer Electronics (GCCE)*
+
+    2. [Transfer Learning-Based Model Protection With Secret Key](https://arxiv.org/pdf/2103.03525.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; improved version by enable transfer learning | [BibTex](): aprilpyone2021transfer | AprilPyone et al, 2021.3
+
     (AprilPyone -- semantic segmentation models)
-1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | ito2021access, AprilPyone et al, 2021.9 
+    1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | ito2021access, AprilPyone et al, 2021.9 
 
     (AprilPyone -- adversarial robustness)
-1. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
+    1. [Encryption inspired adversarial defense for visual classification]() | [BibTex](): maung2020encryption |  AprilPyone et al, *In 2020 IEEE International Conference on Image Processing (ICIP)* 
 
-2. [Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9366496): propose a novel defensive transformation that enables us to maintain a high classification accuracy under the use of both clean images and adversarial examples for adversarially robust defense. The proposed transformation is a block-wise preprocessing technique with a secret key to input images [BibeTex](): aprilpyone2021block | AprilPyone et al, *IEEE Transactions on Information Forensics and Security (TIFS)* 2021
+    2. [Block-wise Image Transformation with Secret Key for Adversarially Robust Defense](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9366496): propose a novel defensive transformation that enables us to maintain a high classification accuracy under the use of both clean images and adversarial examples for adversarially robust defense. The proposed transformation is a block-wise preprocessing technique with a secret key to input images [BibeTex](): aprilpyone2021block | AprilPyone et al, *IEEE Transactions on Information Forensics and Security (TIFS)* 2021
 
     (AprilPyone -- piracy)
-1. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4 | [IH&MMSec'21 version](https://dl.acm.org/doi/pdf/10.1145/3437880.3460398)
-
-3. [Protect the Intellectual Property of Dataset against Unauthorized Use](https://arxiv.org/pdf/2109.07921.pdf): 数据加密解密，加密数据训练得不到好的模型性能，解密使用可逆变换；加密使用feature-level的对抗样本 | xue2021protect, Xue et al, 2021.9
-
-4. [A Novel Data Encryption Method Inspired by Adversarial Attacks](https://arxiv.org/pdf/2109.06634.pdf): simialr with [Protect the Intellectual Property of Dataset against Unauthorized Use] | fernando2021novel, fernando et al, 2021.9
+    1. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：using the key to enable correct image transformation of triggers; 对trigger进行加密; it is piracy-resistant, so the original watermark cannot be overwritten by a pirated watermark, and adding a new watermark decreases the model accuracy unlike most of the existing DNN watermarking methods | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4 | [IH&MMSec'21 version](https://dl.acm.org/doi/pdf/10.1145/3437880.3460398)
 
 ### [Encrpted Architecture]
 1. [DeepObfuscation: Securing the Structure of Convolutional Neural Networks via Knowledge Distillation](https://arxiv.org/pdf/1806.10313.pdf): . Our obfuscation approach is very effective to protect the critical structure of a deep learning model from being exposed to attackers; limitation: weights may be more important than the architecture | [BibTex](): xu2018deepobfuscation | Xu et al, 2018.6
@@ -238,7 +239,7 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
 
-1. [Understanding deep learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf?from=timeline&isappinstalled=0)：overfitting: The capability
+2. [Understanding deep learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf?from=timeline&isappinstalled=0)：overfitting: The capability
 of neural networks to “memorize” random noise | [BibTex](): zhang2016understanding | Zhang et al, 2016.11
 
 
@@ -310,7 +311,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
 schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
 
-4. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
+3. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
 ## <span id="Related-Trigger-&-Unrelated-Prediction">Related Trigger & Unrelated Prediction</span>
 
@@ -368,22 +369,23 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
 
-1. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
+3. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
 
 [transferabilty--robustness against attack from APIs]
-1. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
+4. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
 
 
 ### Security
 1. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：noise-like trigger; 引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定; 对overwriting 有其他解释: 本文针对黑盒情况下的forging attack； 如果白盒情况下两个水印同时存在，只要能提供具有单一水印的模型即可，因此简单的再添加一个水印并不构成攻击威胁; [idea]() 模型水印从差的迁移性的角度去考虑，训练的时候见过的trigger能识别但是verification的时候不能识别 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
 
-3. [Piracy Resistant Watermarks for Deep Neural Networks](https://arxiv.org/pdf/1910.01226.pdf): out-of-bound values; null embedding (land into sub-area/local minimum); wonder filter | [Video](https://www.youtube.com/watch?v=yb0_GwRvF4k&ab_channel=stanfordonline) | [BibTex](): li2019piracy | Li et al, 2019.10 | [Initial version](http://web.stanford.edu/class/ee380/Abstracts/191030-paper.pdf): Persistent and Unforgeable Watermarks for Deep Neural Networks | [BibTex](): li2019persistent | Li et al, 2019.10
+2. [Piracy Resistant Watermarks for Deep Neural Networks](https://arxiv.org/pdf/1910.01226.pdf): out-of-bound values; null embedding (land into sub-area/local minimum); wonder filter | [Video](https://www.youtube.com/watch?v=yb0_GwRvF4k&ab_channel=stanfordonline) | [BibTex](): li2019piracy | Li et al, 2019.10 | [Initial version](http://web.stanford.edu/class/ee380/Abstracts/191030-paper.pdf): Persistent and Unforgeable Watermarks for Deep Neural Networks | [BibTex](): li2019persistent | Li et al, 2019.10
 
-2. [A Protocol for Secure Verification of Watermarks Embedded into Machine Learning Models](https://dl.acm.org/doi/pdf/10.1145/3437880.3460409): choose normal inputs and watermarked inputs randomly; he whole verification process is finally formulated as a problem of Private Set Intersection (PSI), and an adaptive protocol is also introduced accordingly | [BibTex](): Kapusta2021aprotocol | Kapusta et al, *IH&MMSec 21*
+3. [Preventing Watermark Forging Attacks in a MLaaS Environment](https://hal.archives-ouvertes.fr/hal-03220414/): | [BibTex](): sofiane2021preventing | Lounici et al. *SECRYPT 2021, 18th International Conference on Security and Cryptography*
 
-5. [Preventing Watermark Forging Attacks in a MLaaS Environment](https://hal.archives-ouvertes.fr/hal-03220414/): | [BibTex](): sofiane2021preventing | Sofiane et al. *SECRYPT 2021, 18th International Conference on Security and Cryptography*
+4. [A Protocol for Secure Verification of Watermarks Embedded into Machine Learning Models](https://dl.acm.org/doi/pdf/10.1145/3437880.3460409): choose normal inputs and watermarked inputs randomly; he whole verification process is finally formulated as a problem of Private Set Intersection (PSI), and an adaptive protocol is also introduced accordingly | [BibTex](): Kapusta2021aprotocol | Kapusta et al, *IH&MMSec 21*
 
-4. [Combatting ambiguity attacks via selective detection of embedded watermarks](https://www.researchgate.net/profile/Nasir-Memon/publication/3455345_Combatting_Ambiguity_Attacks_via_Selective_Detection_of_Embedded_Watermarks/links/02e7e529fec5813232000000/Combatting-Ambiguity-Attacks-via-Selective-Detection-of-Embedded-Watermarks.pdf): | [BibTex](): sencar2007combatting | *IEEE Transactions on Information Forensics and Security (TIFS)* 2007
+
+
 
 ### Provability 
 1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
@@ -952,6 +954,7 @@ Query-modification (like detection-based defense)
 
 ## Ambiguity Attack
 forgery attack; protocol attack; invisible attack
+1. [Combatting ambiguity attacks via selective detection of embedded watermarks](https://www.researchgate.net/profile/Nasir-Memon/publication/3455345_Combatting_Ambiguity_Attacks_via_Selective_Detection_of_Embedded_Watermarks/links/02e7e529fec5813232000000/Combatting-Ambiguity-Attacks-via-Selective-Detection-of-Embedded-Watermarks.pdf): `common attack in media watermarking` | [BibTex](): sencar2007combatting | *IEEE Transactions on Information Forensics and Security (TIFS)* 2007
 
 <!-- 1. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:BKAV-WKeJ1AJ:scholar.google.com/&output=citation&scisdr=CgWVvEwREJLC_OQ2dGI:AAGBfm0AAAAAYGcwbGKgqKY6a88Qf5KSWhJ1cZDTLhKp&scisig=AAGBfm0AAAAAYGcwbFH6YVqAHUeAAN6Prl_2T1s73g_a&scisf=4&ct=citation&cd=-1&hl=en):fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | [PAMI:DeepIPR: Deep Neural Network Ownership Verification with Passports](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9454280): fan2021deepip | Fan et al, *NeuraIPS* 2019, 2019.9
 
@@ -959,7 +962,7 @@ forgery attack; protocol attack; invisible attack
 
 3. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定。 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
 
-4. [Combatting ambiguity attacks via selective detection of embedded watermarks](https://www.researchgate.net/profile/Nasir-Memon/publication/3455345_Combatting_Ambiguity_Attacks_via_Selective_Detection_of_Embedded_Watermarks/links/02e7e529fec5813232000000/Combatting-Ambiguity-Attacks-via-Selective-Detection-of-Embedded-Watermarks.pdf): | [BibTex](): sencar2007combatting | *IEEE Transactions on Information Forensics and Security (TIFS)* 2007
+
 
 5. [Preventing Watermark Forging Attacks in a MLaaS Environment](https://hal.archives-ouvertes.fr/hal-03220414/): | [BibTex](): sofiane2021preventing | Sofiane et al. *SECRYPT 2021, 18th International Conference on Security and Cryptography* -->
 
