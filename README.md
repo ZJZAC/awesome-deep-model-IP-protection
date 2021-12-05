@@ -59,7 +59,7 @@ Paper & Code
 
 2. [A Survey on Model Watermarking Neural Networks](https://arxiv.org/pdf/2009.12153.pdf)： This document at hand provides the first extensive literature review on ML model watermarking schemes and attacks against them.  | [BibTex](): boenisch2020survey | Franziska Boenisch, 2020.9
 
-3. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://arxiv.org/pdf/2011.13564.pdf)： This paper attempts to provide a review of the existing DNN IP protection works and also an outlook. | [BibTex](): xue2020dnn | Xue et al, *GLSVLSI '21: Proceedings of the 2021 on Great Lakes Symposium on VLSI* 2020.11
+3. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://dl.acm.org/doi/abs/10.1145/3453688.3461752)： This paper attempts to provide a review of the existing DNN IP protection works and also an outlook. | [BibTex](): xue2020dnn | Xue et al, *GLSVLSI '21: Proceedings of the 2021 on Great Lakes Symposium on VLSI* 2020.11
 
 4. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](): li2021survey | Li et al, 2021.3
 
@@ -374,7 +374,6 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 [transferabilty--robustness against attack from APIs]
 4. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
 
-
 ### Security
 1. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：noise-like trigger; 引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定; 对overwriting 有其他解释: 本文针对黑盒情况下的forging attack； 如果白盒情况下两个水印同时存在，只要能提供具有单一水印的模型即可，因此简单的再添加一个水印并不构成攻击威胁; [idea]() 模型水印从差的迁移性的角度去考虑，训练的时候见过的trigger能识别但是verification的时候不能识别 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
 
@@ -384,9 +383,6 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 4. [A Protocol for Secure Verification of Watermarks Embedded into Machine Learning Models](https://dl.acm.org/doi/pdf/10.1145/3437880.3460409): choose normal inputs and watermarked inputs randomly; he whole verification process is finally formulated as a problem of Private Set Intersection (PSI), and an adaptive protocol is also introduced accordingly | [BibTex](): Kapusta2021aprotocol | Kapusta et al, *IH&MMSec 21*
 
-
-
-
 ### Provability 
 1. [Certified Watermarks for Neural Networks](https://openreview.net/forum?id=Im43P9kuaeP)：Using the randomized smoothing technique proposed in Chiang et al., we show that our watermark is guaranteed to be unremovable unless the model parameters are changed by more than a certain `2 threshold | [BibTex](): chiang2020watermarks | Bansal et al, 2018.2
 
@@ -394,14 +390,18 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 1. [DeepHardMark: Towards Watermarking Neural Network Hardware](): injected model, trigger, target functional blocks together to trigger the special behavior. 多加了一个硬件约束 | AAAI2022 under-review
 
 
+## Attempts with Related Prediction 
+1. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/document/9222304)：Image Peocessing,  exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
+
+2. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VVOq5e67uCEJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1YmLg:AAGBfm0AAAAAYG5egLj8-8TdhW-OrFR5PtcTAgXDBsUU&scisig=AAGBfm0AAAAAYG5egJ2W418j7bkygIvLDr7B5IUgFq1r&scisf=4&ct=citation&cd=-1&hl=en): zhang2020model | Zhang et al, *AAAI* 2020.2
+
+3. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
+
+4. [Exploring Structure Consistency for Deep Model Watermarking](https://arxiv.org/pdf/2108.02360.pdf): improvement against model extration attack with pre-processing | zhang2021exploring | Zhang et al, 2021.8
 
 
-## Related Trigger & Related Prediction (from data perspective)
-1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VVOq5e67uCEJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1YmLg:AAGBfm0AAAAAYG5egLj8-8TdhW-OrFR5PtcTAgXDBsUU&scisig=AAGBfm0AAAAAYG5egJ2W418j7bkygIvLDr7B5IUgFq1r&scisf=4&ct=citation&cd=-1&hl=en): zhang2020model | Zhang et al, *AAAI* 2020.2
 
-2. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
-
-3. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/document/9222304)：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
+1. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011
 
 4. [DeepTag: Robust Image Tagging for DeepFake Provenance](https://arxiv.org/pdf/2009.09869.pdf): using watermarked image to resist the facial manipulation; but white-box method I think,suing employ mask to embed more information, or enhance the robustness | [BibTex](): wang2020deeptag | Wang et al, 2020.9 | accepted by *ACM MM'21* [FakeTagger](https://arxiv.org/pdf/2009.09869.pdf)
 
@@ -409,7 +409,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 5. [Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf):  towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9
 
-6. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011
+
 
 
 
