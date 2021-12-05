@@ -261,6 +261,10 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes `channel pruning` to embed the watermark into the host DNN  architecture instead of crafting the DNN parameters; bijective algorithm | [BibTex](): zhao2021structural | Zhao et al, 2021.7
 
+5. [You are caught stealing my winning lottery ticket! Making a lottery ticket claim its ownership](https://proceedings.neurips.cc/paper/2021/file/0dfd8a39e2a5dd536c185e19a804a73b-Paper.pdf) [To do]()
+
+
+
 ### Loss Constrains | Verification Approach | Training Strategies 
 [Stealthiness]
 1. [Attacks on digital watermarks for deep neural networks](https://scholar.harvard.edu/files/tianhaowang/files/icassp.pdf)：weights variance or weights standard deviation, will increase noticeably and systematically during the process of watermark embedding algorithm by Uchida et al; using L2 regulatization to achieve stealthiness; w tend to mean=0, var=1 | [BibTex](): wang2019attacks | Wang et al, *ICASSP* 2019
@@ -335,7 +339,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
 
-<!-- 3. [Deep neural network fingerprinting by conferrable adversarial examples](https://arxiv.org/pdf/1912.00888.pdf): conferrable adversarial examples that exclusively transfer with a target label from a source model to its surrogates | [BibTex](): lukas2019deep | Lukas et al, *ICLR* 2021 -->
+3. [Mitigating Adversarial Attacks by Distributing Different Copies to Different Users](https://arxiv.org/pdf/2111.15160.pdf) [To do]()
 
 [`watermark for adv`]
 1. [A Watermarking-Based Framework for Protecting Deep Image Classifiers Against Adversarial Attacks](https://openaccess.thecvf.com/content/CVPR2021W/TCV/papers/Sun_A_Watermarking-Based_Framework_for_Protecting_Deep_Image_Classifiers_Against_Adversarial_CVPRW_2021_paper.pdf): watermark is robust to adversarial noise | [BibTex](): sun2021watermarking | Sun et al, *CVPR W 2021*
