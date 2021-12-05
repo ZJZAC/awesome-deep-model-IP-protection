@@ -235,6 +235,10 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 3. [Grounding Representation Similarity with Statistical Testing](https://proceedings.neurips.cc/paper/2021/file/0c0bf917c7942b5a08df71f9da626f97-Paper.pdf): orthogonal procrustes for representing similarity  | ding2021grounding | Ding et al, NeurIPS 2021
 
+4. [Similarity of Neural Network Representations Revisited](http://proceedings.mlr.press/v97/kornblith19a/kornblith19a.pdf): 可以衡量不同模型结构学习到的特征表达，那到底是数据集影响还是结构影响呢？[To do]()
+
+
+
 # <span id="DNN-Watermarking-Mechanism">DNN Watermarking Mechanism</span>
 
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
