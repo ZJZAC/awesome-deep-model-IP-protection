@@ -1077,6 +1077,9 @@ threats from side-channel attacks
 ## Graph Watermarking
 
 ## Privacy Risk (inference atteck) 
+1. [Robust Membership Encoding: Inference Attacks and Copyright Protection for Deep Learning](https://arxiv.org/pdf/1909.12982.pdf)
+
+
 
 1. [Privacy risk in machine learning: Analyzing the connection to overfitting](https://arxiv.org/pdf/1709.01604.pdf): This paper examines the effect that overfitting and influence have on the ability of an attacker to learn information about the training data from machine learning models, either through training set membership inference or attribute inference attacks; our formal analysis also shows that overfitting is not necessary for these attacks and begins to shed light on what other factors may be in play | [BibTex](): yeom2018privacy| Yeom et al, *31st Computer Security Foundations Symposium (CSF)* 2018
 
