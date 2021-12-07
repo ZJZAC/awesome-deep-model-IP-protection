@@ -28,9 +28,9 @@ Paper & Code
     + [Related Trigger & Unrelated Prediction](#Related-Trigger-&-Unrelated-Prediction)
       + [Adversarial Examples](#Adversarial-Examples)
     + [Clean Image & Unrelated Prediction](#Clean-Image-&-Unrelated-Prediction)
-    + [Other Attempts with Unrelated Prediction](#Other-Attempts-&-Unrelated-Prediction)
-
-    + [Related Trigger & Related Prediction (from data perspective)](#Related-Trigger-&-Related-Prediction) 
+    + [Other Attempts with Unrelated Prediction](#Other-Attempts-with-Unrelated-Prediction)
+    + [Attempts with Related Prediction ](#Attempts-with-Related-Prediction) 
+    + [Attempts with Clean Prediction ](#Attempts-with-Clean-Prediction) 
 
 + [Evaluation](#Evaluation)
 + [Security](#Security)
@@ -335,10 +335,8 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 6. [Protecting the intellectual property of deep neural networks with watermarking: The frequency domain approach](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9343235): explain the failure to forgery attack of zhang-noise method. | [BibTex](): li2021protecting | Li et al, *19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)* 2021
 
-7. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
 
-
-### Adversarial Examples
+### <span id="Adversarial-Examples">Adversarial Examples</span>
 1. [Adversarial frontier stitching for remote neural network watermarking](https://arxiv.org/pdf/1711.01894.pdf)：propose a novel zero-bit watermarking algorithm that makes use of adversarial model examples,  slightly adjusts the decision boundary of the model so that a specific set of queries can verify the watermark information.  | [Code](https://github.com/dunky11/adversarial-frontier-stitching) | [BibTex](): merrer2020adversarial | Merrer et al, *Neural Computing and Applications 2020* 2017.11 | [Repo by Merrer: awesome-audit-algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms): A curated list of audit algorithms for getting insights from black-box algorithms.
 
 2. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
@@ -364,7 +362,6 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 2. [Protecting the Intellectual Properties of Deep Neural Networks with an Additional Class and Steganographic Images](https://arxiv.org/pdf/2104.09203.pdf):  use a set of watermark key samples (from another distribution) to embed an additional class into the DNN; adopt the least significant bit (LSB) image steganography to embed users’ fingerprints for authentication and management of fingerprints, 引用里有code | [BibTex](): sun2021protecting | Sun et al, 2021.4
 
 3. [Robust Watermarking for Deep Neural Networks via Bi-level Optimization](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Robust_Watermarking_for_Deep_Neural_Networks_via_Bi-Level_Optimization_ICCV_2021_paper.pdf): inner loop phase optimizes the example-level problem to generate robust exemplars, while the outer loop phase proposes a masked adaptive optimization to achieve the robustness of the projected DNN models | yang2021robust, Yang et al, *ICCV 2021*
-
 
 
 ### Capacity
@@ -398,7 +395,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 1. [DeepHardMark: Towards Watermarking Neural Network Hardware](): injected model, trigger, target functional blocks together to trigger the special behavior. 多加了一个硬件约束 | AAAI2022 under-review
 
 
-## Attempts with Related Prediction 
+## <span id="Attempts-with-Related-Prediction">Attempts with Related Prediction </span>
 1. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/document/9222304)：Image Peocessing,  exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
 
 2. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:VVOq5e67uCEJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwu1YmLg:AAGBfm0AAAAAYG5egLj8-8TdhW-OrFR5PtcTAgXDBsUU&scisig=AAGBfm0AAAAAYG5egJ2W418j7bkygIvLDr7B5IUgFq1r&scisf=4&ct=citation&cd=-1&hl=en): zhang2020model | Zhang et al, *AAAI* 2020.2
@@ -406,7 +403,6 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 3. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
 
 4. [Exploring Structure Consistency for Deep Model Watermarking](https://arxiv.org/pdf/2108.02360.pdf): improvement against model extration attack with pre-processing | zhang2021exploring | Zhang et al, 2021.8
-
 
 
 1. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011
@@ -418,6 +414,8 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 5. [Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf):  towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9
 
 
+## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
+1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
 
 
 
