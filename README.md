@@ -263,7 +263,7 @@ of neural networks to “memorize” random noise | [BibTex](): zhang2016underst
 3. [ When NAS Meets Watermarking: Ownership Verification of DNN Models via Cache Side Channels ](https://arxiv.org/pdf/2102.03523.pdf)：dopts a conventional NAS method with mk
 to produce the watermarked architecture and a verification key vk; the owner collects the inference execution trace (by side-channel), and identifies any potential watermark based on vk | [BibTex](): lou2021when | Lou et al, 2021.2
 
-4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes `channel pruning` to embed the watermark into the host DNN  architecture instead of crafting the DNN parameters; bijective algorithm | [BibTex](): zhao2021structural | Zhao et al, 2021.7
+4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes `channel pruning` to embed the watermark into the host DNN architecture instead of crafting the DNN parameters; bijective algorithm | [BibTex](): zhao2021structural | Zhao et al, 2021.7
 
 5. [You are caught stealing my winning lottery ticket! Making a lottery ticket claim its ownership](https://proceedings.neurips.cc/paper/2021/file/0dfd8a39e2a5dd536c185e19a804a73b-Paper.pdf) [To do]()
 
@@ -299,7 +299,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
-5. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more; feasible to the deep model without normalization layer | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021* [To do]()
+5. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more; feasible to the deep model without normalization layer | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021* 
 
 
 ### Approaches Based on Muliti-task Learning
@@ -335,7 +335,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 6. [Protecting the intellectual property of deep neural networks with watermarking: The frequency domain approach](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9343235): explain the failure to forgery attack of zhang-noise method. | [BibTex](): li2021protecting | Li et al, *19th International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)* 2021
 
-7. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
+7. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
 
 
 ### Adversarial Examples
