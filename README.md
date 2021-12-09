@@ -341,7 +341,6 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [BlackMarks: Blackbox Multibit Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1904.00344.pdf)： The first end-toend multi-bit watermarking framework ; Given the owner’s watermark signature (a binary string), a set of key image and label pairs are designed using targeted adversarial attacks; provide evaluation method | [BibTex](): chen2019blackmarks | Chen et al, 2019.4
 
-3. [Mitigating Adversarial Attacks by Distributing Different Copies to Different Users](https://arxiv.org/pdf/2111.15160.pdf) [To do]()
 
 [`watermark for adv`]
 1. [A Watermarking-Based Framework for Protecting Deep Image Classifiers Against Adversarial Attacks](https://openaccess.thecvf.com/content/CVPR2021W/TCV/papers/Sun_A_Watermarking-Based_Framework_for_Protecting_Deep_Image_Classifiers_Against_Adversarial_CVPRW_2021_paper.pdf): watermark is robust to adversarial noise | [BibTex](): sun2021watermarking | Sun et al, *CVPR W 2021*
@@ -595,6 +594,8 @@ provide a proof of theft; verify model's origin
 ## Fingerprinting
 
 1. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID); The main difference between watermarking and fingerprinting is that the WM remains the same for all copies of the IP while the FP is unique for each copy. As such, FPs address the ambiguity of WMs and enables tracking of IP misuse conducted by a specific user. | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019
+
+3. [Mitigating Adversarial Attacks by Distributing Different Copies to Different Users](https://arxiv.org/pdf/2111.15160.pdf)：为了防止相同分发模型直接进行对抗攻击；也可用于attack tracing; based on [attractors](https://arxiv.org/pdf/2003.02732.pdf) | [BibTex](): zhang2021mitigating | Zhang et al, 2021.11.30
 
 2. [IPGuard: Protecting Intellectual Property of Deep Neural Networks via Fingerprinting the Classification Boundary](https://arxiv.org/pdf/1910.12903.pdf): Based on this observation, IPGuard extracts some data points near the classification boundary of the model owner’s classifier and uses them to fingerprint the classifier  | [BibTex](): cao2019ipguard | Cao et al, *AsiaCCS* 2021
 
