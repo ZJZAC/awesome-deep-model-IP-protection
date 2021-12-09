@@ -265,7 +265,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Structural Watermarking to Deep Neural Networks via Network Channel Pruning](https://arxiv.org/pdf/2107.08688.pdf):  structural watermarking scheme that utilizes `channel pruning` to embed the watermark into the host DNN architecture instead of crafting the DNN parameters; bijective algorithm | [BibTex](): zhao2021structural | Zhao et al, 2021.7
 
-5. [You are caught stealing my winning lottery ticket! Making a lottery ticket claim its ownership](https://proceedings.neurips.cc/paper/2021/file/0dfd8a39e2a5dd536c185e19a804a73b-Paper.pdf) [To do]()
+5. [You are caught stealing my winning lottery ticket! Making a lottery ticket claim its ownership](https://proceedings.neurips.cc/paper/2021/file/0dfd8a39e2a5dd536c185e19a804a73b-Paper.pdf): 让模型尽可能地精简,把signature藏在sparse mask里 | [BibTex](): chen2021you | Chen et al, NeurIPS 2021.
 
 
 
