@@ -404,10 +404,10 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 4. [Exploring Structure Consistency for Deep Model Watermarking](https://arxiv.org/pdf/2108.02360.pdf): improvement against model extration attack with pre-processing | zhang2021exploring | Zhang et al, 2021.8
 
-`[deepfake]`
+<!-- `[deepfake]`
 1. [DeepTag: Robust Image Tagging for DeepFake Provenance](https://arxiv.org/pdf/2009.09869.pdf): using watermarked image to resist the facial manipulation; but white-box method I think,suing employ mask to embed more information, or enhance the robustness | [BibTex](): wang2020deeptag | Wang et al, 2020.9 | accepted by *ACM MM'21* [FakeTagger](https://arxiv.org/pdf/2009.09869.pdf)
 
-2. [FaceGuard: Proactive Deepfake Detection](https://arxiv.org/pdf/2109.05673.pdf)：解决了deeptag的假阳问题 | [BibTex](): yang2021faceguard | Yang, Neil Zhenqiang Gong et al, 2021.9
+2. [FaceGuard: Proactive Deepfake Detection](https://arxiv.org/pdf/2109.05673.pdf)： 对一般处理鲁棒，对deepfake过程脆弱； 但其实就是鲁棒水印的方法，对于不同后处理的组合使用强化学习进行训练，防止过拟合；但任务定义`不太清楚` | [BibTex](): yang2021faceguard | Yang, Neil Zhenqiang Gong et al, 2021.9 -->
 
 [`text`]
 1. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011
