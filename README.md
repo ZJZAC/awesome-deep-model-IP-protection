@@ -24,21 +24,24 @@ Paper & Code
     + [Approaches Based on Muliti-task Learning](#Approaches-Based-on-Muliti-task-Learning) 
 
 + [Black-box DNN Watermarking](#Black-box-DNN-Watermarking)
-    + [Unrelated Trigger & Unrelated Prediction](#Unrelated-Trigger-&-Unrelated-Prediction)
-    + [Related Trigger & Unrelated Prediction](#Related-Trigger-&-Unrelated-Prediction)
-      + [Adversarial Examples](#Adversarial-Examples)
-    + [Clean Image & Unrelated Prediction](#Clean-Image-&-Unrelated-Prediction)
-    + [Other Attempts with Unrelated Prediction](#Other-Attempts-with-Unrelated-Prediction)
+    + [Attempts with Unrelated Prediction ](#Attempts-with-Unrelated-Prediction) 
+      + [Unrelated Trigger & Unrelated Prediction](#Unrelated-Trigger-&-Unrelated-Prediction)
+      + [Related Trigger & Unrelated Prediction](#Related-Trigger-&-Unrelated-Prediction)
+        + [Adversarial Examples](#Adversarial-Examples)
+      + [Clean Image & Unrelated Prediction](#Clean-Image-&-Unrelated-Prediction)
+      + [Other Attempts with Unrelated Prediction](#Other-Attempts-with-Unrelated-Prediction)
     + [Attempts with Related Prediction ](#Attempts-with-Related-Prediction) 
     + [Attempts with Clean Prediction ](#Attempts-with-Clean-Prediction) 
 
++ [Applications](#Applications)
+    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) | [Image Caption](#Image-Caption) | [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLP](#NLP) | [GNN](#GNN) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Document Analysis](#Document-Analysis) | [3D](#3D)
+    
 + [Evaluation](#Evaluation)
 + [Security](#Security)
     + [Model Modifications](#Model-Modifications) ([Fine-tuning](#Fine-tuning), [Model Pruning or Parameter Pruning](#Model-Pruning-o-Parameter-Pruning), [Model Compression](#Model-Compression), [Model Retraining](#Model-Retraining))
      | [Removal Attack](#Removal-Attack) | [Collusion Attack](#Collusion-Attack) | [Overwriting Attack](#Overwriting-Attack) | [Evasion Attack](#Evasion-Attack) | [Ambiguity Attack](#Ambiguity-Attack) | [Surrogate Model Attack / Model Stealing Attack](#Surrogate-Model-Attack-/-Model-Stealing-Attack) 
 
-+ [Applications](#Applications)
-    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) | [Image Caption](#Image-Caption) | [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLP](#NLP) | [GNN](#GNN) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Document Analysis](#Document-Analysis) | [3D](#3D)
+
 
 + [Identification Tracing](#DNN-Verification)
     + [Fingerprints](#Fingerprints)
