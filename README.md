@@ -414,6 +414,9 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf):  towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9
 
+3. [Tracing Text Provenance via Context-Aware Lexical Substitution]()
+
+4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | | He et al, AAAI'20
 
 ## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
@@ -461,15 +464,21 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 
 ## <span id="NLP">NLP</span>
-<!-- 1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12 -->
+1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12
 
 2. [Adversarial Watermarking Transformer Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf): 和模型水印对于攻击的定义有所不同 towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9 *S&P21*
 
+3. [Tracing Text Provenance via Context-Aware Lexical Substitution]()
+
 <!-- 3. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011 -->
 
-1. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]() | machine translation 
+4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) | | He et al, AAAI'20
+
+
+3. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]() | machine translation 
 
 1. [Protecting Your NLG Models with Semantic and Robust Watermarks](https://openreview.net/pdf?id=VuW5ojKGI43) | xiang2021protecting | Xiang et al, ICLR 2022 withdraw
+
 
 ## <span id="Document-Analysis">Document Analysis </span>
 
