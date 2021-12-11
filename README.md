@@ -422,7 +422,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | | He et al, AAAI'22
 
 ## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
-1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning* [Yiming]
+1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'20](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
 
 
