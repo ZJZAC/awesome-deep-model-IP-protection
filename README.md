@@ -34,7 +34,7 @@ Paper & Code
     + [Attempts with Clean Prediction ](#Attempts-with-Clean-Prediction) 
 
 + [Applications](#Applications)
-    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) | [Image Caption](#Image-Caption) | [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLG](#NLG) | [GNN](#GNN) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Document Analysis](#Document-Analysis) | [3D](#3D)
+    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) | [Image Captioning](#Image-Captioning) | [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLG](#NLG) | [GNN](#GNN) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Document Analysis](#Document-Analysis) | [3D](#3D)
     
 + [Evaluation](#Evaluation)
 + [Robustness & Security](#Robustness-&-Security)
@@ -60,7 +60,7 @@ Paper & Code
 
 2. [A Survey on Model Watermarking Neural Networks](https://arxiv.org/pdf/2009.12153.pdf)： This document at hand provides the first extensive literature review on ML model watermarking schemes and attacks against them.  | [BibTex](): boenisch2020survey | Franziska Boenisch, 2020.9
 
-3. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://dl.acm.org/doi/abs/10.1145/3453688.3461752)： This paper attempts to provide a review of the existing DNN IP protection works and also an outlook. | [BibTex](): xue2020dnn | Xue et al, *GLSVLSI '21: Proceedings of the 2021 on Great Lakes Symposium on VLSI* 2020.11 [TAI]()
+3. [DNN Intellectual Property Protection: Taxonomy, Methods, Attack Resistance, and Evaluations](https://dl.acm.org/doi/abs/10.1145/3453688.3461752)： This paper attempts to provide a review of the existing DNN IP protection works and also an outlook. | [BibTex](): xue2020dnn | Xue et al, *GLSVLSI '21: Proceedings of the 2021 on Great Lakes Symposium on VLSI* 2020.11 [TAI](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9645219)
 
 4. [A survey of deep neural network watermarking techniques](https://arxiv.org/pdf/2103.09274.pdf) | [BibTex](): li2021survey | Li et al, 2021.3
 
@@ -316,8 +316,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf)：thefirst backdoor-based， abstract image; 补充材料： From Private to Public Verifiability, Zero-Knowledge Arguments. | [Code](https://github.com/adiyoss/WatermarkNN) | [BibTex](): adi2018turning | Adi et al, *27th {USENIX} Security Symposium* 2018
 
-2. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark
-schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
+2. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
 
 3. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
@@ -416,7 +415,7 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 3. [Tracing Text Provenance via Context-Aware Lexical Substitution]() | Yang et al, AAAI'22
 
-4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | | He et al, AAAI'22
+4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | he2021protecting | He et al, AAAI'22
 
 ## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'20](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
@@ -429,11 +428,13 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 
 2. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
 
-3. [Watermarking Deep Neural Networks in Image Processing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9093125)：Image Peocessing, using the trigger pair, target label replaced by target image; inspired by Adi and deepsigns | [BibTex](): quan2020watermarking | Quan et al, *TNNLS* 2020
+3. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9222304)：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
 
-4. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9222304)：Image Peocessing, similar to [1] but exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
+4. [Watermarking Deep Neural Networks in Image Processing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9093125)：Image Peocessing, using the unrelated trigger pair, target label replaced by target image; inspired by Adi and deepsigns | [BibTex](): quan2020watermarking | Quan et al, *TNNLS* 2020
 
-## <span id="Image-Generation">Image Generation</span>
+
+
+## <span id="Image-Generation">Image Generation</span> [shown in fingerprints]
 1. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes | [Empirical Study](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
 
 2. [Responsible Disclosure of Generative Models Using Scalable Fingerprinting](https://arxiv.org/pdf/2012.08726.pdf): 和1的目的一样，具体细节diff在看 | [BibTex](): yu2020responsible | Yu et al, 2020.12
@@ -448,27 +449,35 @@ schemes | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Com
 <!-- ## <span id="Semantic-segmentation">Semantic segmentation</span>
 1. [Access Control Using Spatially Invariant Permutation of Feature Maps for Semantic Segmentation Models](https://arxiv.org/pdf/2109.01332.pdf): correct permutation with correct key | ito2021access, AprilPyone et al, 2021.9 [To do]() -->
 
-## <span id="Image-Captionn">Image Caption</span>
-1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](): lim2020protect  | Lim et al, 2020.8 (surrogate model attck) | [Pattern Recognition](https://reader.elsevier.com/reader/sd/pii/S0031320321004659?token=A0BD59797E19F9A8A58426F36C1075E497A757D5E5990907924D2B4FE9217F3C5382B02807A5C5308C81C90F14944567&originRegion=us-east-1&originCreation=20210905073628) *2021.8*
-
 
 ## <span id="Automatic-Speech-Recognition(ASR)">Automatic Speech Recognition (ASR)</span>
-1. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex]: chen2020specmark | Chen et al, *Interspeech* 2020
+1. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers (related square); using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled | Jia et al, *30th USENIX* 2020
 
-2. [Entangled Watermarks as a Defense against Model Extraction ](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled | Jia et al, *30th USENIX* 2020
+2. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex]: chen2020specmark | Chen et al, *Interspeech* 2020
 
 3. [Speech Pattern based Black-box Model Watermarking for Automatic Speech Recognition](https://arxiv.org/pdf/2110.09814.pdf) | [BibTex](): chen2021speech | Chen et al, 2021.10
 
 ## <span id="NLG">NLG</span>
-1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): NLP | Fu et al, 2020.12
+### <span id="Sentiment-Classification">Sentiment Classification</span>
+1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): sentiment analysis (sentence-iunputted calssification task) | Fu et al, 2020.12
 
-2. [Adversarial Watermarking Transformer Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf): 和模型水印对于攻击的定义有所不同 towards marking and tracing the provenance of machine-generated text ; While the main purpose of model watermarking is to prove ownership and protect against model stealing or extraction, our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. | [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9 *S&P21*
+### <span id="Image-Captioning">Image Captioning</span>
+1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](): lim2020protect  | Lim et al, 2020.8 (surrogate model attck) | [Pattern Recognition](https://reader.elsevier.com/reader/sd/pii/S0031320321004659?token=A0BD59797E19F9A8A58426F36C1075E497A757D5E5990907924D2B4FE9217F3C5382B02807A5C5308C81C90F14944567&originRegion=us-east-1&originCreation=20210905073628) *2021.8*
 
-3. [Tracing Text Provenance via Context-Aware Lexical Substitution]() | Yang et al, AAAI'22
+4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
 
-4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | [BibTex](): he2021protecting | He et al, AAAI'22
+### <span id="Machine-Translation">Machine-Translation</span>
+4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
 
-<!-- 3. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011 -->
+3. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220): backdooring with unrelated prediction, make it in RL but fails in machine translation task and regression; the choice of metric? | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* 
+
+
+
+2. [Adversarial Watermarking Transformer Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf): 和模型水印对于攻击的定义有所不同 towards marking and tracing the provenance of machine-generated text; our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. Transformer| [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9 *S&P21*
+
+3. [Tracing Text Provenance via Context-Aware Lexical Substitution](https://arxiv.org/pdf/2112.07873.pdf) | Yang et al, AAAI'22
+
+4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
 
 3. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]() | machine translation 
 
@@ -523,7 +532,7 @@ provide a proof of theft; verify model's origin
 
 2. [Attributing Fake Images to GANs: Learning and Analyzing GAN Fingerprints](https://arxiv.org/pdf/1811.08180.pdf): We replace their hand-crafted fingerprint (of [1]) formulation with a learning-based one, decoupling model fingerprint from image fingerprint, and show superior performances in a variety of experimental conditions. | [Supplementary Material](https://openaccess.thecvf.com/content_ICCV_2019/supplemental/Yu_Attributing_Fake_Images_ICCV_2019_supplemental.pdf) | [Code](https://github.com/ningyu1991/GANFingerprints) | [Ref Code](https://github.com/cleverhans-lab/deepfake_attribution) | [BibTex]: yu2019attributing | [Homepage](https://ningyu1991.github.io/) | Yu et al, *ICCV* 2019
 
-3. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes; proactive method for deepfake detection; leverage [4] | [Empirical Study](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
+3. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes; proactive method for deepfake detection; leverage [4] | [[Empirical Study]](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) [[ICC'21 oral]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yu_Artificial_Fingerprinting_for_Generative_Models_Rooting_Deepfake_Attribution_in_Training_ICCV_2021_paper.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
 
 4. [Responsible Disclosure of Generative Models Using Scalable Fingerprinting](https://arxiv.org/pdf/2012.08726.pdf): 和5的目的一样，具体细节diff在看 | [BibTex](): yu2020responsible | Yu et al, 2020.12
 
@@ -533,6 +542,9 @@ provide a proof of theft; verify model's origin
 
 8. [A Stealthy and Robust Fingerprinting Scheme for Generative Models](https://arxiv.org/pdf/2106.11760.pdf): We propose a new backdoor embedding approach with Unique-Triplet Loss and fine-grained categorization to enhance the effectiveness of our fingerprints. | [BibTex](): guanlin2021stealthy | Li et al, 2021.6
 
+9. [Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks](https://dl.acm.org/doi/pdf/10.1145/3485832.3485838) | Hu et al, *ACSAC'21*
+
+
 ### <span id="Dataset">Dataset</span>
 1. [Open-sourced Dataset Protection via Backdoor Watermarking](https://arxiv.org/pdf/2010.05821.pdf): use a hypothesis test guided method for dataset verification based on the posterior probability generated by the suspicious third-party model of the benign samples and their correspondingly watermarked samples  | [BibTex](): li2020open | Li ea al, *NeurIPS Workshop on Dataset Curation and Security* 2020 [Yiming]
 
@@ -540,7 +552,7 @@ provide a proof of theft; verify model's origin
 
 3. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): 化敌为友，巧用攻击 [To do]():  the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP) 对IP的新定义，responsible 
 
-4. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): we identify stolen models because they possess knowledge contained in the private training set of the victim; model stealing attack;  | [Code](https://github.com/cleverhans-lab/dataset-inference) | [BibTex](): maini2021dataset | Maini et al, *International Conference on Learning Representations (ICLR)* 2021
+4. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): we identify stolen models because they possess knowledge contained in the private training set of the victim; model stealing attack; `` | [Code](https://github.com/cleverhans-lab/dataset-inference) | [BibTex](): maini2021dataset | Maini et al, *International Conference on Learning Representations (ICLR)* 2021
 
 5. [EMA: Auditing Data Removal from Trained Models](https://arxiv.org/pdf/2109.03675.pdf)；to measure if certain data are memorized by the trained model. 作为水印或指纹的评价测试工具？
 
@@ -1005,8 +1017,8 @@ Shall distinguishing surrogate model attack and inference attack
 10. [Stateful Detection of Model Extraction Attacks](https://arxiv.org/pdf/2107.05166.pdf) detection-based approach | [To do]()
 
 
+# <span id="Perspective">Perspective</span> 
 
-# Perspective
 ## Digital Rights Management (DRM)
 1. [Survey on the Technological Aspects of Digital Rights Management](https://link.springer.com/content/pdf/10.1007%2F978-3-540-30144-8_33.pdf): Digital Rights Management (DRM) has emerged as a multidisciplinary measure to protect the copyright of content owners and to facilitate the consumption of digital content. | [BibTex](): ku2004survey | Ku et al, *International Conference on Information Security* 2004
 
@@ -1062,9 +1074,7 @@ threats from side-channel attacks
 ## Graph Watermarking
 
 ## Privacy Risk (inference atteck) 
-1. [Robust Membership Encoding: Inference Attacks and Copyright Protection for Deep Learning](https://arxiv.org/pdf/1909.12982.pdf)
-
-
+1. [Robust Membership Encoding: Inference Attacks and Copyright Protection for Deep Learning](https://arxiv.org/pdf/1909.12982.pdf)： first paper？ | *AsiaCCS‘20*
 
 1. [Privacy risk in machine learning: Analyzing the connection to overfitting](https://arxiv.org/pdf/1709.01604.pdf): This paper examines the effect that overfitting and influence have on the ability of an attacker to learn information about the training data from machine learning models, either through training set membership inference or attribute inference attacks; our formal analysis also shows that overfitting is not necessary for these attacks and begins to shed light on what other factors may be in play | [BibTex](): yeom2018privacy| Yeom et al, *31st Computer Security Foundations Symposium (CSF)* 2018
 
@@ -1085,3 +1095,5 @@ threats from side-channel attacks
 [Tips]
 - `Specific or General, which is better for DNN watermarking or other techniques`
 - `Similar to backdooring, what are the remaining techniques for us to leverage with positive purpose?`
+- `external features may be robust to extraction attack, but prone to inference attack?`
+- `white-box watermarking method is inherently fragile to model extraction attack`
