@@ -248,7 +248,7 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 of neural networks to “memorize” random noise | [BibTex](): zhang2016understanding | Zhang et al, 2016.11
 
 # <span id="White-box-DNN-Watermarking">White-box DNN Watermarking</span>
-## First Attempt
+## <span id="First-Attempt">First Attempt</span>
 1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082)：第一篇模型水印工作 | [Code](https://github.com/yu4u/dnn-watermark) | [BibTex]): uchida2017embedding | Uchia et al, *ICMR* 2017.1
 
 2. [Digital Watermarking for Deep Neural Networks](https://arxiv.org/pdf/1802.02601.pdf)：Extension of [1] | [BibTex](): nagai2018digital | Nagai et al, 2018.2
@@ -310,8 +310,8 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 3. [TrojanNet: Embedding Hidden Trojan Horse Models in Neural Networks](https://arxiv.org/pdf/2002.10078.pdf): We show that this opaqueness provides an opportunity for adversaries to embed unintended functionalities into the network in the form of Trojan horses; Our method utilizes excess model capacity to simultaneously learn a public and secret task in a single network | [Code](https://github.com/wrh14/trojannet) | [NeurIPS2021 submission](https://arxiv.org/pdf/2002.10078.pdf) | [BibTex](): guo2020trojannet | Guo et al, 2020.2
 
-## Black-box DNN Watermarking (Input-output Style)
-
+<!-- ## Black-box DNN Watermarking (Input-output Style) -->
+# <span id="Black-box-DNN-Watermarking">Black-box DNN Watermarking</span>
 ## <span id="Unrelated-Trigger-&-Unrelated-Prediction">Unrelated Trigger & Unrelated Prediction</span>
 
 1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf)：thefirst backdoor-based， abstract image; 补充材料： From Private to Public Verifiability, Zero-Knowledge Arguments. | [Code](https://github.com/adiyoss/WatermarkNN) | [BibTex](): adi2018turning | Adi et al, *27th {USENIX} Security Symposium* 2018
@@ -421,7 +421,6 @@ to produce the watermarked architecture and a verification key vk; the owner col
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'20](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
 
-
 # <span id="Applications">Applications</span>
 ## <span id="Image-Processing">Image Processing</span>
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](): zhang2020model | Zhang et al, *AAAI* 2020.2
@@ -457,21 +456,20 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 3. [Speech Pattern based Black-box Model Watermarking for Automatic Speech Recognition](https://arxiv.org/pdf/2110.09814.pdf) | [BibTex](): chen2021speech | Chen et al, 2021.10
 
-## <span id="NLG">NLG</span>
-### <span id="Sentiment-Classification">Sentiment Classification</span>
+
+## <span id="NLP">NLP</span> [[link]](https://blog.csdn.net/weixin_44517291/article/details/115508909)
+### <span id="Sentence-Classification">`Sentence Classification`</span>
 1. [Watermarking Neural Language Models based on Backdooring](https://github.com/TIANHAO-WANG/nlm-watermark/blob/master/nlpwatermark.pdf): sentiment analysis (sentence-iunputted calssification task) | Fu et al, 2020.12
 
-### <span id="Image-Captioning">Image Captioning</span>
-1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](): lim2020protect  | Lim et al, 2020.8 (surrogate model attck) | [Pattern Recognition](https://reader.elsevier.com/reader/sd/pii/S0031320321004659?token=A0BD59797E19F9A8A58426F36C1075E497A757D5E5990907924D2B4FE9217F3C5382B02807A5C5308C81C90F14944567&originRegion=us-east-1&originCreation=20210905073628) *2021.8*
+2. [Robust Black-box Watermarking for Deep Neural Network using Inverse Document Frequency](https://arxiv.org/pdf/2103.05590.pdf): modified text as trigger;  divided into the following three categories: Watermarking the training data, network's parameters, model's output; Dataset: IMDB users' reviews sentiment analysis, HamSpam spam detraction | [BibTex](): yadollahi2021robust | Yadollahi et al, 2021.3
 
-4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
+### <span id="Machine-Translation">`Machine-Translation`</span>
+1. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) attack can be referenced; watermark forging? | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]() | machine translation 
 
-### <span id="Machine-Translation">Machine-Translation</span>
-4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
+1. [Protecting Your NLG Models with Semantic and Robust Watermarks](https://openreview.net/pdf?id=VuW5ojKGI43): re | xiang2021protecting | Xiang et al, ICLR 2022 withdraw  [New Arxiv](https://arxiv.org/pdf/2112.05428.pdf)
 
-3. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220): backdooring with unrelated prediction, make it in RL but fails in machine translation task and regression; the choice of metric? | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* 
-
-
+### <span id="Language-Generation">`Language Generation`</span>
+1. [Watermarking the outputs of structured prediction with an application in statistical machine translation](https://www.aclweb.org/anthology/D11-1126.pdf): proposed a method to watermark the outputs of machine learning models, especially machine translation, to be distinguished from the human-generated productions. | [BibTex](): venugopal2011watermarking | Venugopal et al, *Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing* 2011
 
 2. [Adversarial Watermarking Transformer Towards Tracing Text Provenance with Data Hiding](https://arxiv.org/pdf/2009.03015.pdf): 和模型水印对于攻击的定义有所不同 towards marking and tracing the provenance of machine-generated text; our language watermarking scheme is designed to trace provenance and to prevent misuse. Thus, it should be consistently present in the output, not only a response to a trigger set. Transformer| [BibTex](): abdelnabi2020adversarial | Abdelnabi et al, 2020.9 *S&P21*
 
@@ -479,14 +477,10 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
 
-3. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]() | machine translation 
+## <span id="Image-Captioning">Image Captioning</span>
+1. [Protect, Show, Attend and Tell: Empower Image Captioning Model with Ownership Protection](https://arxiv.org/pdf/2008.11009.pdf)：Image Caption | [BibTex](): lim2020protect  | Lim et al, 2020.8 (surrogate model attck) | [Pattern Recognition](https://reader.elsevier.com/reader/sd/pii/S0031320321004659?token=A0BD59797E19F9A8A58426F36C1075E497A757D5E5990907924D2B4FE9217F3C5382B02807A5C5308C81C90F14944567&originRegion=us-east-1&originCreation=20210905073628) *2021.8*
 
-1. [Protecting Your NLG Models with Semantic and Robust Watermarks](https://openreview.net/pdf?id=VuW5ojKGI43) | xiang2021protecting | Xiang et al, ICLR 2022 withdraw  [New Arxiv](https://arxiv.org/pdf/2112.05428.pdf)
-
-
-## <span id="Document-Analysis">Document Analysis </span>
-
-1. [Robust Black-box Watermarking for Deep Neural Network using Inverse Document Frequency](https://arxiv.org/pdf/2103.05590.pdf): modified text as trigger;  divided into the following three categories: Watermarking the training data, network's parameters, model's output; Dataset: IMDB users' reviews, HamSpam spam detraction | [BibTex](): yadollahi2021robust | Yadollahi et al, 2021.3
+2. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
 
 
 ## 3D
