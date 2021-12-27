@@ -224,7 +224,7 @@ Paper & Code
 2. [Hierarchical Authorization of Convolutional Neural
 Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9497716): we refer to differential privacy and use the Laplace mechanism to perturb the output of the model to vary degrees | [BibTex](): luo2021hierarchical | Luo et al, *IEEE Signal Processing Letters 2021*
 
-# <span id="Model-Retrieval">Model Retrieval</span>
+# <span id="Model-Retrieval">Model Retrieval</span> [^](#back)
 
 1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
