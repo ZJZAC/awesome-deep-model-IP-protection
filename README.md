@@ -2,8 +2,7 @@ Paper & Code
 ========================
 **Works for deep model intellectual property (IP) protection.**
 
-
-# Contents 
+## <span id="back">Contents</span>
 - [Survey](#Survey)
 - [Preliminary](#Preliminary)
   + [IP Plagiarism](#IP-Plagiarism) | [IP Security](#IP-Security)
@@ -16,14 +15,14 @@ Paper & Code
 
 + [Model Retrieval](#Model-Retrieval)
 
-+ [DNN Watermarking Mechanism](#DNN-Watermarking-Mechanism)
-+ [White-box DNN Watermarking](#White-box-DNN-Watermarking)
++ [DNN Watermarking](#DNN-Watermarking-Mechanism)
+  + [White-box DNN Watermarking](#White-box-DNN-Watermarking)
     + [First Attempt](#First-Attempt)
     + [Improvement](#Improvement)
       + [Loss Constrains](#Loss-Constrains) | [Verification Approach](#Verification-Approach)  | [Training Strategies](#Training-Strategies)
     + [Approaches Based on Muliti-task Learning](#Approaches-Based-on-Muliti-task-Learning) 
 
-+ [Black-box DNN Watermarking](#Black-box-DNN-Watermarking)
+  + [Black-box DNN Watermarking](#Black-box-DNN-Watermarking)
     + [Attempts with Unrelated Prediction ](#Attempts-with-Unrelated-Prediction) 
       + [Unrelated Trigger & Unrelated Prediction](#Unrelated-Trigger-&-Unrelated-Prediction)
       + [Related Trigger & Unrelated Prediction](#Related-Trigger-&-Unrelated-Prediction)
@@ -33,14 +32,13 @@ Paper & Code
     + [Attempts with Related Prediction ](#Attempts-with-Related-Prediction) 
     + [Attempts with Clean Prediction ](#Attempts-with-Clean-Prediction) 
 
-+ [Applications](#Applications)
-    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) | [Image Captioning](#Image-Captioning) | [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLG](#NLG) | [GNN](#GNN) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Document Analysis](#Document-Analysis) | [3D](#3D)
+  + [Applications](#Applications)
+    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) |  [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLP](#NLP) | [Image Captioning](#Image-Captioning) | [3D & Graph](#3D-&-Graph) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) 
     
-+ [Evaluation](#Evaluation)
-+ [Robustness & Security](#Robustness-&-Security)
+  + [Evaluation](#Evaluation)
+  + [Robustness & Security](#Robustness-&-Security)
     + [Model Modifications](#Model-Modifications) ([Fine-tuning](#Fine-tuning), [Model Pruning or Parameter Pruning](#Model-Pruning-o-Parameter-Pruning), [Model Compression](#Model-Compression), [Model Retraining](#Model-Retraining))
      | [Removal Attack](#Removal-Attack) | [Collusion Attack](#Collusion-Attack) | [Overwriting Attack](#Overwriting-Attack) | [Evasion Attack](#Evasion-Attack) | [Ambiguity Attack](#Ambiguity-Attack) | [Surrogate Model Attack / Model Stealing Attack](#Surrogate-Model-Attack-/-Model-Stealing-Attack) 
-
 
 
 + [Identification Tracing](#Idetification-Tracing)
@@ -54,7 +52,7 @@ Paper & Code
     + [Digital Rights Management (DRM)](#Digital-Rights-Management(DRM)) | [Hardware](#Hardware) | [Software Watermarking](#Software-Watermarking) | [Software Analysis](#Software-Analysis) | [Graph Watermarking](#Graph-Watermarking) | [Privacy Risk (inference atteck)](#Privacy-Risk(inference-atteck))
 
 
-# <span id="Survey">Survey</span> 
+# <span id="Survey">Survey</span> [^](#back)
 
 1. [Machine Learning IP Protection](https://dl.acm.org/doi/pdf/10.1145/3240765.3270589): Major players in the semiconductor industry provide mechanisms on device to protect the IP at rest and during execution from being copied, altered, reverse engineered, and abused by attackers. 参考硬件领域的保护措施（静态动态） | [BitTex](): cammarota2018machine | Cammarota et al, *Proceedings of the International Conference on Computer-Aided Design(ICCAD)* 2018
 
@@ -81,7 +79,7 @@ Paper & Code
 12. [Selection Guidelines for Backdoor-based Model Watermarking](https://repositum.tuwien.at/bitstream/20.500.12708/18543/1/Lederer%20Isabell%20-%202021%20-%20Selection%20Guidelines%20for%20Backdoor-based%20Model...pdf) 本科毕业论文 | lederer2021selection | Lederer, 2021 
 
 
-# <span id="Preliminary">Preliminary</span>
+# <span id="Preliminary">Preliminary</span> [^](#back)
 
 ## Threats for Intellectual Property of Deep Model 
 ### IP Plagiarism
@@ -137,9 +135,7 @@ Paper & Code
 - posioning attack &　backdoor attack:　refer to [poison ink](https://arxiv.org/pdf/2108.02488.pdf)
 
 
-# <span id="Access-Control">Access Control</span>
-
-
+# <span id="Access-Control">Access Control</span> [^](#back)
 ## User Authentication
 ### Software-level
 [inputting]
@@ -240,14 +236,14 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 
 
-# <span id="DNN-Watermarking-Mechanism">DNN Watermarking Mechanism</span>
+# <span id="DNN-Watermarking-Mechanism">DNN Watermarking</span> [^](#back)
 
 1. [Machine Learning Models that Remember Too Much](https://arxiv.org/pdf/1709.07886.pdf)：redundancy: embedding secret information into network parameters | [BibTex](): song2017machine  | Song et al, *Proceedings of the 2017 ACM SIGSAC Conference on computer and communications security* 2017
 
 2. [Understanding deep learning requires rethinking generalization](https://arxiv.org/pdf/1611.03530.pdf?from=timeline&isappinstalled=0)：overfitting: The capability
 of neural networks to “memorize” random noise | [BibTex](): zhang2016understanding | Zhang et al, 2016.11
 
-# <span id="White-box-DNN-Watermarking">White-box DNN Watermarking</span>
+# <span id="White-box-DNN-Watermarking">White-box DNN Watermarking</span> [^](#back)
 ## <span id="First-Attempt">First Attempt</span>
 1. [Embedding Watermarks into Deep Neural Networks](https://arxiv.org/pdf/1701.04082)：第一篇模型水印工作 | [Code](https://github.com/yu4u/dnn-watermark) | [BibTex]): uchida2017embedding | Uchia et al, *ICMR* 2017.1
 
@@ -311,7 +307,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 3. [TrojanNet: Embedding Hidden Trojan Horse Models in Neural Networks](https://arxiv.org/pdf/2002.10078.pdf): We show that this opaqueness provides an opportunity for adversaries to embed unintended functionalities into the network in the form of Trojan horses; Our method utilizes excess model capacity to simultaneously learn a public and secret task in a single network | [Code](https://github.com/wrh14/trojannet) | [NeurIPS2021 submission](https://arxiv.org/pdf/2002.10078.pdf) | [BibTex](): guo2020trojannet | Guo et al, 2020.2
 
 <!-- ## Black-box DNN Watermarking (Input-output Style) -->
-# <span id="Black-box-DNN-Watermarking">Black-box DNN Watermarking</span>
+# <span id="Black-box-DNN-Watermarking">Black-box DNN Watermarking</span> [^](#back)
 ## <span id="Unrelated-Trigger-&-Unrelated-Prediction">Unrelated Trigger & Unrelated Prediction</span>
 
 1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf)：thefirst backdoor-based， abstract image; 补充材料： From Private to Public Verifiability, Zero-Knowledge Arguments. | [Code](https://github.com/adiyoss/WatermarkNN) | [BibTex](): adi2018turning | Adi et al, *27th {USENIX} Security Symposium* 2018
@@ -421,7 +417,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'20](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
 
-# <span id="Applications">Applications</span>
+# <span id="Applications">Applications</span> [^](#back)
 ## <span id="Image-Processing">Image Processing</span>
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](): zhang2020model | Zhang et al, *AAAI* 2020.2
 
@@ -483,38 +479,34 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack;machine translation, document summarizartion, image captioning | [BibTex](): he2021protecting | He et al, AAAI'22
 
 
-## 3D
+## <span id="3D-&-Graph">3D & Graph</span>
 1. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
-
-## GNN
 1. [Watermarking Graph Neural Networks by Random Graphs](https://arxiv.org/pdf/2011.00512.pdf): Graph Neural Networks (GNN); focus on node classification task | [BibTex](): zhao2020watermarking | Zhao et al, *Interspeech* 2020
 
 2. [Watermarking Graph Neural Networks based on Backdoor Attacks](https://arxiv.org/pdf/2110.11024.pdf): both graph and node classification tasks; backdoor-style; considering suspicious models with different architecture | [BibTex](): xu2021watermarking | Xu et al, 2021.10
 
 
 ## <span id="Federated-Learning">Federated Learning</span>
-1. [WAFFLE: Watermarking in Federated Learning](https://arxiv.org/pdf/2011.00512.pdf): WAFFLE leverages capabilities of the aggregator to embed a backdoor-based watermark by re-training the global model with the watermark during each aggregation round. | [BibTex](): atli2020waffle | Atli et al, 2020.8
+1. [WAFFLE: Watermarking in Federated Learning](https://arxiv.org/pdf/2011.00512.pdf): WAFFLE leverages capabilities of the aggregator to embed a backdoor-based watermark by re-training the global model with the watermark during each aggregation round. considering evasion attack by a detctor, watermark forging attack; client might be malicious, clients not involved in watermarking, and have no access to watermark set. | [BibTex](): atli2020waffle | Atli et al, 2020.8
 
 <!-- 2. [Watermarking Federated Deep Neural Network Models](https://aaltodoc.aalto.fi/bitstream/handle/123456789/43561/master_Xia_Yuxi_2020.pdf?sequence=1): for degree of master, advisor: Buse Atli | [BibTex](): xia2020watermarking | Xia et al, 2020 -->
 
+2. [FedIPR: Ownership Verification for Federated Deep Neural Network Models](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_21.pdf): claim legitimate intellectual property rights (IPR) of FedDNN models, in case that models are illegally copied, re-distributed or misused. | fan2021fedipr, Fan et al, *FTL-IJCAI 2021*
+
 3. [Towards Practical Watermark for Deep Neural Networks in Federated Learning](https://arxiv.org/pdf/2105.03167.pdf): we demonstrate a watermarking protocol for protecting deep neural networks in the setting of FL. [Merkle-Sign: Watermarking Framework for Deep Neural Networks in Federated Learning] | [BibTex](): li2021towards | Li et al, 2021.5
 
-4. [FedIPR: Ownership Verification for Federated Deep Neural Network Models](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_21.pdf): claim legitimate intellectual property rights (IPR) of FedDNN models, in case that models are illegally copied, re-distributed or misused. | fanfedipr, Fan et al, *FTL-IJCAI 2021*
+<!-- 5. [A novel approach to simultaneously improve privacy, efficiency and reliability of federated DNN learning](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_31.pdf): demonstrate that embedding passports resist deep leakage attack and model inversion attack; adding passport can confuse the reconstruction | gunovel, Gu et al, *FTL-IJCAI 2021* -->
 
-5. [A novel approach to simultaneously improve privacy, efficiency and reliability of federated DNN learning](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_31.pdf): demonstrate that embedding passports resist deep leakage attack and model inversion attack without affecting model classification performances. | gunovel, Gu et al, *FTL-IJCAI 2021*
+## <span id="Deep-Reinforcement-Learning">Deep Reinforcement Learning</span>
 
-
-## Deep Reinforcement Learning
 1. [Sequential Triggers for Watermarking of Deep Reinforcement Learning Policies](https://arxiv.org/pdf/1906.01126.pdf): experimental evaluation of watermarking a DQN policy trained in the Cartpole environment | [BibTex](): behzadan2019sequential | Behzadan et al, 2019,6
-
-2. [Temporal Watermarks for Deep Reinforcement Learning Models](https://personal.ntu.edu.sg/tianwei.zhang/paper/aamas2021.pdf): Deep Reinforcement Learning (DRL) | [BibTex](): chen2021temporal | Chen et al, *International Conference on Autonomous Agents and Multiagent Systems* 2021
 
 1. [Yes We can: Watermarking Machine Learning Models beyond Classification](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9505220) | lounici2021yes, Lounici wt al, *2021 IEEE 34th Computer Security Foundations Symposium (CSF)* [To do]()
 
+2. [Temporal Watermarks for Deep Reinforcement Learning Models](https://personal.ntu.edu.sg/tianwei.zhang/paper/aamas2021.pdf): damage-free (related) states | [BibTex](): chen2021temporal | Chen et al, *International Conference on Autonomous Agents and Multiagent Systems* 2021
 
-# <span id="Idetification-Tracing">Identificiton Tracing</span>
-
+# <span id="Idetification-Tracing">Identificiton Tracing</span> [^](#back)
 
 **阐明fingerprints和fingerprinting的不同：一个类似相机噪声，设备指纹；一个是为了进行用户追踪的分配指纹，序列号**
 ## <span id="Fingerprints">Fingerprints</span>
@@ -624,10 +616,7 @@ provide a proof of theft; verify model's origin
 
 13. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
 
-
-
-
-# Integrity verification
+# <span id="Integrity-verification">Integrity verification</span> [^](#back)
 The user may want to be sure of the provenance fo the model in some security applications or senarios
 
 1. [SafetyNets: verifiable execution of deep neural networks on an untrusted cloud](https://proceedings.neurips.cc/paper/2017/file/6048ff4e8cb07aa60b6777b6f7384d52-Paper.pdf): Specifically, SafetyNets develops and implements a  specialized interactive proof (IP) protocol for verifiable execution of a class of deep neural networks,  | [BibTex](): ghodsi2017safetynets | Ghodsi et al, *Proceedings of the 31st International Conference on Neural Information Processing Systems. 2017*
