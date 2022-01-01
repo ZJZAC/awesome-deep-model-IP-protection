@@ -286,6 +286,8 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 2. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](https://arxiv.org/pdf/2107.02961.pdf): solve the vulnerability against pruning, viewpoint of communication | [BibTex](): kuribayashi2021immunization, kuribayashi et al, 2021.7
 
+3. [Fostering The Robustness Of White-box Deep Neural Network Watermarks By Neuron Alignment](https://arxiv.org/pdf/2112.14108.pdf): foster the robustness against the neuron permutation attack [lukas,sok] | [to do]
+
 [security]
 1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation Mechanism]
 
@@ -451,6 +453,8 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [SpecMark: A Spectral Watermarking Framework for IP Protection of Speech Recognition Systems](https://indico2.conference4me.psnc.pl/event/35/contributions/3413/attachments/489/514/Wed-1-8-8.pdf): Automatic Speech Recognition (ASR) | [BibTex]: chen2020specmark | Chen et al, *Interspeech* 2020
 
 3. [Speech Pattern based Black-box Model Watermarking for Automatic Speech Recognition](https://arxiv.org/pdf/2110.09814.pdf) | [BibTex](): chen2021speech | Chen et al, 2021.10
+
+4. [Watermarking of Deep Recurrent Neural Network Using Adversarial Examples to Protect Intellectual Property](https://www.tandfonline.com/doi/pdf/10.1080/08839514.2021.2008613): speech-to-text RNN model | [to do]
 
 
 ## <span id="NLP">NLP</span> [[link]](https://blog.csdn.net/weixin_44517291/article/details/115508909)
@@ -1073,3 +1077,4 @@ threats from side-channel attacks
 - `Similar to backdooring, what are the remaining techniques for us to leverage with positive purpose?`
 - `external features may be robust to extraction attack, but prone to inference attack?`
 - `white-box watermarking method is inherently fragile to model extraction attack`
+- `对抗样本生成次数（距离边界的垂直距离），对抗样本的数量（平行距离），黄金样本？ 经过简单fine-tune就能回到原始模型的性能？ 怎么定义transfer-learning 攻击`
