@@ -510,6 +510,13 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 2. [Temporal Watermarks for Deep Reinforcement Learning Models](https://personal.ntu.edu.sg/tianwei.zhang/paper/aamas2021.pdf): damage-free (related) states | [BibTex](): chen2021temporal | Chen et al, *International Conference on Autonomous Agents and Multiagent Systems* 2021
 
+
+## <span id="Transformer">Transformer</span>
+1. [Protecting Your Pretrained Transformer: Data and Model Co-designed Ownership Verification](): CVPR'22 under review
+
+
+
+
 # <span id="Idetification-Tracing">Identificiton Tracing</span> [^](#back)
 
 **阐明fingerprints和fingerprinting的不同：一个类似相机噪声，设备指纹；一个是为了进行用户追踪的分配指纹，序列号**
@@ -637,6 +644,8 @@ the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign 
 
 
 8. [Fragile Neural Network Watermarking with Trigger Image Set](https://link.springer.com/content/pdf/10.1007%2F978-3-030-82136-4_23.pdf): The watermarked model is sensitive to malicious fine tuning and will produce unstable classification results of the trigger images. | zhu2021fragile, Zhu et al, *International Conference on Knowledge Science, Engineering and Management 2021 (KSEM)*
+
+9. [Multipurpose Watermarking Approach for Copyright and Integrity of Steganographic Autoencoder Models](https://downloads.hindawi.com/journals/scn/2021/9936661.pdf) [to do]()
 
 ## Special
 1. [Minimal Modifications of Deep Neural Networks using Verification](https://easychair-www.easychair.org/publications/download/CWhF): Adi 团队；利用模型维护领域的想法， 模型有漏洞，需要重新打补丁，但是不能使用re-train, 如何修改已经训练好的模型；所属领域：model verification, model repairing ...; <font color=red>提出了一种移除水印需要多少的代价的评价标准，measure the resistance of model watermarking </font> | [Coide](https://github.com/jjgold012/MinimalDNNModificationLpar2020) | [BibTex](): goldberger2020minimal | Goldberger et al, *LPAR* 2020
@@ -997,7 +1006,7 @@ Shall distinguishing surrogate model attack and inference attack
 10. [Stateful Detection of Model Extraction Attacks](https://arxiv.org/pdf/2107.05166.pdf) detection-based approach | [To do]()
 
 
-# <span id="Perspective">Perspective</span> 
+# <span id="Perspective">Perspective</span> [^](#back)
 
 ## Digital Rights Management (DRM)
 1. [Survey on the Technological Aspects of Digital Rights Management](https://link.springer.com/content/pdf/10.1007%2F978-3-540-30144-8_33.pdf): Digital Rights Management (DRM) has emerged as a multidisciplinary measure to protect the copyright of content owners and to facilitate the consumption of digital content. | [BibTex](): ku2004survey | Ku et al, *International Conference on Information Security* 2004
