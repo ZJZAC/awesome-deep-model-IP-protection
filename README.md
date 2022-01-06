@@ -429,7 +429,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Watermarking Deep Neural Networks in Image Processing](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9093125)：Image Peocessing, using the unrelated trigger pair, target label replaced by target image; inspired by Adi and deepsigns | [BibTex](): quan2020watermarking | Quan et al, *TNNLS* 2020
 
-
+5. [Protecting Deep Cerebrospinal Fluid Cell Image Processing Models with Backdoor and Semi-Distillation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9647115): [to do]()
 
 ## <span id="Image-Generation">Image Generation</span> [shown in fingerprints]
 1. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes | [Empirical Study](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
