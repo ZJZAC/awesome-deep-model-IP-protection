@@ -78,6 +78,7 @@ Paper & Code
 
 12. [Selection Guidelines for Backdoor-based Model Watermarking](https://repositum.tuwien.at/bitstream/20.500.12708/18543/1/Lederer%20Isabell%20-%202021%20-%20Selection%20Guidelines%20for%20Backdoor-based%20Model...pdf) 本科毕业论文 | lederer2021selection | Lederer, 2021 
 
+13. [Survey on the Technological Aspects of Digital Rights Management](http://profs.sci.univr.it/~giaco/download/Watermarking-Obfuscation/survey%20DRM.pdf) | William Ku, Chi-Hung Chi | International Conference on Information Security,2004
 
 # <span id="Preliminary">Preliminary</span> [^](#back)
 
