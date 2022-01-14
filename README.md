@@ -503,6 +503,10 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 <!-- 5. [A novel approach to simultaneously improve privacy, efficiency and reliability of federated DNN learning](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_31.pdf): demonstrate that embedding passports resist deep leakage attack and model inversion attack; adding passport can confuse the reconstruction | gunovel, Gu et al, *FTL-IJCAI 2021* -->
 
+4. [Secure Federated Learning Model Verification: A Client-side Backdoor Triggered Watermarking Scheme](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9658998): backdoor-based [to do]()
+
+
+
 ## <span id="Deep-Reinforcement-Learning">Deep Reinforcement Learning</span>
 
 1. [Sequential Triggers for Watermarking of Deep Reinforcement Learning Policies](https://arxiv.org/pdf/1906.01126.pdf): experimental evaluation of watermarking a DQN policy trained in the Cartpole environment | [BibTex](): behzadan2019sequential | Behzadan et al, 2019,6
@@ -541,6 +545,10 @@ provide a proof of theft; verify model's origin
 8. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf): We propose a new backdoor embedding approach with Unique-Triplet Loss and fine-grained categorization to enhance the effectiveness of our fingerprints. | [BibTex](): guanlin2021stealthy | Li et al, 2021.6
 
 9. [Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks](https://dl.acm.org/doi/pdf/10.1145/3485832.3485838) | Hu et al, *ACSAC'21*
+
+10. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf):We introduce a classifier to construct a composite model with the protected GAN | Guanlin Li et al | 2021.6
+
+
 
 
 ### <span id="Dataset">Dataset</span>
