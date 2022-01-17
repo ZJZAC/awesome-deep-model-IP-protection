@@ -235,7 +235,7 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 4. [Similarity of Neural Network Representations Revisited](http://proceedings.mlr.press/v97/kornblith19a/kornblith19a.pdf): 可以衡量不同模型结构学习到的特征表达，那到底是数据集影响还是结构影响呢？[To do]()
 
-
+5. [Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models](https://arxiv.org/pdf/2112.05588.pdf) | Jialong Chen et al, *S&P2022* 
 
 # <span id="DNN-Watermarking-Mechanism">DNN Watermarking</span> [^](#back)
 
