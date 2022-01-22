@@ -1,7 +1,8 @@
 Paper & Code 
 ========================
 **Works for deep model intellectual property (IP) protection.**
-
+  <!-- <br/><img src='./IP-images/220122-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/> -->
+  
 ## <span id="back">Contents</span>
 - [Survey](#Survey)
 - [Preliminary](#Preliminary)
@@ -33,7 +34,7 @@ Paper & Code
     + [Attempts with Clean Prediction ](#Attempts-with-Clean-Prediction) 
 
   + [Applications](#Applications)
-    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) |  [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLP](#NLP) | [Image Captioning](#Image-Captioning) | [3D & Graph](#3D-&-Graph) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) 
+    + [Image Processing](#Image-Processing) | [Image Generation](#Image-Generation) |  [Automatic Speech Recognition (ASR)](#Automatic-Speech-Recognition(ASR)) | [NLP](#NLP) | [Image Captioning](#Image-Captioning) | [3D & Graph](#3D-&-Graph) | [Federated Learning](#Federated-Learning) | [Deep Reinforcement Learning](#Deep-Reinforcement-Learning) | [Transformer](#Transformer) | [Pretrained Encoders](#Pretrained-Encoders) 
     
   + [Evaluation](#Evaluation)
   + [Robustness & Security](#Robustness-&-Security)
@@ -417,7 +418,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | he2021protecting | He et al, AAAI'22
 
 ## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
-1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'20](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
+1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'22](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
 
 # <span id="Applications">Applications</span> [^](#back)
@@ -517,10 +518,12 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 
 ## <span id="Transformer">Transformer</span>
-1. [Protecting Your Pretrained Transformer: Data and Model Co-designed Ownership Verification](): CVPR'22 under review
+1. [Protecting Your Pretrained Transformer: Data and Model Co-designed Ownership Verification](): CVPR'22 under review [to do]()
 
+## <span id="Pretrained-Encoders">Pretrained Encoders</span>
+1. [Watermarking Pre-trained Encoders in Contrastive Learning](https://arxiv.org/pdf/2201.08217.pdf): [Selling](https://twimlai.com/solutions/features/model-marketplace/) pre-trained encoders;  introduce a task-agnostic loss function to effectively embed into the encoder a backdoor as the watermark.
 
-
+  <br/><img src='./IP-images/220122-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/>
 
 # <span id="Idetification-Tracing">Identificiton Tracing</span> [^](#back)
 
