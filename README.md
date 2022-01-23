@@ -420,6 +420,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 ## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'22](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
+2. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): utilize linear color transformation as shift of the private dataset. Zou et al, 2021.9
 
 # <span id="Applications">Applications</span> [^](#back)
 ## <span id="Image-Processing">Image Processing</span>
@@ -525,6 +526,11 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
   <br/><img src='./IP-images/220122-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/>
 
+2. [StolenEncoder: Stealing Pre-trained Encoders](https://arxiv.org/pdf/2201.05889.pdf): ImageNet encoder, CLIP encoder, and Clarifai’s General Embedding encoder | Yupei Liu, Jinyuan Jia, Hongbin Liu, Neil Zhenqiang Gong | 2022.1
+
+
+
+
 # <span id="Idetification-Tracing">Identificiton Tracing</span> [^](#back)
 
 **阐明fingerprints和fingerprinting的不同：一个类似相机噪声，设备指纹；一个是为了进行用户追踪的分配指纹，序列号**
@@ -568,8 +574,6 @@ provide a proof of theft; verify model's origin
 6. [EMA: Auditing Data Removal from Trained Models](https://arxiv.org/pdf/2109.03675.pdf)；to measure if certain data are memorized by the trained model. 作为水印或指纹的评价测试工具？ | huang2021mathsf, Huang et al, 2021.9
 
 8. [Radioactive data tracing through training](http://proceedings.mlr.press/v119/sablayrolles20a/sablayrolles20a.pdf): Our radioactive mark is resilient to strong data augmentations and variations of the model architecture; Our assumption is different: in our case, we control the training data, but the training process is not controlled; resite to distillation; not satisfy Kerckhoff's principle | [](): sablayrolles2020radioactive | Sablayrolles et al, *ICML* 2020
-
-9. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): utilize linear color transformation as shift of the private dataset. Zou et al, 2021.9
 
 
 9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): Alto, examination for the degree of master | Minh et al, 2021.8 [emperical]()
