@@ -422,6 +422,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 2. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): utilize linear color transformation as shift of the private dataset. | zou2021anti | Zou et al, 2021.9
 
+
 # <span id="Applications">Applications</span> [^](#back)
 ## <span id="Image-Processing">Image Processing</span>
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](): zhang2020model | Zhang et al, *AAAI* 2020.2
@@ -522,48 +523,27 @@ to produce the watermarked architecture and a verification key vk; the owner col
 1. [Protecting Your Pretrained Transformer: Data and Model Co-designed Ownership Verification](): CVPR'22 under review [toto do]()
 
 ## <span id="Pretrained-Encoders">Pretrained Encoders</span>
-1. [Watermarking Pre-trained Encoders in Contrastive Learning](https://arxiv.org/pdf/2201.08217.pdf): [Selling](https://twimlai.com/solutions/features/model-marketplace/) pre-trained encoders;  introduce a task-agnostic loss function to effectively embed into the encoder a backdoor as the watermark. [to do]()
+1. [Watermarking Pre-trained Encoders in Contrastive Learning](https://arxiv.org/pdf/2201.08217.pdf): [Selling](https://twimlai.com/solutions/features/model-marketplace/) pre-trained encoders;  introduce a task-agnostic loss function to effectively embed into the encoder a backdoor as the watermark. | Wu, Yutong and Qiu, Han and Zhang, Tianwei and Qiu, Meikang | wu2022watermarking | 2022.1
 
   <br/><img src='./IP-images/220122-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/>
 
 2. [StolenEncoder: Stealing Pre-trained Encoders](https://arxiv.org/pdf/2201.05889.pdf): ImageNet encoder, CLIP encoder, and Clarifai’s General Embedding encoder | Yupei Liu, Jinyuan Jia, Hongbin Liu, Neil Zhenqiang Gong | liu2022stolenencoder | 2022.1
 
-
+3. [Can’t Steal? Cont-Steal! Contrastive Stealing Attacks Against Image Encoders](https://arxiv.org/pdf/2201.07513.pdf) | Sha, Zeyang and He, Xinlei and Yu, Ning and Backes, Michael and Zhang, Yang | sha2022can | 2022.1
 
 
 # <span id="Idetification-Tracing">Identificiton Tracing</span> [^](#back)
 
 **阐明fingerprints和fingerprinting的不同：一个类似相机噪声，设备指纹；一个是为了进行用户追踪的分配指纹，序列号**
-## <span id="Fingerprints">Fingerprints</span>
+[Fingerprinting vs. Watermarking](https://www.plagiarismtoday.com/2007/10/09/watermarking-vs-fingerprinting-a-war-in-terminology/)
 
-### GAN fingerprints
-provide a proof of theft; verify model's origin
-
-1. [Do gans leave artificial fingerprints?](https://arxiv.org/pdf/1812.11842.pdf): visualize GAN fingerprints based on PRNU, and show their application to GAN source identification, which is hand-crafted  fingerprint formulation | [BibTex](): marra2019gans | Marra et al, *IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
-
-2. [Attributing Fake Images to GANs: Learning and Analyzing GAN Fingerprints](https://arxiv.org/pdf/1811.08180.pdf): We replace their hand-crafted fingerprint (of [1]) formulation with a learning-based one, decoupling model fingerprint from image fingerprint, and show superior performances in a variety of experimental conditions. | [Supplementary Material](https://openaccess.thecvf.com/content_ICCV_2019/supplemental/Yu_Attributing_Fake_Images_ICCV_2019_supplemental.pdf) | [Code](https://github.com/ningyu1991/GANFingerprints) | [Ref Code](https://github.com/cleverhans-lab/deepfake_attribution) | [BibTex]: yu2019attributing | [Homepage](https://ningyu1991.github.io/) | Yu et al, *ICCV* 2019
-
-3. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes; proactive method for deepfake detection; leverage [4] | [[Empirical Study]](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) [[ICC'21 oral]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yu_Artificial_Fingerprinting_for_Generative_Models_Rooting_Deepfake_Attribution_in_Training_ICCV_2021_paper.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
-
-4. [Responsible Disclosure of Generative Models Using Scalable Fingerprinting](https://arxiv.org/pdf/2012.08726.pdf): 和5的目的一样，具体细节diff在看 | [BibTex](): yu2020responsible | Yu et al, 2020.12
-
-5. [Decentralized Attribution of Generative Models](https://arxiv.org/pdf/2010.13974.pdf): Each binary classifier is parameterized by a user-specific key and distinguishes its associated model distribution from the authentic data distribution. We develop sufficient conditions of the keys that guarantee an attributability lower bound.| [Code](https://github.com/ASU-Active-Perception-Group/decentralized_attribution_of_generative_models) | [BibTex](): kim2020decentralized | Kim et al, *ICLR* 2021
-
-7. [Learning to Disentangle GAN Fingerprint for Fake Image Attribution](https://arxiv.org/pdf/2106.08749.pdf): Existing works on fake image attribution mainly rely on a direct classification framework. Without additional supervision, the extracted features could include many content-relevant components and  poorly. | [BibTex](): yang2021learning | Yang et al, 2021.6
-
-8. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf): We propose a new backdoor embedding approach with Unique-Triplet Loss and fine-grained categorization to enhance the effectiveness of our fingerprints. | [BibTex](): guanlin2021stealthy | Li et al, 2021.6
-
-9. [Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks](https://dl.acm.org/doi/pdf/10.1145/3485832.3485838) | Hu et al, *ACSAC'21*
-
-10. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf):We introduce a classifier to construct a composite model with the protected GAN | Guanlin Li et al | 2021.6
-
-
-
-
+## <span id="Fingerprints">Fingerprints</span> [^](#back)
 ### <span id="Dataset">Dataset</span>
-1. [Open-sourced Dataset Protection via Backdoor Watermarking](https://arxiv.org/pdf/2010.05821.pdf): use a hypothesis test guided method for dataset verification based on the posterior probability generated by the suspicious third-party model of the benign samples and their correspondingly watermarked samples  | [BibTex](): li2020open | Li ea al, *NeurIPS Workshop on Dataset Curation and Security* 2020 [Yiming]
+1. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): `put forward` the importance of protecting the training set. 训练数据会泄露，可以用来做模型版权溯源 化敌为友 | [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
 
-2. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): This kind of information leakage can be exploited, for example, by a vendor to build more effective classifiers or to simply acquire trade secrets from a competitor’s apparatus, potentially violating its intellectual property rights. 训练数据会泄露，可以用来做模型版权溯源 化敌为友 | [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
+2. [Radioactive data tracing through training](https://arxiv.org/pdf/2002.00937.pdf): Our radioactive mark is resilient to strong data augmentations and variations of the model architecture; Our assumption is different: in our case, we control the training data, but the training process is not controlled; resite to distillation; not satisfy Kerckhoff's principle | sablayrolles2020radioactive | Sablayrolles et al, *ICML* 2020
+
+1. [Open-sourced Dataset Protection via Backdoor Watermarking](https://arxiv.org/pdf/2010.05821.pdf): use a hypothesis test guided method for dataset verification based on the posterior probability generated by the suspicious third-party model of the benign samples and their correspondingly watermarked samples  | [BibTex](): li2020open | Li ea al, *NeurIPS Workshop on Dataset Curation and Security* 2020 [Yiming]
 
 3. [Robust and Verifiable Information Embedding Attacks to Deep Neural Networks via Error-Correcting Codes](https://arxiv.org/pdf/2010.13751.pdf)： 使用纠错码对trigger进行annotation, 分析了和现有information embedding attack 以及 model watermarking的区别； 可以recover的不只是label, 也可以是训练数据， property， 类似inference attcak | [BibTex](): jia2020robust | Jia et al, 2020.10
 
@@ -571,14 +551,11 @@ provide a proof of theft; verify model's origin
 
 5. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): we identify stolen models because they possess knowledge contained in the private training set of the victim; model stealing attack; `` | [Code](https://github.com/cleverhans-lab/dataset-inference) | [BibTex](): maini2021dataset | Maini et al, *International Conference on Learning Representations (ICLR)* 2021
 
-6. [EMA: Auditing Data Removal from Trained Models](https://arxiv.org/pdf/2109.03675.pdf)；to measure if certain data are memorized by the trained model. 作为水印或指纹的评价测试工具？ | huang2021mathsf, Huang et al, 2021.9
-
-8. [Radioactive data tracing through training](http://proceedings.mlr.press/v119/sablayrolles20a/sablayrolles20a.pdf): Our radioactive mark is resilient to strong data augmentations and variations of the model architecture; Our assumption is different: in our case, we control the training data, but the training process is not controlled; resite to distillation; not satisfy Kerckhoff's principle | [](): sablayrolles2020radioactive | Sablayrolles et al, *ICML* 2020
-
-
 9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): Alto, examination for the degree of master | Minh et al, 2021.8 [emperical]()
 
 10. [Data Protection in Big Data Analysis](https://uwspace.uwaterloo.ca/bitstream/handle/10012/17319/Shafieinejad_Masoumeh.pdf?sequence=1&isAllowed=y): examination for Ph.D | Masoumeh Shafieinejad, 2021.8
+
+6. [EMA: Auditing Data Removal from Trained Models](https://arxiv.org/pdf/2109.03675.pdf)；to measure if certain data are memorized by the trained model. 作为水印或指纹的评价测试工具？ | huang2021mathsf, Huang et al, 2021.9
 
 
 
@@ -604,11 +581,31 @@ provide a proof of theft; verify model's origin
 ### <span id="Deployment">Deployment</span>
 2. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
 
+### GAN fingerprints
+provide a proof of theft; verify model's origin
+
+1. [Do gans leave artificial fingerprints?](https://arxiv.org/pdf/1812.11842.pdf): visualize GAN fingerprints based on PRNU, and show their application to GAN source identification, which is hand-crafted  fingerprint formulation | [BibTex](): marra2019gans | Marra et al, *IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
+
+2. [Attributing Fake Images to GANs: Learning and Analyzing GAN Fingerprints](https://arxiv.org/pdf/1811.08180.pdf): We replace their hand-crafted fingerprint (of [1]) formulation with a learning-based one, decoupling model fingerprint from image fingerprint, and show superior performances in a variety of experimental conditions. | [Supplementary Material](https://openaccess.thecvf.com/content_ICCV_2019/supplemental/Yu_Attributing_Fake_Images_ICCV_2019_supplemental.pdf) | [Code](https://github.com/ningyu1991/GANFingerprints) | [Ref Code](https://github.com/cleverhans-lab/deepfake_attribution) | [BibTex]: yu2019attributing | [Homepage](https://ningyu1991.github.io/) | Yu et al, *ICCV* 2019
+
+3. [Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data](https://arxiv.org/pdf/2007.08457.pdf): We first embed artificial fingerprints into training data, then validate a surprising discovery on the transferability of such fingerprints from training data to generative models, which in turn appears in the generated deepfakes; proactive method for deepfake detection; leverage [4] | [[Empirical Study]](https://www-inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/projFinalProposed/cs194-26-aek/CS294_26_Final_Project_Write_Up.pdf) [[ICC'21 oral]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yu_Artificial_Fingerprinting_for_Generative_Models_Rooting_Deepfake_Attribution_in_Training_ICCV_2021_paper.pdf) | [BibTex](): yu2020artificial | Yu et al, 2020.7
+
+4. [Responsible Disclosure of Generative Models Using Scalable Fingerprinting](https://arxiv.org/pdf/2012.08726.pdf): 和5的目的一样，具体细节diff在看 | [[code]](https://github.com/ningyu1991/ScalableGANFingerprints) | [BibTex](): yu2020responsible | Yu et al, 2020.12, ICLR'22
+
+5. [Decentralized Attribution of Generative Models](https://arxiv.org/pdf/2010.13974.pdf): Each binary classifier is parameterized by a user-specific key and distinguishes its associated model distribution from the authentic data distribution. We develop sufficient conditions of the keys that guarantee an attributability lower bound.| [Code](https://github.com/ASU-Active-Perception-Group/decentralized_attribution_of_generative_models) | [BibTex](): kim2020decentralized | Kim et al, *ICLR* 2021
+
+7. [Learning to Disentangle GAN Fingerprint for Fake Image Attribution](https://arxiv.org/pdf/2106.08749.pdf): Existing works on fake image attribution mainly rely on a direct classification framework. Without additional supervision, the extracted features could include many content-relevant components and  poorly. | [BibTex](): yang2021learning | Yang et al, 2021.6
+
+8. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf): We propose a new backdoor embedding approach with Unique-Triplet Loss and fine-grained categorization to enhance the effectiveness of our fingerprints. | [BibTex](): guanlin2021stealthy | Li et al, 2021.6
+
+9. [Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks](https://dl.acm.org/doi/pdf/10.1145/3485832.3485838) | Hu et al, *ACSAC'21*
+
+10. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf):We introduce a classifier to construct a composite model with the protected GAN | Guanlin Li et al | 2021.6
 
 
 **阐明fingerprints和fingerprinting的不同：一个类似相机噪声，设备指纹；一个是为了进行用户追踪的分配指纹，序列号**
 
-## <span id="Fingerprinting">Fingerprinting</span>
+## <span id="Fingerprinting">DNN Fingerprinting</span> [^](#back)
 
 1. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID); The main difference between watermarking and fingerprinting is that the WM remains the same for all copies of the IP while the FP is unique for each copy. As such, FPs address the ambiguity of WMs and enables tracking of IP misuse conducted by a specific user. | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019
 
@@ -633,7 +630,9 @@ provide a proof of theft; verify model's origin
 
 12. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP); we propose a teacher model fingerprinting attack to infer the origin of a student model, i.e., the teacher model it transfers from. | [BibTex](): chen2021teacher | Chen et al, 2021.6
 
-13. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan et al, *European Symposium on Research in Computer Security 2021 (B类)*
+13. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26): 对抗样本做水印的拓展，TAFA enables model fingerprinting for DNNs on a variety of downstream tasks including but not limited to classification, regression and generative  modeling, with no assumption on training data access. | Pan, Xudong and Zhang, Mi and Lu, Yifan and Yang, Min | pan2021tafa |  *European Symposium on Research in Computer Security 2021 (B类)*
+
+14. [UTAF: A Universal Approach to Task-Agnostic Model Fingerprinting](https://arxiv.org/pdf/2201.07391.pdf)  | Pan, Xudong and Zhang, Mi and Yan, Yifan | pan2022utaf | 2022.1
 
 
 # <span id="Integrity-verification">Integrity verification</span> [^](#back)
