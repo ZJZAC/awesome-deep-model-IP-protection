@@ -368,14 +368,22 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [Visual Decoding of Hidden Watermark in Trained Deep Neural Network](https://ieeexplore.ieee.org/abstract/document/8695386)：The proposed method has a remarkable feature for watermark detection process, which can decode the embedded pattern cumulatively and visually. 关注提取端，进行label可视化成二位图片，增加关联性 | [BibTex](): sakazawa2019visual | Sakazawa et al, * IEEE Conference on Multimedia Information Processing and Retrieval (MIPR)* 2019
 
 ### Robustness
+[post-processing]
+
+1. [Robust and Verifiable Information Embedding Attacks to Deep Neural Networks via Error-Correcting Codes](https://arxiv.org/pdf/2010.13751.pdf)： 使用纠错码对trigger进行annotation, 分析了和现有information embedding attack 以及 model watermarking的区别； 可以recover的不只是label, 也可以是训练数据， property， 类似inference attcak | Jia, Jinyuan and Wang, Binghui and Gong, Neil Zhenqiang | [BibTex](): jia2020robust | Jia et al, 2020.10
+
+[pre-processing]
+
+1. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
+
+[model extratcion] tramer2016stealing
 1. [DAWN: Dynamic Adversarial Watermarking of Neural Networks](https://arxiv.org/pdf/1906.00830.pdf): dynamically changing the responses for a small subset of queries (e.g., <0.5%) from API clients | [BibTex](): szyller2019dawn | Szyller et al, 2019,6
 
-2. [Entangled Watermarks as a Defense against Model Extraction](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data | [Code](https://github.com/cleverhans-lab/entangled-watermark) | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
+2. [Entangled Watermarks as a Defense against Model Extraction](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data; location的确定取决于梯度，还是很全面分析了一些adaptive attack 值得进一步得阅读； outlier dection可以参考 | [Code](https://github.com/cleverhans-lab/entangled-watermark) | Jia, Hengrui and Choquette-Choo, Christopher A and Chandrasekaran, Varun and Papernot, Nicolas | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
 
-3. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
+3. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): 互信息的概念， T-test定义可以借鉴；watermark的location指哪些层可以用来fine-tune；P7 take home； feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | Tang, Ruixiang and Jin, Hongye and Wigington, Curtis and Du, Mengnan and Jain, Rajiv and Hu, Xia | tang2021my | ICLR2020 submission
 
-[transferabilty--robustness against attack from APIs]
-4. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | ICLR2020 submission
+
 
 ### Security
 1. [Secure neural network watermarking protocol against forging attack](https://www.jianguoyun.com/p/DVsuU1IQ0J2UCRic_-0D)：noise-like trigger; 引入单向哈希函数，使得用于证明所有权的触发集样本必须通过连续的哈希逐个形成，并且它们的标签也按照样本的哈希值指定; 对overwriting 有其他解释: 本文针对黑盒情况下的forging attack； 如果白盒情况下两个水印同时存在，只要能提供具有单一水印的模型即可，因此简单的再添加一个水印并不构成攻击威胁; [idea]() 模型水印从差的迁移性的角度去考虑，训练的时候见过的trigger能识别但是verification的时候不能识别 | [BibTex](): zhu2020secure | Zhu et al, *EURASIP Journal on Image and Video Processing* 2020.1
@@ -393,7 +401,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 1. [DeepHardMark: Towards Watermarking Neural Network Hardware](): injected model, trigger, target functional blocks together to trigger the special behavior. 多加了一个硬件约束 | AAAI2022 under-review | [toto do]()
 
 
-## <span id="Attempts-with-Related-Prediction">Attempts with Related Prediction </span>
+## <span id="Attempts-with-Related-Prediction">Attempts with Related Prediction </span> [^](#back)
 `[image processing]`
 1. [Watermarking Neural Networks with Watermarked Images](https://ieeexplore.ieee.org/document/9222304)：Image Peocessing,  exclude surrogate model attack | [BibTex](): wu2020watermarking | Wu et al, *TCSVT* 2020
 
@@ -417,7 +425,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Protecting Intellectual Property of Language Generation APIs with Lexical Watermark](https://arxiv.org/pdf/2112.02701.pdf) model extraction attack | he2021protecting | He et al, AAAI'22
 
-## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span>
+## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span> [^](#back)
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'22](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
 2. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): utilize linear color transformation as shift of the private dataset. | zou2021anti | Zou et al, 2021.9
@@ -545,7 +553,6 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 1. [Open-sourced Dataset Protection via Backdoor Watermarking](https://arxiv.org/pdf/2010.05821.pdf): use a hypothesis test guided method for dataset verification based on the posterior probability generated by the suspicious third-party model of the benign samples and their correspondingly watermarked samples  | [BibTex](): li2020open | Li ea al, *NeurIPS Workshop on Dataset Curation and Security* 2020 [Yiming]
 
-3. [Robust and Verifiable Information Embedding Attacks to Deep Neural Networks via Error-Correcting Codes](https://arxiv.org/pdf/2010.13751.pdf)： 使用纠错码对trigger进行annotation, 分析了和现有information embedding attack 以及 model watermarking的区别； 可以recover的不只是label, 也可以是训练数据， property， 类似inference attcak | [BibTex](): jia2020robust | Jia et al, 2020.10
 
 4. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): 化敌为友，巧用攻击 [To do]():  the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP) 对IP的新定义，responsible | chen2021teacher, Chen et al, 2021.6
 
