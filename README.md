@@ -312,7 +312,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 <!-- ## Black-box DNN Watermarking (Input-output Style) -->
 # <span id="Black-box-DNN-Watermarking">Black-box DNN Watermarking</span> [^](#back)
-## <span id="Unrelated-Trigger-&-Unrelated-Prediction">Unrelated Trigger & Unrelated Prediction</span>
+## <span id="Unrelated-Trigger-&-Unrelated-Prediction">Unrelated Trigger & Unrelated Prediction</span> [^](#back)
 
 1. [Turning Your Weakness Into a Strength: Watermarking Deep Neural Networks by Backdooring](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-adi.pdf)：thefirst backdoor-based， abstract image; 补充材料： From Private to Public Verifiability, Zero-Knowledge Arguments. | [Code](https://github.com/adiyoss/WatermarkNN) | [BibTex](): adi2018turning | Adi et al, *27th {USENIX} Security Symposium* 2018
 
@@ -320,7 +320,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 3. [KeyNet An Asymmetric Key-Style Framework for Watermarking Deep Learning Models](https://www.mdpi.com/2076-3417/11/3/999/htm): append a private model after pristine network, the additive model for verification; describe drawbacks of two type triggers, 分析了对不同攻击的原理性解释:ft, pruning, overwriting; 做了laundring的实验 | [BibTex](): jebreel2021keynet| Jebreel et al, *Applied Sciences * 2021
 
-## <span id="Related-Trigger-&-Unrelated-Prediction">Related Trigger & Unrelated Prediction</span>
+## <span id="Related-Trigger-&-Unrelated-Prediction">Related Trigger & Unrelated Prediction</span> [^](#back)
 
 1. [Protecting Intellectual Property of Deep Neural Networks with Watermarking](https://www.researchgate.net/profile/Zhongshu-Gu/publication/325480419_Protecting_Intellectual_Property_of_Deep_Neural_Networks_with_Watermarking/links/5c1cfcd4a6fdccfc705f2cd4/Protecting-Intellectual-Property-of-Deep-Neural-Networks-with-Watermarking.pdf)：Three backdoor-based watermark schemes: specific test string, some pattern of noise | [BibTex](): zhang2018protecting | Zhang et al, *Asia Conference on Computer and Communications Security* 2018
 
@@ -347,13 +347,13 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [Watermarking-based Defense against Adversarial Attacks on Deep Neural Networks](https://faculty.ist.psu.edu/wu/papers/IJCNN.pdf): we propose a new defense mechanism that creates a knowledge gap between attackers and defenders by imposing a designed watermarking system into standard deep neural networks; introduce `randomization` | [BibTex](): liwatermarking | Li et al, 2021.4
 
 
-## <span id="Clean-Image-&-Unrelated-Prediction">Clean Image & Unrelated Prediction</span>
+## <span id="Clean-Image-&-Unrelated-Prediction">Clean Image & Unrelated Prediction</span> [^](#back)
 
 1. [Robust Watermarking of Neural Network with Exponential Weighting](https://arxiv.org/pdf/1901.06151.pdf)： increase the weight value (trained on clean data) exponentially by fine-tuning on combined data set; introduce query modification attack (detect and AE) | [BibTex](): namba2019robust |  et al, *Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security (AisaCCS)* 2019
 
 2. [DeepTrigger: A Watermarking Scheme of Deep Learning Models Based on Chaotic Automatic Data Annotation](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9264250)：fraudulent ownership claim attacks, chaotic automatic data annotation; Anti-counterfeiting | [BibTex](): zhang2020deeptrigger | Zhang et al, * IEEE Access 8* 2020
 
-## <span id="Other-Attempts-with-Unrelated-Prediction">Other Attempts with Unrelated Prediction</span>
+## <span id="Other-Attempts-with-Unrelated-Prediction">Other Attempts with Unrelated Prediction</span> [^](#back)
 ### Fidelity
 1. [Protecting IP of Deep Neural Networks with Watermarking: A New Label Helps](https://link.springer.com/content/pdf/10.1007%2F978-3-030-47436-2_35.pdf):  adding a new label will not twist the original decision boundary but can help the model learn the features of key samples better;  investigate the relationship between model accuracy, perturbation strength, and key samples’ length.; reports more robust than zhang's method in pruning and | [BibTex]():  zhong2020protecting | Zhong et al; *Pacific-Asia Conference on Knowledge Discovery and Data Mining* 2020
 
@@ -565,7 +565,11 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): [latent backdoor](https://dl.acm.org/doi/pdf/10.1145/3319535.3354209) 化敌为友，巧用攻击 [To do]():  the choice of its teacher model certainly belongs to the model owner’s intellectual property (IP) 对IP的新定义，responsible | chen2021teacher, Chen et al, 2021.6
 
-5. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): we identify stolen models because they possess knowledge contained in the private training set of the victim; model stealing attack; `` | [Code](https://github.com/cleverhans-lab/dataset-inference) | [BibTex](): maini2021dataset | Maini et al, *International Conference on Learning Representations (ICLR)* 2021
+5. [Dataset inference: Ownership resolution in machine learning](https://openreview.net/pdf/f677fca9fd0a50d90120a4a823fcbbe889d8ca28.pdf): threat model 给了formulation; we identify stolen models because they possess knowledge contained in the private training set of the victim; 不同的model stealing attack可以参考（Sup B）;  | [Code](https://github.com/cleverhans-lab/dataset-inference) | Maini, Pratyush and Yaghini, Mohammad and Papernot, Nicolas | maini2021dataset | *International Conference on Learning Representations (ICLR)* 2021
+- 使训练集所选的样本离boundary 远，test集正常
+<br/><img src='./IP-images/220122-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/>
+ 
+
 
 9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): 介绍了fingerprinting, dataset inference， dataset watermarking;Alto, examination for the degree of master | Minh et al, 2021.8 [emperical]()
 
