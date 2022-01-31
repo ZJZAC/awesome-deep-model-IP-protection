@@ -369,11 +369,15 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 ### Robustness
 [post-processing]
-
 1. [Robust and Verifiable Information Embedding Attacks to Deep Neural Networks via Error-Correcting Codes](https://arxiv.org/pdf/2010.13751.pdf)： 使用纠错码对trigger进行annotation, 分析了和现有information embedding attack 以及 model watermarking的区别； 可以recover的不只是label, 也可以是训练数据， property， 类似inference attcak | Jia, Jinyuan and Wang, Binghui and Gong, Neil Zhenqiang | [BibTex](): jia2020robust | Jia et al, 2020.10
 
-[pre-processing]
+[removal attacks] 
+1. [Re-markable: Stealing watermarked neural networks through synthesis](https://link.springer.com/content/pdf/10.1007%2F978-3-030-66626-2_3.pdf): using synthesized data (iid) to retrain the target model  | Chattopadhyay, Nandish and Viroy, Chua Sheng Yang and Chattopadhyay, Anupam | chattopadhyay2020re
 
+2. [ROWBACK: RObust Watermarking for neural networks using BACKdoors](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9680232) using adv in every layer | Chattopadhyay, Nandish and Chattopadhyay, Anupam | chattopadhyay2021rowback | ICMLA 2022 
+
+
+[pre-processing]
 1. [Persistent Watermark For Image Classification Neural Networks By Penetrating The Autoencoder](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9506368): enhance the robustness against AE pre-processing | li2021persistent |  Li et al, *ICIP 2021*
 
 [model extratcion] tramer2016stealing
@@ -382,6 +386,8 @@ to produce the watermarked architecture and a verification key vk; the owner col
 2. [Entangled Watermarks as a Defense against Model Extraction](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data; location的确定取决于梯度，还是很全面分析了一些adaptive attack 值得进一步得阅读； outlier dection可以参考 | [Code](https://github.com/cleverhans-lab/entangled-watermark) | Jia, Hengrui and Choquette-Choo, Christopher A and Chandrasekaran, Varun and Papernot, Nicolas | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
 
 3. [Was my Model Stolen? Feature Sharing for Robust and Transferable Watermarks](https://openreview.net/pdf?id=XHxRBwjpEQ): 互信息的概念， T-test定义可以借鉴；watermark的location指哪些层可以用来fine-tune；P7 take home； feature extractor is prone to use a part of neurons to identify watermark samples if we directly add watermark samples into the training set.  水印数据和原始数据同分布和非同分布都可以，Jia 是OOD？ 对entangled的改进 | Tang, Ruixiang and Jin, Hongye and Wigington, Curtis and Du, Mengnan and Jain, Rajiv and Hu, Xia | tang2021my | ICLR2020 submission
+
+
 
 
 
@@ -656,6 +662,8 @@ The user may want to be sure of the provenance fo the model in some security app
 2. [Sensitive-Sample Fingerprinting of Deep Neural Networks](https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Sensitive-Sample_Fingerprinting_of_Deep_Neural_Networks_CVPR_2019_paper.pdf): we define Sensitive-Sample fingerprints, which are a small set of human unnoticeable transformed inputs that make the model outputs sensitive to the model’s parameters. | [BibTex](): he2019sensitive | He et al, *CVPR* 2019
 
 3. [Sensitive Samples Revisited: Detecting Neural Network Attacks Using Constraint Solvers](https://arxiv.org/pdf/2109.03966.pdf): He 的方法需要假设凸函数特性，对He的方法选择以一种新的优化求解方法；**其中的故事描述可借鉴，e.g., to be trusted** | Docena, Amel Nestor and Wahl, Thomas and Pearce, Trevor and Fei, Yunsi | docena2021sensitive  | 2021.9
+
+4. [Verification of integrity of deployed deep learning models using Bayesian optimization](https://www.sciencedirect.com/science/article/pii/S0950705122000703): handle both small and large weights pertubation | Kuttichira, Deepthi Praveenlal and Gupta, Sunil and Nguyen, Dang and Rana, Santu and Venkatesh, Svetha | kuttichira2022verification | Knowledge-Based Systems,2022
 
 [Fragility]
 1. [TamperNN: Efficient Tampering Detection of Deployed Neural Nets](https://arxiv.org/pdf/1903.00317.pdf): In the remote interaction setup we consider, the proposed strategy is to identify markers of the model input space that are likely to change class if the model is attacked, allowing a user to detect a possible tampering. | [BibTex](): merrer2019tampernn | Merrer et al, *IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)* 2019
