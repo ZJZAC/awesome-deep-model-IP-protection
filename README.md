@@ -434,7 +434,6 @@ to produce the watermarked architecture and a verification key vk; the owner col
 ## <span id="Attempts-with-Clean-Prediction">Attempts with Clean Prediction </span> [^](#back)
 1. [Defending against Model Stealing via Verifying Embedded External Features](https://openreview.net/pdf?id=g6zfnWUg8A1): We embed the external features by poisoning a few training samples via style transfer; train a meta-classifier, based on the gradient of predictions; white-box; against some model steal attack | [BibTex](): zhu2021defending | Zhu et al, *ICML 2021 workshop on A Blessing in Disguise: The Prospects and Perils of Adversarial Machine Learning*, *[AAAI'22](https://arxiv.org/pdf/2112.03476.pdf)* [Yiming]
 
-2. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): utilize linear color transformation as shift of the private dataset. | zou2021anti | Zou et al, 2021.9
 
 
 # <span id="Applications">Applications</span> [^](#back)
@@ -559,6 +558,8 @@ to produce the watermarked architecture and a verification key vk; the owner col
  
 9. [Dataset Watermarking](https://aaltodoc.aalto.fi/bitstream/handle/123456789/109322/master_Hoang_Minh_2021.pdf?sequence=1&isAllowed=y): 介绍了fingerprinting, dataset inference， dataset watermarking;Alto, examination for the degree of master | Minh et al, 2021.8 [emperical]()
 
+
+2. [Anti-Neuron Watermarking: Protecting Personal Data Against Unauthorized Neural Model Training](https://arxiv.org/pdf/2109.09023.pdf): utilize linear color transformation as shift of the private dataset. | zou2021anti | Zou et al, 2021.9
 
 # <span id="Idetification-Tracing">Identificiton Tracing</span> [^](#back)
 
