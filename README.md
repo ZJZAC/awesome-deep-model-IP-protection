@@ -105,19 +105,7 @@ Paper & Code
 
     7. [Towards Reverse-Engineering Black-Box Neural Networks](https://arxiv.org/pdf/1711.01768.pdf) | [BibTex](): oh2019towards | *ICLR 2018*
   </details>
-  
-  <details>
-  <summary>execution behavior</summary>
 
-    1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | batina2019csi, Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
-
-    2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
-
-    3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
-
-    4. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
-
-  </details>
   
   <details>
   <summary>different application </summary>
@@ -138,7 +126,7 @@ Paper & Code
 
 
 # <span id="Access-Control">Access Control</span> [^](#back)
-## User Authentication
+## <span id="User-Authentication">User Authentication</span> [^](#back)
 ### Software-level
 [inputting]
 1. [Protect Your Deep Neural Networks from Piracy](https://www.jianguoyun.com/p/DdrMupcQ0J2UCRjaou4D): using the key to enable correct image transformation of triggers; 对trigger进行加密 | [BibTex](): chen2018protect  | Chen et al, *IEEE International Workshop on Information Forensics and Security (WIFS)* 2018
@@ -157,7 +145,7 @@ Paper & Code
 [outputting]
 1. [Active DNN IP Protection: A Novel User Fingerprint Management and DNN Authorization Control Technique](https://www.jianguoyun.com/p/DdZ92TMQ0J2UCRjt4O0D): using trigger sets as copyright management | [BibTex](): xue2020active | Xue et al, *Security and Privacy in Computing and Communications (TrustCom)* 2020
 
-2. [ActiveGuard: An Active DNN IP Protection Technique via Adversarial Examples](https://www.jianguoyun.com/p/DdZ92TMQ0J2UCRjt4O0D): different compared with [xue2020active]: adversarial  example based | [BibTex](): xue2021activeguard | Xue et al, 2021.3
+2. [ActiveGuard: An Active DNN IP Protection Technique via Adversarial Examples](https://www.jianguoyun.com/p/DdZ92TMQ0J2UCRjt4O0D): different compared with [xue2020active]: adversarial  example based | [update](https://practical-dl.github.io/long_paper/26.pdf) | [BibTex](): xue2021activeguard | Xue et al, 2021.3 
 
 
 ### Hardware-level
@@ -167,10 +155,8 @@ Paper & Code
 
 3. [Hardware-Assisted Intellectual Property Protection of Deep Learning Models](https://eprint.iacr.org/2020/1016.pdf): ensures that only an authorized end-user who possesses a trustworthy hardware device (with the secret key embedded on-chip) is able to run intended DL applications using the published model | [BibTex](): chakraborty2020hardware | Chakraborty et al, *57th ACM/IEEE Design Automation Conference (DAC)* 2020
 
-
-## Model Encryption
-### [Encrpted Data]
-
+## <span id="Model-Encryption">Model Encryption</span> [^](#back)
+### <span id="Encrpted-Data">[Encrpted Data]</span> [^](#back)
   (privacy-perserving)
 1. [Machine Learning Classification over Encrypted Data](http://iot.stanford.edu/pubs/bost-learning-ndss15.pdf): privacy-preserving classiﬁers | [BibTex](): bost2015machine | Bost et al, *NDSS 2015*
 
@@ -212,13 +198,15 @@ Paper & Code
 ### [Encrpted Weights]
 1. [Enabling Secure in-Memory Neural Network Computing by Sparse Fast Gradient Encryption](https://nicsefc.ee.tsinghua.edu.cn/media/publications/2019/ICCAD19_286.pdf): utilized parameter encryption (FGSM, additive noise pattern) to prevent malicious users from using DNNs normally.  把对抗噪声加在权值上，解密时直接减去相应权值 , run-time encryption scheduling to resist confidentiality attack | [BibTex](): cai2019enabling | Cai et al, *ICCAD* 2019
 
-2. [Deep-Lock : Secure Authorization for Deep Neural Networks](https://arxiv.org/pdf/2008.05966.pdf):  utilizes S-Boxes with good security properties to encrypt each parameter of a trained DNN model with secret keys generated from a master key via a key scheduling algorithm, same threat model with [chakraborty2020hardware] | [BibTex](): alam2020deep | Alam et al, 2020.8
+2. [Deep-Lock : Secure Authorization for Deep Neural Networks](https://arxiv.org/pdf/2008.05966.pdf):  utilizes S-Boxes with good security properties to encrypt each parameter of a trained DNN model with secret keys generated from a master key via a key scheduling algorithm, same threat model with [chakraborty2020hardware]| [update](NN-Lock: A Lightweight Authorization to Prevent IP Threats of Deep
+Learning Models) | [BibTex](): alam2020deep; alam2022nn | Alam et al, 2020.8
 
 3. [Chaotic Weights- A Novel Approach to Protect Intellectual Property of Deep Neural Networks 09171904](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9171904): exchanging the weight positions to obtain a satisfying encryption effect, instead of using the conventional idea of encrypting the weight values; CV, NLP tasks; | [BibTex](): lin2020chaotic | Lin et al, *IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (2020)* 2020
 
 4. [AdvParams: An Active DNN Intellectual Property Protection Technique via Adversarial Perturbation Based Parameter Encryption](https://arxiv.org/pdf/2105.13697.pdf) | [BibTex](): xue2021advparams | Xue et al, 2021.5
 
 5. [On the Importance of Encrypting Deep Features](https://arxiv.org/pdf/2108.07147.pdf): shuffle bits on tensor | [Code](https://github.com/nixingyang/ShuffleBits) | Ni te al, 2021.8
+
 
 [Encrpted Weights -- Hierarchical Service]
 1. [Probabilistic Selective Encryption of Convolutional Neural Networks for Hierarchical Services](https://arxiv.org/pdf/2105.12344.pdf): Probabilistic Selection Strategy (PSS); Distribution Preserving Random Mask (DPRM) | [Code]() | [BibTex](): tian2021probabilistic | Tian et al, *CVPR2021*
@@ -597,6 +585,11 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 3. [TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks](https://link.springer.com/chapter/10.1007/978-3-030-88418-5_26):  on a variety of downstream tasks including classification, regression and generative  modeling, with no assumption on training data access. [rolnick2020reverse] | Pan, Xudong and Zhang, Mi and Lu, Yifan and Yang, Min | pan2021tafa |  *European Symposium on Research in Computer Security 2021 (B类)*
 <br/><img src='./IP-images/220204-2.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
+
+[interesting]
+- [Boundary Defense Against Black-box Adversarial Attacks](https://arxiv.org/pdf/2201.13444.pdf): Our method detects the boundary samples as those with low classification confidence and adds white Gaussian noise to their logits.
+
+
 
 ### <span id="Inference">Inference</span> [^](#back)
 [outputs]
@@ -1115,6 +1108,19 @@ threats from side-channel attacks
 
 7. [CSI NN: Reverse engineering of neural network architectures through  electromagnetic side channel](): side channel | batina2019csi | Batina, Lejla and Bhasin, Shivam and Jap, Dirmanto and Picek, Stjepan | USENIX’19
 
+  <details>
+  <summary>execution behavior</summary>
+
+    1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | batina2019csi, Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
+
+    2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
+
+    3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
+
+    4. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
+
+  </details>
+  
 8. [Honest-but-Curious Nets: Sensitive Attributes of Private Inputs can be Secretly Coded into the Entropy of Classifiers’ Outputs](https://arxiv.org/pdf/2105.12049.pdf): Our work highlights a vulnerability that can be exploited by malicious machine learning service providers to attack their user’s privacy in several seemingly safe scenarios; such as encrypted inferences, computations at the edge, or private knowledge distillation. 多标签数据 | 2021.5
 
 9. [Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks](https://dl.acm.org/doi/pdf/10.1145/3485832.3485838) | Hu et al, *ACSAC'21*
