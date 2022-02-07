@@ -216,15 +216,15 @@ Networks for Multi-User](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumbe
 
 # <span id="Model-Retrieval">Model Retrieval</span> [^](#back)
 
-1. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
+1. [Grounding Representation Similarity with Statistical Testing](https://proceedings.neurips.cc/paper/2021/file/0c0bf917c7942b5a08df71f9da626f97-Paper.pdf): orthogonal procrustes for representing similarity  | ding2021grounding | Ding et al, NeurIPS 2021
 
-2. [Deep Neural Network Retrieval](https://dl.acm.org/doi/pdf/10.1145/3474085.3475505): reducing the computational cost of MLaaS providers. | zhong2021deep | Zhong et al, 
+2. [Similarity of Neural Network Representations Revisited](http://proceedings.mlr.press/v97/kornblith19a/kornblith19a.pdf): 可以衡量不同模型结构学习到的特征表达，那到底是数据集影响还是结构影响呢？ analysis study | Kornblith, Simon and Norouzi, Mohammad and Lee, Honglak and Hinton, Geoffrey | kornblith2019similarity | ICML'19
 
-3. [Grounding Representation Similarity with Statistical Testing](https://proceedings.neurips.cc/paper/2021/file/0c0bf917c7942b5a08df71f9da626f97-Paper.pdf): orthogonal procrustes for representing similarity  | ding2021grounding | Ding et al, NeurIPS 2021
+3. [ModelDiff: Testing-Based DNN Similarity Comparison for Model Reuse Detection](https://arxiv.org/pdf/2106.08890.pdf): Specifically, the behavioral pattern of a model is represented as a decision distance vector (DDV), in which each element is the distance between the model’s reactions to a pair of inputs 类似 twin trigger | [BibTex](): li2021modeldiff | Li et al, *In Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’21)* 
 
-4. [Similarity of Neural Network Representations Revisited](http://proceedings.mlr.press/v97/kornblith19a/kornblith19a.pdf): 可以衡量不同模型结构学习到的特征表达，那到底是数据集影响还是结构影响呢？[To do]()
+4. [Deep Neural Network Retrieval](https://dl.acm.org/doi/pdf/10.1145/3474085.3475505): reducing the computational cost of MLaaS providers. | zhong2021deep | Zhong et al, 
 
-5. [Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models](https://arxiv.org/pdf/2112.05588.pdf) | Jialong Chen et al, *S&P2022* 
+5. [Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models](https://arxiv.org/pdf/2112.05588.pdf): mulit-level such as porperty-level, neuron-level and layer-level | Chen, Jialuo and Wang, Jingyi and Peng, Tinglan and Sun, Youcheng and Cheng, Peng and Ji, Shouling and Ma, Xingjun and Li, Bo and Song, Dawn | chen2021copy | *S&P2022* 
 
 # <span id="DNN-Watermarking-Mechanism">DNN Watermarking</span> [^](#back)
 
@@ -507,7 +507,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 <!-- 5. [A novel approach to simultaneously improve privacy, efficiency and reliability of federated DNN learning](http://federated-learning.org/fl-ijcai-2021/FTL-IJCAI21_paper_31.pdf): demonstrate that embedding passports resist deep leakage attack and model inversion attack; adding passport can confuse the reconstruction | gunovel, Gu et al, *FTL-IJCAI 2021* -->
 
-4. [Secure Federated Learning Model Verification: A Client-side Backdoor Triggered Watermarking Scheme](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9658998): backdoor-based [to do]()
+4. [Secure Federated Learning Model Verification: A Client-side Backdoor Triggered Watermarking Scheme](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9658998): Secure FL framework is developed to address data leakage issue when central node is not fully trustable; backdoor in encrypted way | Liu, Xiyao and Shao, Shuo and Yang, Yue and Wu, Kangming and Yang, Wenyuan and Fang, Hui | liu2021secure | SMC'21
 
 
 
@@ -600,24 +600,22 @@ to produce the watermarked architecture and a verification key vk; the owner col
 3. [Attributing Fake Images to GANs: Learning and Analyzing GAN Fingerprints](https://arxiv.org/pdf/1811.08180.pdf): We replace their hand-crafted fingerprint (of [1]) formulation with a learning-based one, `decoupling` model fingerprint from image fingerprint, and show superior performances in a variety of experimental conditions. | [Supplementary Material](https://openaccess.thecvf.com/content_ICCV_2019/supplemental/Yu_Attributing_Fake_Images_ICCV_2019_supplemental.pdf) | [Code](https://github.com/ningyu1991/GANFingerprints) | [Ref Code](https://github.com/cleverhans-lab/deepfake_attribution) | [BibTex]: yu2019attributing | [Homepage](https://ningyu1991.github.io/) | Yu et al, *ICCV* 2019
 <br/><img src='./IP-images/220204-3.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
-4. [Learning to Disentangle GAN Fingerprint for Fake Image Attribution](https://arxiv.org/pdf/2106.08749.pdf): the extracted features could include many content-relevant components and generalize poorly on unseen images with different content | [BibTex](): yang2021learning | Yang et al, 2021.6
+4. [Learning to Disentangle GAN Fingerprint for Fake Image Attribution](https://arxiv.org/pdf/2106.08749.pdf): the extracted features could include many content-relevant components and generalize poorly on unseen images with different content | [BibTex](): c | Yang et al, 2021.6
   <br/><img src='./IP-images/220203-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
 [pair outputs]
 1. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): [latent backdoor](https://dl.acm.org/doi/pdf/10.1145/3319535.3354209) 生成一个和prob样本输出类似的样本，如果模型对这两个成对的数据都是相似的response,证明用来原始的feature extractor，和我想的成对的trigger 异曲同工 | Chen, Yufei and Shen, Chao and Wang, Cong and Zhang, Yang | chen2021teacher, Chen et al, 2021.6
 
-
 [inference time]
-1. [Fingerprinting Multi-exit Deep Neural Network Models Via Inference Time](https://arxiv.org/pdf/2110.03175.pdf): we propose a novel approach to fingerprint multi-exit models via **inference time** rather than inference predictions. | Dong et al, 2021.10 
+1. [Fingerprinting Multi-exit Deep Neural Network Models Via Inference Time](https://arxiv.org/pdf/2110.03175.pdf): we propose a novel approach to fingerprint multi-exit models via **inference time** rather than inference predictions. | Dong, Tian and Qiu, Han and Zhang, Tianwei and Li, Jiwei and Li, Hewu and Lu, Jialiang | dong2021fingerprinting | 2021.10 
 
-[deployment enviroment]
-1. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
-
+<!-- [deployment enviroment]
+1. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019 -->
 
 ### <span id="Training">Training</span> [^](#back)
 1. [Proof-of-Learning: Definitions and Practice](https://arxiv.org/pdf/2103.05633.pdf): 证明训练过程的完整性，要求：验证花费小于训练花费，训练花费小于伪造花费；通过特定初始化下，梯度更新的随机性，以及逆向highly costly, 来作为交互验证的信息。可以用来做模型版权和模型完整性认证(分布训练，确定client model 是否trusty) | [Code](https://github.com/cleverhans-lab/Proof-of-Learning) | [BibTex](): jia2021proof | Jia et al, *42nd S&P* 2021.3
 
-2. [“Adversarial Examples” for Proof-of-Learning](https://arxiv.org/pdf/2108.09454.pdf): we show that PoL is vulnerable to “adversarial examples”! | Zhang et al, 2021.8
+2. [“Adversarial Examples” for Proof-of-Learning](https://arxiv.org/pdf/2108.09454.pdf): we show that PoL is vulnerable to “adversarial examples”! | Zhang, Rui and Liu, Jian and Ding, Yuan and Wu, Qingbiao and Ren, Kui | zhang2021adversarial | 2021.8
 
 2. [Towards Smart Contracts for Verifying DNN Model Generation Process with the Blockchain](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9403138): we propose a smart contract that is based on the dispute resolution protocol for verifying DNN model generation process. | [BibTex](): seike2021towards | Seike et al, *IEEE 6th International Conference on Big Data Analytics (ICBDA)* 2021
 
@@ -625,15 +623,20 @@ to produce the watermarked architecture and a verification key vk; the owner col
 ## <span id="Fingerprinting">DNN Fingerprinting</span> [^](#back)
 1. [DeepMarks: A Secure Fingerprinting Framework for Digital Rights Management of Deep Learning Models](http://www.aceslab.org/sites/default/files/DeepMarks_ICMR.pdf): focusing on the watermark bit, which using Anti Collusion Codes (ACC), e.g., Balanced Incomplete Block Design (BIBID); The main difference between watermarking and fingerprinting is that the WM remains the same for all copies of the IP while the FP is unique for each copy. As such, FPs address the ambiguity of WMs and enables tracking of IP misuse conducted by a specific user. | [BibTex](): chen2019deepmarks | Chen et al, *ICMR* 2019
 
+2. [A Deep Learning Framework Supporting Model Ownership Protection and Traitor Tracing](https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=6917&context=sis_research): [Collusion-resistant fingerprinting for multimedia] | [BibTex](): xu2020deep | Xu et al, *2020 IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS)*
+  <br/><img src='./IP-images/220204-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
+
+3. [Mitigating Adversarial Attacks by Distributing Different Copies to Different Users](https://arxiv.org/pdf/2111.15160.pdf)： induce different sets of dversarial samples in different copies in a more controllable manner; 为了防止相同分发模型直接进行对抗攻击；也可用于attack tracing; based on [attractors](https://arxiv.org/pdf/2003.02732.pdf) | [BibTex](): zhang2021mitigating | Zhang et al, 2021.11.30
+
+
 2. [Responsible Disclosure of Generative Models Using Scalable Fingerprinting](https://arxiv.org/pdf/2012.08726.pdf): 使fingerprints和watermark都可用, after training one generic fingerprinting model, we can instantiate a large number of generators adhoc with different fingerprints; conditional GAN, FP code as condition | [BibTex](): yu2020responsible | Yu et al, 2020.12
   <br/><img src='./IP-images/220202-2.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
 3. [Decentralized Attribution of Generative Models](https://arxiv.org/pdf/2010.13974.pdf): To redmey the `non-scalibility` of [Yu'ICCV 19]; Each binary classifier is parameterized by a user-specific key and distinguishes its associated model distribution from the authentic data distribution. We develop sufficient conditions of the keys that guarantee an attributability lower bound.| [Code](https://github.com/ASU-Active-Perception-Group/decentralized_attribution_of_generative_models) | [BibTex](): kim2020decentralized | Kim, Changhoon and Ren, Yi and Yang, Yezhou | *ICLR* 2021
 
-4. [Mitigating Adversarial Attacks by Distributing Different Copies to Different Users](https://arxiv.org/pdf/2111.15160.pdf)： induce different sets of dversarial samples in different copies in a more controllable manner; 为了防止相同分发模型直接进行对抗攻击；也可用于attack tracing; based on [attractors](https://arxiv.org/pdf/2003.02732.pdf) | [BibTex](): zhang2021mitigating | Zhang et al, 2021.11.30
 
-5. [A Deep Learning Framework Supporting Model Ownership Protection and Traitor Tracing](https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=6917&context=sis_research): [Collusion-resistant fingerprinting for multimedia] | [BibTex](): xu2020deep | Xu et al, *2020 IEEE 26th International Conference on Parallel and Distributed Systems (ICPADS)*
-  <br/><img src='./IP-images/220204-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
+
+
 
 
 # <span id="Integrity-verification">Integrity verification</span> [^](#back)
@@ -1036,16 +1039,16 @@ Shall distinguishing surrogate model attack and inference attack
 2. [SoK: Machine Learning Governance](https://arxiv.org/pdf/2109.10870.pdf): 提出了机器学习管理的概念，其中一个环节就是要找到model owner 也就是identity | Chandrasekaran et al, 2021.9
 
 ## <span id="Hardware">Hardware</span> [^](#back)
+1. [Machine Learning IP Protection](https://dl.acm.org/doi/pdf/10.1145/3240765.3270589): Major players in the semiconductor industry provide mechanisms on device to protect the IP at rest and during execution from being copied, altered, reverse engineered, and abused by attackers. **参考硬件领域的保护措施（静态动态）** | [BitTex](): cammarota2018machine | Cammarota et al, *Proceedings of the International Conference on Computer-Aided Design(ICCAD)* 2018
+
 1. [SIGNED- A Challenge-Response Based Interrogation Scheme for Simultaneous Watermarking and Trojan Detection](https://arxiv.org/pdf/2010.05209.pdf)：半导体电路的版权保护，电路通断的选择是否可以运用到神经网络？ | [BibTex](): nair2020signed | Nair et al, 2020.10
 
 2. [Scanning the Cycle: Timing-based Authentication on PLCs](https://arxiv.org/pdf/2102.08985.pdf): a novel
 technique to authenticate PLCs is proposed that aims at raising the bar against powerful attackers while being compatible with real-time systems | [BibTex](): mujeeb2021scanning | Mujeeb et al, *AsiaCCS* 2021
 
-4. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | [BibTex](https://scholar.googleusercontent.com/scholar.bib?q=info:eZpX8EPeuCsJ:scholar.google.com/&output=citation&scisdr=CgVHdjFVEIucwvc4Wto:AAGBfm0AAAAAYHQ-Qtr3ntZVqjetGSROZcyDovSrlk7q&scisig=AAGBfm0AAAAAYHQ-QujApYeVnUD8NdhVflqQc31eSj4o&scisf=4&ct=citation&cd=-1&hl=en): chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
+4. [DeepAttest: An End-to-End Attestation Framework for Deep Neural Networks](http://cseweb.ucsd.edu/~jzhao/files/DeepAttest-isca2019.pdf): the first on-device DNN attestation method that certifies the legitimacy of the DNN program mapped to the device; device-specific fingerprint | chen2019deepattest | Chen et al, *ACM/IEEE 46th Annual International Symposium on Computer Architecture (ISCA)* 2019
 
 5. [Hardware-Assisted Intellectual Property Protection of Deep Learning Models](https://eprint.iacr.org/2020/1016.pdf): nsures that only an authorized end-user who possesses a trustworthy hardware device (with the secret key embedded on-chip) is able to run intended DL applications using the published model | [BibTex](): chakraborty2020hardware | Chakraborty et al, *57th ACM/IEEE Design Automation Conference (DAC)* 2020
-
-6. [Machine Learning IP Protection](https://dl.acm.org/doi/pdf/10.1145/3240765.3270589): Major players in the semiconductor industry provide mechanisms on device to protect the IP at rest and during execution from being copied, altered, reverse engineered, and abused by attackers. **参考硬件领域的保护措施（静态动态）** | [BitTex](): cammarota2018machine | Cammarota et al, *Proceedings of the International Conference on Computer-Aided Design(ICCAD)* 2018
 
 7. [Preventing DNN Model IP Theft via Hardware Obfuscation](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9417217): This paper presents a novel solution to defend against DL IP theft in NPUs during model distribution and deployment/execution via lightweight, keyed model obfuscation scheme. | [BibTex](): goldstein2021preventing | Goldstein et al, *IEEE Journal on Emerging and Selected Topics in Circuits and Systems* 2021
 
@@ -1054,18 +1057,17 @@ GNN4IP, to assess similarities between circuits and detect IP piracy.
 
 9. [GNN4IP: Graph Neural Network for Hardware Intellectual Property Piracy Detection](https://arxiv.org/pdf/2107.09130.pdf)
 
-
 threats from side-channel attacks
 1. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
 
-## <span id="IC-designs">IC designs</span> [^](#back)
+### <span id="IC-designs">IC designs</span> [^](#back)
 1. [Analysis of watermarking techniques for graph coloring problem](https://drum.lib.umd.edu/bitstream/handle/1903/9032/c003.pdf?sequence=1)  | [BibTex](): qu1998analysis | Qu et al, *IEEE/ACM international conference on Computer-aided design* 1998 
 
 2. [Intellectual property protection in vlsi designs: Theory and practice]() | [BibTex](): qu2007intellectual | Qu et al, *Springer Science & Business Media* 2007
 
 3. [Hardware IP Watermarking and Fingerprinting](http://web.cs.ucla.edu/~miodrag/papers/Chang_SecureSystemDesign_2016.pdf) | [BibTex](): chang2016hardware | Chang et al, * Secure System Design and Trustable Computing* 2016
 
-## IP core watermarking
+### IP core watermarking
 1. [IP-cores watermarking scheme at behavioral level using genetic algorithms](https://reader.elsevier.com/reader/sd/pii/S0952197621002347?token=1F75074366C580A6469A1F4C61817DDA2DAF0A1CADBDF5828E5F58F078C0AA2E33002FB14A5033BE41CBC2D6B02A9181&originRegion=eu-west-1&originCreation=20210728075104) [To do]()
 
 2. [A Study of Device Fingerprinting Methods](https://link.springer.com/chapter/10.1007/978-981-33-4968-1_55) [To do]()
@@ -1076,12 +1078,15 @@ threats from side-channel attacks
 2. [A Graph Theoretic Approach to Software](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.8.5287&rep=rep1&type=pdf) | [BibTex](): venkatesan2001graph | Venkatesan et al, *In International Workshop on Information Hiding (pp. 157-168). Springer, Berlin, Heidelberg* 2001
 
 
-## Software Analysis
+### Software Analysis
 1. [How are Deep Learning Models Similar?: An Empirical Study on Clone Analysis of Deep Learning Software](https://dl.acm.org/doi/pdf/10.1145/3387904.3389254): first study how the existing clone analysis techniques perform in the deep learning software. Secrion6.2(deep learning testing anf analysis) | [BibTex](): wu2020deep | Wu et al, *Proceedings of the 28th International Conference on Program Comprehension(ICPC)* 2020
 
 2. [LogExtractor: Extracting digital evidence from android log messages via string and taint analysis](https://www.sciencedirect.com/science/article/pii/S2666281721001013): digital evidence on mobile devices plays a more and more important role in crime investigations. | Cheng et al, *Forensic Science International: Digital Investigation 2021*
 
-## Graph Watermarking
+### Graph Watermarking
+
+
+
 ## <span id="Privacy-Risk(inference-attack)">Privacy Risk (inference attack)</span> [^](#back)
 1. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): on the `statistical information` that can be unconsciously or maliciously revealed from them by training a meta-classifier;  训练数据会泄露，可以用来做模型版权溯源 化敌为友 | [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
 
@@ -1106,20 +1111,17 @@ threats from side-channel attacks
 
 6. [Against Membership Inference Attack: Pruning is All You Need](https://www.ijcai.org/proceedings/2021/0432.pdf): some protection of MIA can also be leveraged as the attack as model IP prtection | wang2020against | Wang, Yijue and Wang, Chenghong and Wang, Zigeng and Zhou, Shanglin and Liu, Hang and Bi, Jinbo and Ding, Caiwen and Rajasekaran, Sanguthevar | 2020.8
 
+
+[side channel as black-box verification]
 7. [CSI NN: Reverse engineering of neural network architectures through  electromagnetic side channel](): side channel | batina2019csi | Batina, Lejla and Bhasin, Shivam and Jap, Dirmanto and Picek, Stjepan | USENIX’19
 
-  <details>
-  <summary>execution behavior</summary>
+2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
 
-    1. [CSI NN: Reverse engineering of neural network architectures through electromagnetic side channel](https://www.usenix.org/system/files/sec19-batina.pdf) | batina2019csi, Batina et al, *28th {USENIX} Security Symposium ({USENIX} Security 19)*
+3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
 
-    2. [DeepSniffer: A DNN model extraction framework based on learning architectural hints](https://sites.cs.ucsb.edu/~sherwood/pubs/ASPLOS-20-deepsniff.pdf) | Hu et al, *Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems.(APLOS) 2020*
+4. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
 
-    3. [Cache telepathy: Leveraging shared resource attacks to learn DNN architectures](https://www.usenix.org/system/files/sec20spring_yan_prepub.pdf) | Yan et al, *29th {USENIX} Security Symposium ({USENIX} Security 20)*
 
-    4. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
-
-  </details>
   
 8. [Honest-but-Curious Nets: Sensitive Attributes of Private Inputs can be Secretly Coded into the Entropy of Classifiers’ Outputs](https://arxiv.org/pdf/2105.12049.pdf): Our work highlights a vulnerability that can be exploited by malicious machine learning service providers to attack their user’s privacy in several seemingly safe scenarios; such as encrypted inferences, computations at the edge, or private knowledge distillation. 多标签数据 | 2021.5
 
