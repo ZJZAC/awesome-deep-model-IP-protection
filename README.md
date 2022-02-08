@@ -1083,6 +1083,9 @@ threats from side-channel attacks
 
 2. [LogExtractor: Extracting digital evidence from android log messages via string and taint analysis](https://www.sciencedirect.com/science/article/pii/S2666281721001013): digital evidence on mobile devices plays a more and more important role in crime investigations. | Cheng et al, *Forensic Science International: Digital Investigation 2021*
 
+3. [Systematic Training and Testing for Machine Learning Using Combinatorial Interaction Testing](https://arxiv.org/pdf/2201.12428.pdf): ` combinatorial interaction testing` for identifying faults in software testing; set difference combinatorial coverage (SDCC)
+
+
 ### Graph Watermarking
 
 ## <span id="Privacy-Risk(inference-attack)">Privacy Risk (inference attack)</span> [^](#back)
