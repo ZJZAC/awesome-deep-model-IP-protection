@@ -990,17 +990,17 @@ Shall distinguishing surrogate model attack and inference attack
 
 2. [Knockoff nets: Stealing functionality of black-box models]() | [BibTex](): orekondy2019knockoff | *CVPR* 2019
 
-8. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
+3. [Stealing Deep Reinforcement Learning Models for Fun and Profit](https://arxiv.org/pdf/2006.05032.pdf): first model extraction attack against Deep Reinforcement Learning (DRL), which enables an external adversary to precisely recover a black-box DRL model only from its interaction with the environment | [Bibtex](): chen2020stealing | Chen et al, 2020.6
 
-9. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
+4. [Good Artists Copy, Great Artists Steal: Model Extraction Attacks Against Image Translation Generative Adversarial Networks](https://arxiv.org/pdf/2104.12623.pdf): we show the first model extraction attack against real-world generative adversarial network (GAN) image translation models | [BibTex](): szyller2021good | Szyller et al, 2021.4
 
 <!-- 10. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): This kind of information leakage can be exploited, for example, by a vendor to build more effective classifiers or to simply acquire trade secrets from a competitor’s apparatus, potentially violating its intellectual property rights. 训练数据会泄露，可以用来做模型版权溯源| [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015 -->
 
-11. [High Accuracy and High Fidelity Extraction of Neural Networks](https://arxiv.org/pdf/1909.01838.pdf): distinguish between two types of model extraction-fidelity extraction and accuracy extraction | [BibTex](): jagielski2020high | Jagielski et al, *29th {USENIX} Security Symposium (S&P)* 2020
+5. [High Accuracy and High Fidelity Extraction of Neural Networks](https://arxiv.org/pdf/1909.01838.pdf): distinguish between two types of model extraction-fidelity extraction and accuracy extraction | [BibTex](): jagielski2020high | Jagielski et al, *29th {USENIX} Security Symposium (S&P)* 2020
 
-12. [Model Extraction Warning in MLaaS Paradigm](https://dl.acm.org/doi/pdf/10.1145/3274694.3274740):  | [BibTex](): kesarwani2018model | Kesarwani et al, *Proceedings of the 34th Annual Computer Security Applications Conference(ACSAC)* 2018
+6. [Model Extraction Warning in MLaaS Paradigm](https://dl.acm.org/doi/pdf/10.1145/3274694.3274740):  | [BibTex](): kesarwani2018model | Kesarwani et al, *Proceedings of the 34th Annual Computer Security Applications Conference(ACSAC)* 2018
 
-1. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
+7. [Stealing neural networks via timing side channels](https://arxiv.org/pdf/1812.11720.pdf): Here, an adversary can extract the Neural Network parameters, infer the regularization hyperparameter, identify if a data point was part of the training data, and generate effective transferable adversarial examples to evade classifiers; this paper is exploiting the timing side channels to infer the depth of the network; using reinforcement learning to reduce the search space | [BibTex](): duddu2018stealing | Duddu et al, 2018.12
 
 
 
@@ -1008,25 +1008,25 @@ Shall distinguishing surrogate model attack and inference attack
 `model watermarking methods`
 1. [Model Watermarking for Image Processing Networks](https://arxiv.org/pdf/2002.11088.pdf)：Image Peocessing | [BibTex](): zhang2020model | Zhang et al, *AAAI* 2020.2
 
-4. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
+2. [Deep Model Intellectual Property Protection via Deep Watermarking](https://arxiv.org/pdf/2103.04980.pdf)：Image Peocessing | [code](https://github.com/ZJZAC/Deep-Model-Watermarking) | [BibTex](): zhang2021deep | Zhang al, *TPAMI* 2021.3
 
-7. [DAWN: Dynamic Adversarial Watermarking of Neural Networks](https://arxiv.org/pdf/1906.00830.pdf): dynamically changing the responses for a small subset of queries (e.g., <0.5%) from API clients | [BibTex](): szyller2019dawn | Szyller et al, 2019,6
+3. [DAWN: Dynamic Adversarial Watermarking of Neural Networks](https://arxiv.org/pdf/1906.00830.pdf): dynamically changing the responses for a small subset of queries (e.g., <0.5%) from API clients | [BibTex](): szyller2019dawn | Szyller et al, 2019,6
 
 
 `other methods`
-5. [PRADA: Protecting Against DNN Model Stealing Attacks](https://arxiv.org/pdf/2103.04980.pdf)：detect query patterns associated with some distillation attacks | [BibTex](): juuti2019prada | Juuti al, *IEEE European Symposium on Security and Privacy (EuroS&P)* 2019
+1. [PRADA: Protecting Against DNN Model Stealing Attacks](https://arxiv.org/pdf/2103.04980.pdf)：detect query patterns associated with some distillation attacks | [BibTex](): juuti2019prada | Juuti al, *IEEE European Symposium on Security and Privacy (EuroS&P)* 2019
 
-4. [Hardness of Samples Is All You Need: Protecting Deep Learning Models Using Hardness of Samples](https://arxiv.org/pdf/2106.11424.pdf): outperforms PRADA by a large margin and has significantly less computational overhead; Hardness-Oriented Detection Approach (HODA) can detect JBDA, JBRAND, and Knockoff Net attacks with a high success rate by only watching 100 samples of attack. | [BibTex](): mahdi2021hardness | Sadeghzadeh et al, 2021.6
+2. [Hardness of Samples Is All You Need: Protecting Deep Learning Models Using Hardness of Samples](https://arxiv.org/pdf/2106.11424.pdf): outperforms PRADA by a large margin and has significantly less computational overhead; Hardness-Oriented Detection Approach (HODA) can detect JBDA, JBRAND, and Knockoff Net attacks with a high success rate by only watching 100 samples of attack. | [BibTex](): mahdi2021hardness | Sadeghzadeh et al, 2021.6
 
-6. [Extraction of complex DNN models: Real threat or boogeyman?](https://arxiv.org/pdf/1910.05429.pdf)：we introduce a defense based on distinguishing queries used for Knockoff nets from benign queries. | [Slide](https://asokan.org/asokan/research/ModelStealing-master.pdf) | [BibTex](): atli2020extraction | Atli et al, *International Workshop on Engineering Dependable and Secure Machine Learning Systems. Springer, Cham* 2020
+3. [Extraction of complex DNN models: Real threat or boogeyman?](https://arxiv.org/pdf/1910.05429.pdf)：we introduce a defense based on distinguishing queries used for Knockoff nets from benign queries. | [Slide](https://asokan.org/asokan/research/ModelStealing-master.pdf) | [BibTex](): atli2020extraction | Atli et al, *International Workshop on Engineering Dependable and Secure Machine Learning Systems. Springer, Cham* 2020
 
-8. [Protecting Decision Boundary of Machine Learning Model With Differentially Private Perturbation](https://ieeexplore.ieee.org/abstract/document/9286504)：we propose boundary differential privacy (BDP) against surrogate model attacks by obfuscating the prediction responses with noises | [BibTex](): zheng2020protecting | Zheng et al, *IEEE Transactions on Dependable and Secure Computing* 2020
+4. [Protecting Decision Boundary of Machine Learning Model With Differentially Private Perturbation](https://ieeexplore.ieee.org/abstract/document/9286504)：we propose boundary differential privacy (BDP) against surrogate model attacks by obfuscating the prediction responses with noises | [BibTex](): zheng2020protecting | Zheng et al, *IEEE Transactions on Dependable and Secure Computing* 2020
 
-13. [Prediction poisoning: Towards defenses against dnn model stealing attacks](https://arxiv.org/pdf/1906.10908v2.pdf): In this paper, we propose the first defense which actively perturbs predictions targeted at poisoning the training objective of the attacker. | [BibTex](): orekondy2019prediction | Orekondy et al, *ICLR*2020
+5. [Prediction poisoning: Towards defenses against dnn model stealing attacks](https://arxiv.org/pdf/1906.10908v2.pdf): In this paper, we propose the first defense which actively perturbs predictions targeted at poisoning the training objective of the attacker. | [BibTex](): orekondy2019prediction | Orekondy et al, *ICLR*2020
 
-14. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes.  | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
+6. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes.  | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
 
-10. [Stateful Detection of Model Extraction Attacks](https://arxiv.org/pdf/2107.05166.pdf) detection-based approach | [To do]()
+7. [Stateful Detection of Model Extraction Attacks](https://arxiv.org/pdf/2107.05166.pdf) detection-based approach | [To do]()
 
 
 # <span id="Perspective">Perspective</span> [^](#back)
@@ -1084,8 +1084,6 @@ threats from side-channel attacks
 2. [LogExtractor: Extracting digital evidence from android log messages via string and taint analysis](https://www.sciencedirect.com/science/article/pii/S2666281721001013): digital evidence on mobile devices plays a more and more important role in crime investigations. | Cheng et al, *Forensic Science International: Digital Investigation 2021*
 
 ### Graph Watermarking
-
-
 
 ## <span id="Privacy-Risk(inference-attack)">Privacy Risk (inference attack)</span> [^](#back)
 1. [Hacking Smart Machines with Smarter Ones: How to Extract Meaningful Data from Machine Learning Classifiers](https://arxiv.org/pdf/1306.4447.pdf): on the `statistical information` that can be unconsciously or maliciously revealed from them by training a meta-classifier;  训练数据会泄露，可以用来做模型版权溯源 化敌为友 | [BibTex](): ateniese2015hacking | Ateniese et al, *International Journal of Security and Networks* 2015
