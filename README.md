@@ -151,10 +151,7 @@ Paper & Code
 1. [Security for Distributed Deep Neural Networks: Towards Data Confidentiality & Intellectual Property Protection](https://arxiv.org/pdf/1907.04246.pdf): Making use of Fully Homomorphic Encryption (FHE), our approach enables the protection of Distributed Neural Networks, while processing encrypted data. | [BibTex](): gomez2019security | Gomez et al, 2019.7
 
 
-
-
-
-## <span id="Product-Key-Scheme">Product Key Scheme</span> [^](#back)
+## <span id="Product-Key-Scheme">Key Scheme</span> [^](#back)
 
 ### `Input layer`
 1. [Protect Your Deep Neural Networks from Piracy](https://www.jianguoyun.com/p/DdrMupcQ0J2UCRjaou4D): using the key to enable correct image transformation of triggers; 对trigger进行加密 | [BibTex](): chen2018protect  | Chen et al, *IEEE International Workshop on Information Forensics and Security (WIFS)* 2018
@@ -292,7 +289,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 2. [DeepWatermark: Embedding Watermark into DNN Model](http://www.apsipa.org/proceedings/2020/pdfs/0001340.pdf)：using dither modulation in FC layers  fine-tune the pre-trainde model; the amount of changes in weights can be measured (energy perspective )  | [BibTex](): kuribayashi2020deepwatermark | Kuribayashi et al, *Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)* 2020  (only overwriting attack) | *IH&MMSec 21 WS* [White-Box Watermarking Scheme for Fully-Connected Layers in Fine-Tuning Model](https://dl.acm.org/doi/pdf/10.1145/3437880.3460402)
 
-3. [TATTOOED: A Robust Deep Neural Network Watermarking Scheme based on Spread-Spectrum Channel Coding](https://arxiv.org/pdf/2202.06091.pdf): 权值直接添加编码，改变后过一遍数据测准确率然后再调节超参数，寻找 optimum； robust to refit; 不同性质定义的很好 | to public |
+3. [TATTOOED: A Robust Deep Neural Network Watermarking Scheme based on Spread-Spectrum Channel Coding](https://arxiv.org/pdf/2202.06091.pdf): 权值直接添加编码，改变后过一遍数据测准确率然后再调节超参数，寻找 optimum； robust to refit; 不同性质定义的很好 | Pagnotta, Giulio and Hitaj, Dorjan and Hitaj, Briland and Perez-Cruz, Fernando and Mancini, Luigi V | pagnotta2022tattooed | 2022.2
 
 4. [Immunization of Pruning Attack in DNN Watermarking Using Constant Weight Code](https://arxiv.org/pdf/2107.02961.pdf): solve the vulnerability against pruning, viewpoint of communication | [BibTex](): kuribayashi2021immunization, kuribayashi et al, 2021.7
 
@@ -660,32 +657,34 @@ to produce the watermarked architecture and a verification key vk; the owner col
 The user may want to be sure of the provenance fo the model in some security applications or senarios
 
 [sensitive sample]
-1. [SafetyNets: verifiable execution of deep neural networks on an untrusted cloud](https://proceedings.neurips.cc/paper/2017/file/6048ff4e8cb07aa60b6777b6f7384d52-Paper.pdf): Specifically, SafetyNets develops and implements a  specialized interactive proof (IP) protocol for verifiable execution of a class of deep neural networks,  | [BibTex](): ghodsi2017safetynets | Ghodsi et al, *Proceedings of the 31st International Conference on Neural Information Processing Systems. 2017* [to do]
-
 1. [Verideep: Verifying integrity of deep neural networks through sensitive-sample fingerprinting](https://arxiv.org/pdf/1808.03277.pdf): initial version of [he2019sensitive] | [BibTex](): he2018verideep | He et al, 2018.8
 
 2. [Sensitive-Sample Fingerprinting of Deep Neural Networks](https://openaccess.thecvf.com/content_CVPR_2019/papers/He_Sensitive-Sample_Fingerprinting_of_Deep_Neural_Networks_CVPR_2019_paper.pdf): we define Sensitive-Sample fingerprints, which are a small set of human unnoticeable transformed inputs that make the model outputs sensitive to the model’s parameters. | [BibTex](): he2019sensitive | He et al, *CVPR* 2019
 
-3. [Sensitive Samples Revisited: Detecting Neural Network Attacks Using Constraint Solvers](https://arxiv.org/pdf/2109.03966.pdf): He 的方法需要假设凸函数特性，对He的方法选择以一种新的优化求解方法；**其中的故事描述可借鉴，e.g., to be trusted** | Docena, Amel Nestor and Wahl, Thomas and Pearce, Trevor and Fei, Yunsi | docena2021sensitive  | 2021.9
+3. [Verification of integrity of deployed deep learning models using Bayesian optimization](https://www.sciencedirect.com/science/article/pii/S0950705122000703): handle both small and large weights pertubation | Kuttichira, Deepthi Praveenlal and Gupta, Sunil and Nguyen, Dang and Rana, Santu and Venkatesh, Svetha | kuttichira2022verification | Knowledge-Based Systems,2022
 
-4. [Verification of integrity of deployed deep learning models using Bayesian optimization](https://www.sciencedirect.com/science/article/pii/S0950705122000703): handle both small and large weights pertubation | Kuttichira, Deepthi Praveenlal and Gupta, Sunil and Nguyen, Dang and Rana, Santu and Venkatesh, Svetha | kuttichira2022verification | Knowledge-Based Systems,2022
+4. [Sensitive Samples Revisited: Detecting Neural Network Attacks Using Constraint Solvers](https://arxiv.org/pdf/2109.03966.pdf): He 的方法需要假设凸函数特性，对He的方法选择以一种新的优化求解方法；**其中的故事描述可借鉴，e.g., to be trusted** | Docena, Amel Nestor and Wahl, Thomas and Pearce, Trevor and Fei, Yunsi | docena2021sensitive  | 2021.9
+
+5. [TamperNN: Efficient Tampering Detection of Deployed Neural Nets](https://arxiv.org/pdf/1903.00317.pdf): In the remote interaction setup we consider, the proposed strategy is to identify markers of the model input space that are likely to change class if the model is attacked, allowing a user to detect a possible tampering. | [BibTex](): merrer2019tampernn | Merrer et al, *IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)* 2019
+
+6. [Fragile Neural Network Watermarking with Trigger Image Set](https://link.springer.com/content/pdf/10.1007%2F978-3-030-82136-4_23.pdf): The watermarked model is sensitive to malicious fine tuning and will produce unstable classification results of the trigger images. | zhu2021fragile, Zhu et al, *International Conference on Knowledge Science, Engineering and Management 2021 (KSEM)*
 
 [Fragility]
-1. [TamperNN: Efficient Tampering Detection of Deployed Neural Nets](https://arxiv.org/pdf/1903.00317.pdf): In the remote interaction setup we consider, the proposed strategy is to identify markers of the model input space that are likely to change class if the model is attacked, allowing a user to detect a possible tampering. | [BibTex](): merrer2019tampernn | Merrer et al, *IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)* 2019
+1. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes; focus on three consecutive FC layer | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
 
-2. [MimosaNet: An Unrobust Neural Network Preventing Model Stealing](https://arxiv.org/pdf/1907.01650.pdf): . In this paper, we propose a method for creating an equivalent version of an already trained fully connected deep neural network that can prevent network stealing: namely, it produces the same responses and classification accuracy, but it is extremely sensitive to weight changes; focus on three consecutive FC layer | [BibTex](): szentannai2019mimosanet | Szentannai et al, 2019.7
-
-3. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding， To verify
+2. [DeepiSign: Invisible Fragile Watermark to Protect the Integrity and Authenticity of CNN](https://arxiv.org/pdf/2101.04319.pdf): convert to DCT domain, choose the high frequency to adopt LSB for information hiding， To verify
 the integrity and authenticity of the model | [BibTex](): abuadbba2021deepisign | Abuadbba et al, *SAC* 2021
 
-4. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](https://reader.elsevier.com/reader/sd/pii/S0020025521006642?token=69900AD74DF75BCD44D9AF0ACB66CF250754FF4F8DB188F9A7A11CDB06EBFF2F114E90EE6440F4AB1629A0878D2C9455&originRegion=us-east-1&originCreation=20211129131257): white-box | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)* 
+3. [NeuNAC: A Novel Fragile Watermarking Algorithm for Integrity Protection of Neural Networks](https://reader.elsevier.com/reader/sd/pii/S0020025521006642?token=69900AD74DF75BCD44D9AF0ACB66CF250754FF4F8DB188F9A7A11CDB06EBFF2F114E90EE6440F4AB1629A0878D2C9455&originRegion=us-east-1&originCreation=20211129131257): white-box | [BibTex](): botta2021neunac | Botta et al, *Information Sciences (2021)* 
 
-5. [Fragile Neural Network Watermarking with Trigger Image Set](https://link.springer.com/content/pdf/10.1007%2F978-3-030-82136-4_23.pdf): The watermarked model is sensitive to malicious fine tuning and will produce unstable classification results of the trigger images. | zhu2021fragile, Zhu et al, *International Conference on Knowledge Science, Engineering and Management 2021 (KSEM)*
-
-[Reversible]
+    [Reversible]
 1. [Reversible Watermarking in Deep Convolutional Neural Networks for Integrity Authentication](https://arxiv.org/pdf/2101.04319.pdf): chose the least important weights as the cover, can reverse the original model performance, can authenticate the integrity | [Reversible data hiding](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.4172&rep=rep1&type=pdf) | [BibTex](): guan2020reversible | Guan et al, *ACM MM* 2020
 
-2. [Multipurpose Watermarking Approach for Copyright and Integrity of Steganographic Autoencoder Models](https://downloads.hindawi.com/journals/scn/2021/9936661.pdf): store the hash value of each block in the redundant bits of the FC layer | gu2021multipurpose | Security and Communication Networks,2021
+
+[others]
+1. [SafetyNets: verifiable execution of deep neural networks on an untrusted cloud](https://proceedings.neurips.cc/paper/2017/file/6048ff4e8cb07aa60b6777b6f7384d52-Paper.pdf): Specifically, SafetyNets develops and implements a  specialized interactive proof (IP) protocol for verifiable execution of a class of deep neural networks,  | [BibTex](): ghodsi2017safetynets | Ghodsi et al, *Proceedings of the 31st International Conference on Neural Information Processing Systems. 2017* [to do]
+
+<!-- 3. [Multipurpose Watermarking Approach for Copyright and Integrity of Steganographic Autoencoder Models](https://downloads.hindawi.com/journals/scn/2021/9936661.pdf): store the hash value of each block in the redundant bits of the FC layer | gu2021multipurpose | Security and Communication Networks,2021 -->
 
 ## Special
 1. [Minimal Modifications of Deep Neural Networks using Verification](https://easychair-www.easychair.org/publications/download/CWhF): Adi 团队；利用模型维护领域的想法， 模型有漏洞，需要重新打补丁，但是不能使用re-train, 如何修改已经训练好的模型；所属领域：model verification, model repairing ...; <font color=red>提出了一种移除水印需要多少的代价的评价标准，measure the resistance of model watermarking </font> | [Coide](https://github.com/jjgold012/MinimalDNNModificationLpar2020) | [BibTex](): goldberger2020minimal | Goldberger et al, *LPAR* 2020
