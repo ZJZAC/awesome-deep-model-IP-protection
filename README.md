@@ -81,6 +81,9 @@ Paper & Code
 
 13. [Survey on the Technological Aspects of Digital Rights Management](http://profs.sci.univr.it/~giaco/download/Watermarking-Obfuscation/survey%20DRM.pdf) | William Ku, Chi-Hung Chi | International Conference on Information Security,2004
 
+14. [Robustness and Security of Digital Watermarks](https://d1wqtxts1xzle7.cloudfront.net/34469773/fc98_2-libre.pdf?1408337885=&response-content-disposition=inline%3B+filename%3DRobustness_and_Security_of_Digital_Water.pdf&Expires=1646298827&Signature=Fk0rJwdxEEREcRfgqA15PIjUbzoinHoqYoX4f2-mSgjS~0ueeOb0QX5tXCxEj7PDOw4qkzVcJ4WyhGNkRncpeMv~hBMTD3AcwlEsYD4P065Kkah69Ar~kJfQh2FJm-0VRCaREoLXTOCGKxmpH7zePpDwyauwlMxgUQKaVj9ms9FqpRA7NZMK2yP-aR08ofqEj7YSYFL3biXThBItxUWmGdLIYWUo2LCymINXFHvusw6detc8WLVKt0o~F02scd9gWFHwCbDSc1NfaQxdDxP8n4j0LxFkQGLhp00yJFHTYNdD-jhOEK1CubXfCDOI-6n34kfD5g46QRth1O8iWl7AKg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
+
+
 # <span id="Preliminary">Preliminary</span> [^](#back)
 
 ## Threats for Intellectual Property of Deep Model 
