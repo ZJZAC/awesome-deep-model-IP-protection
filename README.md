@@ -83,6 +83,10 @@ Paper & Code
 
 14. [Robustness and Security of Digital Watermarks](https://d1wqtxts1xzle7.cloudfront.net/34469773/fc98_2-libre.pdf?1408337885=&response-content-disposition=inline%3B+filename%3DRobustness_and_Security_of_Digital_Water.pdf&Expires=1646298827&Signature=Fk0rJwdxEEREcRfgqA15PIjUbzoinHoqYoX4f2-mSgjS~0ueeOb0QX5tXCxEj7PDOw4qkzVcJ4WyhGNkRncpeMv~hBMTD3AcwlEsYD4P065Kkah69Ar~kJfQh2FJm-0VRCaREoLXTOCGKxmpH7zePpDwyauwlMxgUQKaVj9ms9FqpRA7NZMK2yP-aR08ofqEj7YSYFL3biXThBItxUWmGdLIYWUo2LCymINXFHvusw6detc8WLVKt0o~F02scd9gWFHwCbDSc1NfaQxdDxP8n4j0LxFkQGLhp00yJFHTYNdD-jhOEK1CubXfCDOI-6n34kfD5g46QRth1O8iWl7AKg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
 
+15. [Survey on watermarking methods in the artificial intelligence domain and beyond](https://www.sciencedirect.com/science/article/pii/S0140366422000664): 利用AI设计水印算法
+
+
+
 
 # <span id="Preliminary">Preliminary</span> [^](#back)
 
@@ -299,7 +303,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 5. [Fostering The Robustness Of White-box Deep Neural Network Watermarks By Neuron Alignment](https://arxiv.org/pdf/2112.14108.pdf): using trigger to remember the order of  neurons, against the neuron permutation attack [lukas,sok] | li2021fostering | 2021.12
 
 [security]
-1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective) | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation Mechanism]
+1. [Watermarking Neural Network with Compensation Mechanism](https://www.jianguoyun.com/p/DV0-NowQ0J2UCRjey-0D): using spread spectrum (capability) and a noise sequence for security; 补偿机制指对没有嵌入水印的权值再进行fine-tune; measure changes with norm (energy perspective), 多用方法在前面robustness中都提过，此处可以不再提这篇工作 | [BibTex](): feng2020watermarking | Feng et al, *International Conference on Knowledge Science, Engineering and Management* 2020 [Fidelity] | [Compensation Mechanism]
 
 2. [Rethinking Deep Neural Network Ownership Verification: Embedding Passports to Defeat Ambiguity Attacks](https://openreview.net/pdf?id=BJlfKVBeUr) | [Code](https://github.com/kamwoh/DeepIPR) | [BibTex](): fan2019rethinking | [Extension](https://arxiv.org/pdf/1909.07830.pdf) | Fan et al, *NeuraIPS* 2019, 2019.9
 
@@ -387,6 +391,9 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 [model extratcion] tramer2016stealing
 1. [DAWN: Dynamic Adversarial Watermarking of Neural Networks](https://arxiv.org/pdf/1906.00830.pdf): dynamically changing the responses for a small subset of queries (e.g., <0.5%) from API clients | [BibTex](): szyller2019dawn | Szyller et al, 2019,6
+
+2. [Cosine Model Watermarking Against Ensemble Distillation](https://arxiv.org/pdf/2203.02777.pdf): [to do]
+
 
 2. [Entangled Watermarks as a Defense against Model Extraction](https://arxiv.org/pdf/2002.12200.pdf)：forcing the model to learn features which are jointly used to analyse both the normal and the triggers; using soft nearest neighbor loss (SNNL) to measure entanglement over labeled data; location的确定取决于梯度，还是很全面分析了一些adaptive attack 值得进一步得阅读； outlier dection可以参考 | [Code](https://github.com/cleverhans-lab/entangled-watermark) | Jia, Hengrui and Choquette-Choo, Christopher A and Chandrasekaran, Varun and Papernot, Nicolas | [BibTex](): jia2020entangled |  et al, *30th USENIX* 2020
 
