@@ -85,7 +85,7 @@ Paper & Code
 
 15. [Survey on watermarking methods in the artificial intelligence domain and beyond](https://www.sciencedirect.com/science/article/pii/S0140366422000664): 利用AI设计水印算法
 
-
+16. [人工智能模型水印研究综述](https://www.jsjkx.com/CN/article/openArticlePDF.jsp?id=20072)
 
 
 # <span id="Preliminary">Preliminary</span> [^](#back)
@@ -310,6 +310,10 @@ to produce the watermarked architecture and a verification key vk; the owner col
 3. [Passport-aware Normalization for Deep Model Protection](https://proceedings.neurips.cc/paper/2020/file/ff1418e8cc993fe8abcfe3ce2003e5c5-Paper.pdf): Improvemnet of [1] | [Code](https://github.com/ZJZAC/Passport-aware-Normalization) | [BibTex](): zhang2020passport | Zhang et al, *NeuraIPS* 2020, 2020.9
 
 4. [Watermarking Deep Neural Networks with Greedy Residuals](http://proceedings.mlr.press/v139/liu21x.html): less is more; feasible to the deep model without normalization layer | [BibTex](): liu2021watermarking | Liu et al, *ICML 2021* 
+
+5. [Collusion Resistant Watermarking for Deep Learning Models Protection](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9728937): 可不引用 ： ICACT‘22 | Tokyo
+
+
 
 ### <span id="MTL">Approaches Based on Muliti-task Learning</span> [^](#back)
  
@@ -588,7 +592,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 3. [Deep neural network fingerprinting by conferrable adversarial examples](https://arxiv.org/pdf/1912.00888.pdf): conferrable adversarial examples that exclusively transfer with a target label from a source model to its surrogates, using refrence model | [BibTex](): lukas2019deep | Lukas et al, *ICLR* 2021
   <br/><img src='./IP-images/220203-4.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
-4. [Characteristic Examples: High-Robustness, Low-Transferability Fingerprinting of Neural Networks](https://www.ijcai.org/proceedings/2021/0080.pdf):  we use random initialization instead of true data and therefore our method is data-free; using high frequency to constrain the transferablity | Wang, Siyue and Wang, Xiao and Chen, Pin-Yu and Zhao, Pu and Lin, Xue | wang2021characteristic | *IJCAT2021*
+4. [Characteristic Examples: High-Robustness, Low-Transferability Fingerprinting of Neural Networks](https://www.ijcai.org/proceedings/2021/0080.pdf):  we use random initialization instead of true data and therefore our method is data-free; using high frequency to constrain the transferablity | Wang, Siyue and Wang, Xiao and Chen, Pin-Yu and Zhao, Pu and Lin, Xue | wang2021characteristic | *IJCAI2021*
 <br/><img src='./IP-images/220203-5.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
 5. [Fingerprinting Deep Neural Networks Globally via Universal Adversarial Perturbations](https://arxiv.org/pdf/2202.08602.pdf): UAPs,  contrastive learning | Peng, Zirui and Li, Shaofeng and Chen, Guoxing and Zhang, Cheng and Zhu, Haojin and Xue, Minhui |　2022.2 [to do]
@@ -631,6 +635,12 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Learning to Disentangle GAN Fingerprint for Fake Image Attribution](https://arxiv.org/pdf/2106.08749.pdf): the extracted features could include many content-relevant components and generalize poorly on unseen images with different content | [BibTex](): c | Yang et al, 2021.6
   <br/><img src='./IP-images/220203-1.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
+
+5. [Your Model Trains on My Data? Protecting Intellectual Property of Training Data via Membership Fingerprint Authentication](https://www.chenwang.net.cn/publications/MeFA-TIFS22.pdf)：使用MIA做 fingerprint [to do]
+
+
+
+
 
 [pair outputs]
 1. [Teacher Model Fingerprinting Attacks Against Transfer Learning](https://arxiv.org/pdf/2106.12478.pdf): [latent backdoor](https://dl.acm.org/doi/pdf/10.1145/3319535.3354209) 生成一个和prob样本输出类似的样本，如果模型对这两个成对的数据都是相似的response,证明用来原始的feature extractor，和我想的成对的trigger 异曲同工 | Chen, Yufei and Shen, Chao and Wang, Cong and Zhang, Yang | chen2021teacher, Chen et al, 2021.6
@@ -1173,3 +1183,4 @@ threats from side-channel attacks
 - `external features may be robust to extraction attack, but prone to inference attack?`
 - `white-box watermarking method is inherently fragile to model extraction attack`
 - `对抗样本生成次数（距离边界的垂直距离），对抗样本的数量（平行距离），黄金样本？ 经过简单fine-tune就能回到原始模型的性能？ 怎么定义transfer-learning 攻击`
+- ` According to recent works about the unfairness of ML applications, the inherent bias existing in the training data will cause the ML models to output unfair results with respect to some records [52], [53]. By identifying the prediction unfairness, we may verify the IP of a suspect model’s training data with a smaller cost.`
