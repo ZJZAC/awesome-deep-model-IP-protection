@@ -182,7 +182,7 @@ Paper & Code
   (AprilPyone -- piracy)
   1. [Piracy-Resistant DNN Watermarking by Block-Wise Image Transformation with Secret Key](https://arxiv.org/pdf/2104.04241.pdf)：uses a secret key to verify ownership instead of trigger sets, 类似张鑫鹏的protocal， 连续变换，生成trigger sets | [BibTex](): AprilPyone2021privacy | AprilPyone et al, 2021.4 | [IH&MMSec'21 version](https://dl.acm.org/doi/pdf/10.1145/3437880.3460398)
 
-3. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking
+3. [Non-Transferable Learning: A New Approach for Model Verification and Authorization](https://arxiv.org/pdf/2106.06916.pdf): propose the idea is feasible to both ownership verification (target-specified cases) and usage authorization (source-only NTL).; 反其道行之，只要加了扰动就下降，利用脆弱性，或者说是超强的转移性，exclusive | [BibTex](): wang2021nontransferable | Wang et al, *NeurIPS 2021 submission* [Mark]: for robust black-box watermarking | ICLR'22 | [blog](https://mp.weixin.qq.com/s/JgTQW9Szj40kMMsEwThCfA)
 
 
 [prevent unauthorized training]
@@ -487,6 +487,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 4. [Watermarking of Deep Recurrent Neural Network Using Adversarial Examples to Protect Intellectual Property](https://www.tandfonline.com/doi/pdf/10.1080/08839514.2021.2008613): speech-to-text RNN model, based on adv example | Rathi, Pulkit and Bhadauria, Saumya and Rathi, Sugandha | rathi2021watermarking | Applied Artificial Intelligence, 2021
 
+5. [Protecting the Intellectual Property of Speaker Recognition Model by Black-Box Watermarking in the Frequency Domain](https://www.mdpi.com/2073-8994/14/3/619/html): adding a trigger signal in the frequency domain; a new label is assigned | Yumin Wang and Hanzhou Wu | [to do]
 
 ## <span id="NLP">NLP</span> [[link]](https://blog.csdn.net/weixin_44517291/article/details/115508909)
 ### <span id="Sentence-Classification">`Sentence Classification`</span>
@@ -587,7 +588,7 @@ to produce the watermarked architecture and a verification key vk; the owner col
 1. [AFA Adversarial fingerprinting authentication for deep neural networks](https://www.sciencedirect.com/science/article/abs/pii/S014036641931686X)：Use the adversarial examples as the model’s fingerprint； also mimic the `logits vector` of the target sample 𝑥𝑡; ghost model [li2020learning] (directly modify) substitute refrence models | [BibTex](): zhao2020afa | Zhao et al, * Computer Communications* 2020
   <br/><img src='./IP-images/220203-3.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
-2. [Fingerprinting Deep Neural Networks - A DeepFool Approach](): In this paper, we utilize the geometry characteristics inherited in the DeepFool algorithm to extract data points near the classification boundary; execution time independent of dataset  | Wang, Si and Chang, Chip-Hong | wang2021fingerprinting | Wang et al, *IEEE International Symposium on Circuits and Systems (ISCAS)* 2021
+2. [Fingerprinting Deep Neural Networks - A DeepFool Approach](https://ieeexplore.ieee.org/document/9401119): In this paper, we utilize the geometry characteristics inherited in the DeepFool algorithm to extract data points near the classification boundary; execution time independent of dataset  | Wang, Si and Chang, Chip-Hong | wang2021fingerprinting | Wang et al, *IEEE International Symposium on Circuits and Systems (ISCAS)* 2021
 
 3. [Deep neural network fingerprinting by conferrable adversarial examples](https://arxiv.org/pdf/1912.00888.pdf): conferrable adversarial examples that exclusively transfer with a target label from a source model to its surrogates, using refrence model | [BibTex](): lukas2019deep | Lukas et al, *ICLR* 2021
   <br/><img src='./IP-images/220203-4.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
@@ -609,6 +610,9 @@ to produce the watermarked architecture and a verification key vk; the owner col
 
 7. [iNNformant: Boundary Samples as Telltale Watermarks](https://informationsecurity.uibk.ac.at/pdfs/SKB2021_IH.pdf): Improvement of [schlogl2021forensicability]; This is relevant if, in the above example, the model owner wants to probe the inference pipeline inconspicuously in order to avoid that the licensee can process obvious boundary samples in a different pipeline (the legitimate one) than the bulk of organic samples. We propose to generate transparent boundary samples as perturbations of natural input samples and measure the distortion by the peak  signal-to-noise ratio (PSNR). | [BibTex](): schlogl2021innformant | Schlogl et al, * IH&MMSEC '21* 2021
 <br/><img src='./IP-images/220204-5.png' align='left' style=' width:300px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
+
+4. [Integrity Fingerprinting of DNN with Double Black-box Design and Verification](https://arxiv.org/pdf/2203.10902.pdf): h captures the decision boundary by generating a limited number of encysted sample fingerprints, which are a set of naturally transformed and augmented inputs enclosed around the model’s decision boundary in order to capture the inherent fingerprints of the model [to do]
+<br/><img src='./IP-images/220329-1.png' align='left' style=' width:500px;height:100 px'/> <br/><br/><br/><br/><br/><br/><br/>
 
 [more application]
 1. [A Novel Verifiable Fingerprinting Scheme for Generative Adversarial Networks](https://arxiv.org/pdf/2106.11760.pdf): image 后面再加一个classifier, 使用adv，这样生成的adv会更不可见一点 | [BibTex](): li2021novel | Li et al, 2021.6
